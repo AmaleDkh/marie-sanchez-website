@@ -152,3 +152,21 @@ img {
     }
   }
 }
+
+.practical-information {
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+  gap: 240px;
+
+  &__item {
+    &__icon {
+      color: $green-color;
+      margin-bottom: 24px;
+    }
+
+    &__text {
+      text-align: center;
+    }
+  }
+}
