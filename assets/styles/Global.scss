@@ -281,27 +281,74 @@ img {
 .frequently-asked-questions {
   margin: 160px 120px 0 120px;
 
-  &__item {
-    &__elements-block {
-      &__icon-question {
-        display: flex;
-        gap: 16px;
-        align-items: center;
-        margin-bottom: 16px;
+  &__content-container {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    margin: 0 200px;
 
-        &__icon {
-          color: $green-color;
-          cursor: pointer;
-          text-align: left;
+    &__item {
+      &__elements-block {
+        &__icon-question {
+          display: flex;
+          gap: 16px;
+          align-items: center;
+          margin-bottom: 16px;
+
+          &__icon {
+            color: $green-color;
+            cursor: pointer;
+            text-align: left;
+          }
+        }
+
+        &__answer {
+          margin-bottom: 16px;
+        }
+
+        &__answer--visible {
+          max-height: 500px;
         }
       }
 
-      &__answer {
-        margin-bottom: 16px;
-      }
+      &__image-container {
+        border-radius: 5px;
 
-      &__answer--visible {
-        max-height: 500px;
+        &__image {
+          width: 450px;
+          height: 550px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.education-and-experience {
+  margin: 160px 120px 0 120px;
+
+  &__container {
+    display: flex;
+
+    &__education-list,
+    &__experience-list {
+      &__item {
+        list-style-type: none;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        &__icon {
+          color: $green-color;
+        }
+
+        &__line {
+          width: 32px;
+          height: 2px;
+          background-color: $green-color;
+          margin: 16px 0;
+        }
       }
     }
   }

@@ -5,6 +5,7 @@ import ConsultationInformation from '../ConsultationInformation/ConsultationInfo
 import DurationPrices from '../DurationPrices/DurationPrices';
 import ImageBlock from '../ImageBlock/ImageBlock';
 import FrequentlyAskedQuestions from '../FrequentlyAskedQuestions/FrequentlyAskedQuestions';
+import EducationAndExperience from '../EducationAndExperience/EducationAndExperience';
 
 function MainContent() {
   return (
@@ -15,6 +16,7 @@ function MainContent() {
       <DurationPrices />
       <FrequentlyAskedQuestions />
       <ImageBlock />
+      <EducationAndExperience />
     </main>
   );
 }

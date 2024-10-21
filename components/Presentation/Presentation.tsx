@@ -2,7 +2,7 @@
 import Image from 'next/image';
 
 // Component
-import AppointmentButton from '../ConsultationInformation/AppointmentButton/AppointmentButton';
+import AppointmentButton from '../AppointmentButton/AppointmentButton';
 
 // Image
 import Photo from '../../assets/images/marie-sanchez.webp';

@@ -3,8 +3,9 @@ import Image from 'next/image';
 
 // Components
 import SectionTitle from '../SectionTitle/SectionTitle';
-import AppointmentButton from './AppointmentButton/AppointmentButton';
+import AppointmentButton from '../AppointmentButton/AppointmentButton';
 
+// Image
 import OfficeDecoration from '../../assets/images/office-decoration.webp';
 
 function ConsultationInformation() {
