@@ -207,3 +207,61 @@ img {
     }
   }
 }
+
+.duration-prices {
+  margin-top: 144px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 104px;
+
+    &__block {
+      position: relative;
+      z-index: 1;
+
+      &__item-block {
+        text-align: center;
+        width: 230px;
+        height: 230px;
+        background-color: $light-green-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 8px;
+        position: relative;
+        z-index: 1;
+        border-radius: 5px;
+
+        &__title {
+          margin-bottom: 24px;
+          font-weight: bold;
+          font-family: 'EB Garamond';
+          font-size: 24px;
+        }
+
+        &__paragraph,
+        &__paragraph__first,
+        &__paragraph__second {
+          margin: 0;
+        }
+
+        &__paragraph__first {
+          margin-bottom: 8px;
+        }
+      }
+
+      &__square {
+        width: 230px;
+        height: 230px;
+        background-color: $green-color;
+        position: absolute;
+        z-index: 0;
+        top: 16px;
+        left: 16px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
