@@ -15,7 +15,7 @@ function PracticalInformation() {
           size="3x"
           className="practical-information__item__icon"
         />
-        <div className="practical-information__item__text">TBC</div>
+        <div className="practical-information__item__text">Lorem ipsum</div>
       </div>
       <div className="practical-information__item">
         <FontAwesomeIcon
@@ -23,7 +23,7 @@ function PracticalInformation() {
           size="3x"
           className="practical-information__item__icon"
         />
-        <div className="practical-information__item__text">TBC</div>
+        <div className="practical-information__item__text">Lorem ipsum</div>
       </div>
       <div className="practical-information__item">
         <FontAwesomeIcon
@@ -31,7 +31,7 @@ function PracticalInformation() {
           size="3x"
           className="practical-information__item__icon"
         />
-        <div className="practical-information__item__text">TBC</div>
+        <div className="practical-information__item__text">Lorem ipsum</div>
       </div>
     </section>
   );

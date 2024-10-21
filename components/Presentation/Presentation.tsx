@@ -1,6 +1,9 @@
 // Next element
 import Image from 'next/image';
 
+// Component
+import AppointmentButton from '../ConsultationInformation/AppointmentButton/AppointmentButton';
+
 // Image
 import Photo from '../../assets/images/marie-sanchez.webp';
 
@@ -37,9 +40,7 @@ function Presentation() {
             psychiatrique au sein de laquelle je propose des ateliers de groupe.
           </p>
         </div>
-        <button className="presentation-container__text__button-appointment">
-          PRENDRE RENDEZ-VOUS
-        </button>
+        <AppointmentButton />
       </div>
     </section>
   );

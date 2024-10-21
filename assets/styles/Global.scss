@@ -110,13 +110,13 @@ img {
 }
 
 .main {
-  margin: 88px 272px;
+  margin: 88px 80px;
 }
 
 .presentation-container {
   display: flex;
   align-items: center;
-  gap: 200px;
+  gap: 160px;
 
   &__photo-container {
     width: 300px;
@@ -139,17 +139,6 @@ img {
     &__presentation {
       margin-bottom: 48px;
     }
-
-    &__button-appointment {
-      background-color: $brown-color;
-      color: $beige-color;
-      border: none;
-      border-radius: 90px;
-      padding: 16px;
-      font-weight: bold;
-      display: flex;
-      margin: auto;
-    }
   }
 }
 
@@ -160,13 +149,61 @@ img {
   gap: 240px;
 
   &__item {
+    display: flex;
+    flex-direction: column;
     &__icon {
       color: $green-color;
       margin-bottom: 24px;
     }
+  }
+}
 
-    &__text {
-      text-align: center;
+.button-appointment {
+  background-color: $brown-color;
+  color: $beige-color;
+  border: none;
+  border-radius: 90px;
+  padding: 16px;
+  font-weight: bold;
+  display: flex;
+  margin: auto;
+}
+
+.section-title {
+  color: $brown-color;
+  font-size: 40px;
+  margin: 0 0 56px 0;
+}
+
+.consultation-information {
+  display: flex;
+  gap: 128px;
+  margin-top: 160px;
+
+  &__text {
+    &__presentation {
+      margin: 0 0 56px 0;
+
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__image-container {
+    width: 450px;
+    height: 550px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 15px;
+
+    &__image {
+      width: 450px;
+      height: 550px;
+      object-fit: cover;
     }
   }
 }
