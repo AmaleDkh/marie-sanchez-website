@@ -18,7 +18,6 @@ body {
     Helvetica Neue,
     sans-serif;
   background-color: $beige-color;
-  margin: 0 40px;
 }
 
 a {
@@ -36,7 +35,7 @@ img {
 }
 
 .header {
-  margin: 24px 0;
+  margin: 24px 40px;
   color: $brown-color;
   display: flex;
   justify-content: space-between;
@@ -100,7 +99,7 @@ img {
 }
 
 .footer {
-  margin: 24px 0;
+  margin: 24px 40px;
   text-align: center;
   color: $brown-color;
   position: fixed;
@@ -110,13 +109,14 @@ img {
 }
 
 .main {
-  margin: 88px 80px;
+  margin: 88px 0;
 }
 
 .presentation-container {
   display: flex;
   align-items: center;
   gap: 160px;
+  margin: 0 120px;
 
   &__photo-container {
     width: 300px;
@@ -143,7 +143,7 @@ img {
 }
 
 .practical-information {
-  margin-top: 160px;
+  margin: 160px 120px 0 120px;
   display: flex;
   justify-content: center;
   gap: 240px;
@@ -175,41 +175,8 @@ img {
   margin: 0 0 56px 0;
 }
 
-.consultation-information {
-  display: flex;
-  gap: 128px;
-  margin-top: 160px;
-
-  &__text {
-    &__presentation {
-      margin: 0 0 56px 0;
-
-      p {
-        margin-top: 0;
-      }
-    }
-  }
-
-  &__image-container {
-    width: 450px;
-    height: 550px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 15px;
-
-    &__image {
-      width: 450px;
-      height: 550px;
-      object-fit: cover;
-    }
-  }
-}
-
 .duration-prices {
-  margin-top: 144px;
+  margin: 160px 120px 0 120px;
 
   &__container {
     display: flex;
@@ -263,5 +230,50 @@ img {
         border-radius: 5px;
       }
     }
+  }
+}
+
+.consultation-information {
+  display: flex;
+  gap: 128px;
+  margin: 160px 120px 0 120px;
+
+  &__text {
+    &__presentation {
+      margin: 0 0 56px 0;
+
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__image-container {
+    width: 450px;
+    height: 550px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+
+    &__image {
+      width: 450px;
+      height: 550px;
+      object-fit: cover;
+    }
+  }
+}
+
+.image-block-container {
+  width: 100%;
+  height: 600px;
+  margin-top: 144px;
+
+  &__image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
   }
 }

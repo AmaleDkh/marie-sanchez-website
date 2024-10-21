@@ -3,6 +3,7 @@ import Presentation from '../Presentation/Presentation';
 import PracticalInformation from '../PracticalInformation/PracticalInformation';
 import ConsultationInformation from '../ConsultationInformation/ConsultationInformation';
 import DurationPrices from '../DurationPrices/DurationPrices';
+import ImageBlock from '../ImageBlock/ImageBlock';
 
 function MainContent() {
   return (
@@ -11,6 +12,7 @@ function MainContent() {
       <PracticalInformation />
       <ConsultationInformation />
       <DurationPrices />
+      <ImageBlock />
     </main>
   );
 }
