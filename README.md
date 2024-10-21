@@ -1,1 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# Marie Sanchez Psychologist-Clinician website
+
+This project is a website for a psychologist-clinician.
