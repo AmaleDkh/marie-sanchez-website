@@ -1,5 +1,7 @@
+// Next element
 import Image from 'next/image';
 
+// Image
 import OfficeDecoration2 from '../../assets/images/office-decoration2.webp';
 
 function ImageBlock() {

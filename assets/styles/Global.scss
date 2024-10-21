@@ -277,3 +277,32 @@ img {
     object-fit: cover;
   }
 }
+
+.frequently-asked-questions {
+  margin: 160px 120px 0 120px;
+
+  &__item {
+    &__elements-block {
+      &__icon-question {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 16px;
+
+        &__icon {
+          color: $green-color;
+          cursor: pointer;
+          text-align: left;
+        }
+      }
+
+      &__answer {
+        margin-bottom: 16px;
+      }
+
+      &__answer--visible {
+        max-height: 500px;
+      }
+    }
+  }
+}
