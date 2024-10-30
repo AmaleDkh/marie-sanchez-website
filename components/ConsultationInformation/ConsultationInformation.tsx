@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 // Components
 import SectionTitle from '../SectionTitle/SectionTitle';
-import AppointmentButton from '../AppointmentButton/AppointmentButton';
+import Button from '../Button/Button';
 
 // Image
 import OfficeDecoration from '../../assets/images/office-decoration.webp';
@@ -28,16 +28,16 @@ function ConsultationInformation() {
             questions, afin que nous puissions définir ensemble les modalités du
             suivi ainsi que la ou les approche(s) que nous utiliserons.
           </p>
-          <p className="consultation-information__text__presentation__paragraph">
+          {/* <p className="consultation-information__text__presentation__paragraph">
             L’objectif est que vous puissiez bénéficier d’un espace d’écoute et
             d’une aide afin d’apaiser et dépasser certaines souffrances. Mon
             rôle est de vous accompagner, à votre rythme,  en vous aidant à
             explorer et à comprendre vos émotions, vos pensées, et retrouver en
             vous les ressources pour aller vers une meilleure compréhension de
             vous-même et une amélioration de votre qualité de vie. 
-          </p>
+          </p> */}
         </div>
-        <AppointmentButton />
+        <Button text="En savoir plus" />
       </div>
       <div className="consultation-information__image-container">
         <Image

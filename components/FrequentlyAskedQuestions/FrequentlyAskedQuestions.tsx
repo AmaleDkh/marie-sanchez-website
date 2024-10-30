@@ -32,7 +32,7 @@ function FrequentlyAskedQuestions() {
     <section className="frequently-asked-questions">
       <SectionTitle title="FOIRE AUX QUESTIONS" />
       <div className="frequently-asked-questions__content-container">
-        <div className="frequently-asked-questions__content-container__item__image-container__image">
+        <div className="frequently-asked-questions__content-container__item__image-container">
           <Image
             src={officeDecoration}
             alt="Photo d'une commode avec une lampe et des livres ainsi qu'une horloge au-dessus"

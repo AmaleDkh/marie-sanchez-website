@@ -1,23 +1,19 @@
-@import './assets/styles/Colors.scss';
+@import './Colors.scss';
+@import './Fonts.scss';
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
   background-color: $beige-color;
+}
+
+* {
+  font-family: 'Montserrat';
+}
+
+h2 {
+  font-family: 'Baskerville';
 }
 
 a {
@@ -36,7 +32,7 @@ img {
 
 .header {
   margin: 24px 40px;
-  color: $brown-color;
+  color: $dark-green-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,6 +44,8 @@ img {
     &__names {
       font-size: 32px;
       font-weight: 700;
+      font-family: 'Baskerville';
+      font-style: italic;
     }
   }
   &__navigation-menu {
@@ -75,7 +73,8 @@ img {
     &__bar {
       height: 3px;
       width: 100%;
-      background-color: $brown-color;
+      color: $dark-green-color;
+      background-color: $dark-green-color;
     }
   }
   &__navigation-menu {
@@ -101,22 +100,21 @@ img {
 .footer {
   margin: 24px 40px;
   text-align: center;
-  color: $brown-color;
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  color: $dark-green-color;
   width: 100%;
 }
 
 .main {
-  margin: 88px 0;
+  margin: 72px 0;
 }
 
 .presentation-container {
   display: flex;
   align-items: center;
-  gap: 160px;
-  margin: 0 120px;
+  gap: 104px;
+  background-color: $green-color;
+  color: white;
+  padding: 60px 240px;
 
   &__photo-container {
     width: 300px;
@@ -143,7 +141,7 @@ img {
 }
 
 .practical-information {
-  margin: 160px 120px 0 120px;
+  margin: 104px 120px 0 120px;
   display: flex;
   justify-content: center;
   gap: 240px;
@@ -152,15 +150,15 @@ img {
     display: flex;
     flex-direction: column;
     &__icon {
-      color: $green-color;
+      color: $light-brown-color;
       margin-bottom: 24px;
     }
   }
 }
 
-.button-appointment {
-  background-color: $brown-color;
-  color: $beige-color;
+.button {
+  background-color: $light-brown-color;
+  color: white;
   border: none;
   border-radius: 90px;
   padding: 16px;
@@ -170,13 +168,13 @@ img {
 }
 
 .section-title {
-  color: $brown-color;
+  color: $dark-green-color;
   font-size: 40px;
   margin: 0 0 56px 0;
 }
 
 .duration-prices {
-  margin: 160px 120px 0 120px;
+  margin: 120px 240px 0 240px;
 
   &__container {
     display: flex;
@@ -185,13 +183,11 @@ img {
 
     &__block {
       position: relative;
-      z-index: 1;
 
       &__item-block {
         text-align: center;
         width: 230px;
         height: 230px;
-        background-color: $light-green-color;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -199,6 +195,8 @@ img {
         padding: 0 8px;
         position: relative;
         z-index: 1;
+        background-color: $light-brown-color;
+        color: white;
         border-radius: 5px;
 
         &__title {
@@ -222,6 +220,7 @@ img {
       &__square {
         width: 230px;
         height: 230px;
+
         background-color: $green-color;
         position: absolute;
         z-index: 0;
@@ -235,9 +234,8 @@ img {
 
 .consultation-information {
   display: flex;
-  gap: 128px;
-  margin: 160px 120px 0 120px;
-
+  gap: 104px;
+  margin: 104px 240px 0 240px;
   &__text {
     &__presentation {
       margin: 0 0 56px 0;
@@ -279,13 +277,12 @@ img {
 }
 
 .frequently-asked-questions {
-  margin: 160px 120px 0 120px;
+  margin: 136px 240px 0 240px;
 
   &__content-container {
     display: flex;
     align-items: center;
     gap: 72px;
-    margin: 0 200px;
 
     &__item {
       &__elements-block {
@@ -296,7 +293,7 @@ img {
           margin-bottom: 16px;
 
           &__icon {
-            color: $green-color;
+            color: $light-brown-color;
             cursor: pointer;
             text-align: left;
           }
@@ -312,6 +309,13 @@ img {
       }
 
       &__image-container {
+        width: 450px;
+        height: 550px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
         border-radius: 5px;
 
         &__image {
@@ -325,31 +329,65 @@ img {
 }
 
 .education-and-experience {
-  margin: 160px 120px 0 120px;
+  margin: 104px 240px 0 240px;
+
+  &__title {
+    font-family: 'Baskerville';
+    font-size: 24px;
+    font-style: italic;
+    color: $green-color;
+    margin: 0;
+  }
 
   &__container {
     display: flex;
+    align-items: center;
+    gap: 88px;
+    background-color: $light-brown-color;
+    color: white;
+    padding: 56px 56px 24px 56px;
+    border-radius: 5px;
 
     &__education-list,
     &__experience-list {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin: 0;
+
       &__item {
         list-style-type: none;
-        margin-bottom: 16px;
+        margin-bottom: 32px;
         display: flex;
         align-items: center;
         gap: 16px;
 
-        &__icon {
-          color: $green-color;
-        }
+        // &__icon {
+        //   color: $light-brown-color;
+        // }
 
-        &__line {
-          width: 32px;
-          height: 2px;
-          background-color: $green-color;
-          margin: 16px 0;
-        }
+        // &__line {
+        //   width: 32px;
+        //   height: 2px;
+        //   background-color: $light-brown-color;
+        //   margin: 16px 0;
+        // }
       }
     }
+  }
+}
+
+.education-and-experience__container__education-list__item__degree {
+  &__name {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+}
+
+.education-and-experience__container__experience-list__item__experience {
+  &__name {
+    font-weight: bold;
+    margin-bottom: 8px;
   }
 }

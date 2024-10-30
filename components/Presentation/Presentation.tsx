@@ -2,7 +2,7 @@
 import Image from 'next/image';
 
 // Component
-import AppointmentButton from '../AppointmentButton/AppointmentButton';
+import Button from '../Button/Button';
 
 // Image
 import Photo from '../../assets/images/marie-sanchez.webp';
@@ -40,7 +40,7 @@ function Presentation() {
             psychiatrique au sein de laquelle je propose des ateliers de groupe.
           </p>
         </div>
-        <AppointmentButton />
+        <Button text="Prendre rendez-vous" />
       </div>
     </section>
   );

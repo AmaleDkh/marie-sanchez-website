@@ -1,14 +1,18 @@
 [
   {
-    "degree": "Diplôme de Psychologie clinique, psychopathologie et psychologie de la santé – École de Psychologues Praticiens"
+    "degree": "Diplôme de Psychologie clinique, psychopathologie et psychologie de la santé",
+    "location": "École de Psychologues Praticiens"
   },
   {
-    "degree": "Formation en Psycho-Sexologie - AFPRO"
+    "degree": "Formation en Psycho-Sexologie",
+    "location": "AFPRO"
   },
   {
-    "degree": "Formation ICV LI-1 - Institut Double Hélice"
+    "degree": "Formation ICV LI-1",
+    "location": "Institut Double Hélice"
   },
   {
-    "degree": "Formation urgences psychiatriques - Hôpital Charles Perrens"
+    "degree": "Formation urgences psychiatriques",
+    "location": "Hôpital Charles Perrens"
   }
 ]
