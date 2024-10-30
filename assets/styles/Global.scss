@@ -6,6 +6,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: $beige-color;
+  font-family: 'Montserrat';
 }
 
 * {
@@ -36,6 +37,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   &__principal-information {
     display: flex;
     flex-direction: column;
@@ -48,6 +50,7 @@ img {
       font-style: italic;
     }
   }
+
   &__navigation-menu {
     display: flex;
     align-items: center;
@@ -77,20 +80,24 @@ img {
       background-color: $dark-green-color;
     }
   }
+
   &__navigation-menu {
     position: absolute;
     top: 100%;
-    right: 8px;
+    right: -40px;
     z-index: 1000;
     width: 250px;
 
     &__list {
       list-style-type: none;
-      padding: 0;
+      padding: 24px 16px 0 16px;
       text-align: end;
+      background-color: $light-brown-color;
+      color: white;
+      font-weight: bold;
 
       &__item {
-        margin-bottom: 16px;
+        padding-bottom: 24px;
         cursor: pointer;
       }
     }
@@ -114,11 +121,11 @@ img {
   gap: 104px;
   background-color: $green-color;
   color: white;
-  padding: 60px 240px;
+  padding: 136px 240px;
 
   &__photo-container {
-    width: 300px;
-    height: 300px;
+    width: 368px;
+    height: 368px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -134,8 +141,15 @@ img {
   }
 
   &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
     &__presentation {
-      margin-bottom: 48px;
+      &__title {
+        font-style: italic;
+        margin: 0 0 32px;
+      }
     }
   }
 }
@@ -335,45 +349,34 @@ img {
     font-family: 'Baskerville';
     font-size: 24px;
     font-style: italic;
-    color: $green-color;
+    color: $light-brown-color;
     margin: 0;
   }
 
   &__container {
     display: flex;
     align-items: center;
-    gap: 88px;
-    background-color: $light-brown-color;
-    color: white;
-    padding: 56px 56px 24px 56px;
-    border-radius: 5px;
+    gap: 48px;
 
-    &__education-list,
-    &__experience-list {
-      padding: 0;
+    &__experience-list,
+    &__education-list {
+      list-style-type: none;
       display: flex;
       flex-direction: column;
-      gap: 40px;
-      margin: 0;
+      gap: 24px;
+      padding: 0;
 
       &__item {
         list-style-type: none;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
         display: flex;
         align-items: center;
         gap: 16px;
-
-        // &__icon {
-        //   color: $light-brown-color;
-        // }
-
-        // &__line {
-        //   width: 32px;
-        //   height: 2px;
-        //   background-color: $light-brown-color;
-        //   margin: 16px 0;
-        // }
       }
+    }
+
+    &__education-list {
+      padding-left: 16px;
     }
   }
 }
@@ -390,4 +393,12 @@ img {
     font-weight: bold;
     margin-bottom: 8px;
   }
+}
+
+.vertical-line {
+  border-left: 2px solid $light-brown-color;
+  height: 240px;
+  width: 0;
+  display: flex;
+  align-self: center;
 }

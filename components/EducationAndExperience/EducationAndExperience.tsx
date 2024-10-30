@@ -1,13 +1,10 @@
 // Component
 import SectionTitle from '../SectionTitle/SectionTitle';
+import VerticalLine from '../VerticalLine/VerticalLine';
 
 // Datas
 import educationList from '../../assets/datas/educationList.json';
 import experienceList from '../../assets/datas/experienceList.json';
-
-// Font Awesome icons
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 function EducationAndExperience() {
   return (
@@ -25,12 +22,6 @@ function EducationAndExperience() {
                 key={`${item}-${index}`}
                 className="education-and-experience__container__experience-list__item"
               >
-                {/* <FontAwesomeIcon
-                icon={faCircle}
-                className="education-and-experience__container__experience-list__item__icon"
-              />
-              <div className="education-and-experience__container__experience-list__item__line"></div> */}
-
                 <div className="education-and-experience__container__experience-list__item__experience">
                   <div className="education-and-experience__container__experience-list__item__experience__name">
                     {item.experience}
@@ -44,6 +35,8 @@ function EducationAndExperience() {
           </div>
         </ul>
 
+        <VerticalLine />
+
         <ul className="education-and-experience__container__education-list">
           <h3 className="education-and-experience__title">Diplômes</h3>
           <div className="education-and-experience__container__education-list__list">
@@ -52,12 +45,6 @@ function EducationAndExperience() {
                 key={`${item}-${index}`}
                 className="education-and-experience__container__education-list__item"
               >
-                {/* <FontAwesomeIcon
-                icon={faCircle}
-                className="education-and-experience__container__experience-list__item__icon"
-              /> */}
-                {/* <div className="education-and-experience__container__experience-list__item__line"></div> */}
-
                 <div className="education-and-experience__container__education-list__item__degree">
                   <div className="education-and-experience__container__education-list__item__degree__name">
                     {item.degree}

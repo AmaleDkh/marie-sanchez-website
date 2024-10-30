@@ -21,6 +21,9 @@ function Presentation() {
       </div>
       <div className="presentation-container__text">
         <div className="presentation-container__text__presentation">
+          <h2 className="presentation-container__text__presentation__title">
+            Psychologue-Clinicienne à Bordeaux
+          </h2>
           <p>
             Spécialisée en psychopathologie de l’adulte et en neuropsychologie,
             j’exerce de manière intégrative, en utilisant principalement des
@@ -31,14 +34,14 @@ function Presentation() {
             addictions. J’adapte mon approche selon votre demande et vos
             préférences.
           </p>
-          <p>
+          {/* <p>
             J’accueille tout type de public adulte (LGBTQIA+, profils neuro
             atypiques, etc.)
           </p>
           <p>
             J’exerce en parallèle de mon activité en libéral dans une clinique
             psychiatrique au sein de laquelle je propose des ateliers de groupe.
-          </p>
+          </p> */}
         </div>
         <Button text="Prendre rendez-vous" />
       </div>
