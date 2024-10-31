@@ -1,8 +1,8 @@
 // Component
 import ConsultationInformationPageContent from '../components/ConsultationInformationPageContent/ConsultationInformationPageContent';
 
-function Consultations() {
+function ConsultationsPage() {
   return <ConsultationInformationPageContent />;
 }
 
-export default Consultations;
+export default ConsultationsPage;

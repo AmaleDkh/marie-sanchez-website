@@ -13,10 +13,10 @@ function MainContent() {
       <Presentation />
       <PracticalInformation />
       <ConsultationInformation />
-      <DurationPrices />
-      <FrequentlyAskedQuestions />
+      <DurationPrices className="" />
+      <FrequentlyAskedQuestions className="" />
       <ImageBlock />
-      <EducationAndExperience />
+      <EducationAndExperience className="" />
     </main>
   );
 }

@@ -17,7 +17,7 @@ import officeDecoration from '../../assets/images/office-decoration3.webp';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
-function FrequentlyAskedQuestions() {
+function FrequentlyAskedQuestions({ className }) {
   const [isAnswerIndexVisible, setIsAnswerIndexVisible] = useState(null);
 
   const toggleAnswerIndex = (index) => {
@@ -29,7 +29,7 @@ function FrequentlyAskedQuestions() {
   };
 
   return (
-    <section className="frequently-asked-questions">
+    <section className={`frequently-asked-questions ${className}`}>
       <SectionTitle title="FOIRE AUX QUESTIONS" />
       <div className="frequently-asked-questions__content-container">
         <div className="frequently-asked-questions__content-container__item__image-container">

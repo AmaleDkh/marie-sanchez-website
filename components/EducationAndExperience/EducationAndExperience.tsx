@@ -6,9 +6,9 @@ import VerticalLine from '../VerticalLine/VerticalLine';
 import educationList from '../../assets/datas/educationList.json';
 import experienceList from '../../assets/datas/experienceList.json';
 
-function EducationAndExperience() {
+function EducationAndExperience({ className }) {
   return (
-    <section className="education-and-experience">
+    <section className={`education-and-experience ${className}`}>
       <SectionTitle title="MON PARCOURS" />
 
       <div className="education-and-experience__container">

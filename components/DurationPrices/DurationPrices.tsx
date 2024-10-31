@@ -1,9 +1,9 @@
 // Component
 import SectionTitle from '../SectionTitle/SectionTitle';
 
-function DurationPrices() {
+function DurationPrices({ className }) {
   return (
-    <section className="duration-prices">
+    <section className={`duration-prices ${className}`}>
       <SectionTitle title="DURÉE & TARIFS" />
       <div className="duration-prices__container">
         <div className="duration-prices__container__block">

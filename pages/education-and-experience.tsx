@@ -1,5 +1,10 @@
-function EducationAndExperience() {
-  return <div>EducationAndExperience</div>;
+// Component
+import EducationAndExperience from '../components/EducationAndExperience/EducationAndExperience';
+
+function EducationAndExperiencePage() {
+  return (
+    <EducationAndExperience className="education-and-experience__page-version" />
+  );
 }
 
-export default EducationAndExperience;
+export default EducationAndExperiencePage;

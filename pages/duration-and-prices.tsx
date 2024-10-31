@@ -1,5 +1,8 @@
-function DurationAndPrice() {
-  return <div>DurationAndPrice</div>;
+// Component
+import DurationPrices from '../components/DurationPrices/DurationPrices';
+
+function DurationAndPricesPage() {
+  return <DurationPrices className="duration-prices__page-version" />;
 }
 
-export default DurationAndPrice;
+export default DurationAndPricesPage;
