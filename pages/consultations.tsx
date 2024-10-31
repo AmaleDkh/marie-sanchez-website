@@ -1,5 +1,8 @@
+// Component
+import ConsultationInformationPageContent from '../components/ConsultationInformationPageContent/ConsultationInformationPageContent';
+
 function Consultations() {
-  return <div>Consultations</div>;
+  return <ConsultationInformationPageContent />;
 }
 
 export default Consultations;

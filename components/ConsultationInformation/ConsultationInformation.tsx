@@ -15,29 +15,23 @@ function ConsultationInformation() {
         <SectionTitle title="CONSULTATIONS" />
         <div className="consultation-information__text__presentation">
           <p className="consultation-information__text__presentation__paragraph">
-            Psychologue clinicienne et Psychothérapeute, je vous reçois dans mon
-            cabinet à Cenon, proche de Bordeaux centre, dans un cadre
-            bienveillant, sans jugement et de manière confidentielle. 
+            En tant que Psychologue-Clinicienne et Neuropsychologue,
+            j'accompagne chaque personne avec une approche bienveillante et sur
+            mesure, adaptée à vos besoins uniques.
           </p>
           <p className="consultation-information__text__presentation__paragraph">
-            Je reçois des adultes et jeunes adultes (à partir de 18 ans). 
+            Nous explorons ensemble vos émotions et pensées grâce à des méthodes
+            comme les Thérapies Cognitivo-Comportementales (TCC), la thérapie
+            par l'acceptation et l'engagement (ACT) et la thérapie des schémas.
           </p>
           <p className="consultation-information__text__presentation__paragraph">
-            La première séance vous permet d'exposer les raisons qui vous
-            amènent à consulter, de parler de vos objectifs et de poser vos
-            questions, afin que nous puissions définir ensemble les modalités du
-            suivi ainsi que la ou les approche(s) que nous utiliserons.
+            Mon objectif est de vous offrir des solutions personnalisées pour
+            retrouver en vous les ressources nécessaires à une meilleure
+            compréhension de vous-même et une amélioration de votre qualité de
+            vie, afin de retrouver bien-être et équilibre.
           </p>
-          {/* <p className="consultation-information__text__presentation__paragraph">
-            L’objectif est que vous puissiez bénéficier d’un espace d’écoute et
-            d’une aide afin d’apaiser et dépasser certaines souffrances. Mon
-            rôle est de vous accompagner, à votre rythme,  en vous aidant à
-            explorer et à comprendre vos émotions, vos pensées, et retrouver en
-            vous les ressources pour aller vers une meilleure compréhension de
-            vous-même et une amélioration de votre qualité de vie. 
-          </p> */}
         </div>
-        <Button text="En savoir plus" />
+        <Button link="/consultations" text="En savoir plus" />
       </div>
       <div className="consultation-information__image-container">
         <Image

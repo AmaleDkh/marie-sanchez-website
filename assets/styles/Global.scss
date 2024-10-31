@@ -15,6 +15,7 @@ body {
 
 h2 {
   font-family: 'Baskerville';
+  font-size: 24px;
 }
 
 a {
@@ -148,7 +149,11 @@ img {
     &__presentation {
       &__title {
         font-style: italic;
-        margin: 0 0 32px;
+        margin: 0 0 56px;
+      }
+
+      &__paragraph {
+        margin: 0;
       }
     }
   }
@@ -179,6 +184,7 @@ img {
   font-weight: bold;
   display: flex;
   margin: auto;
+  width: fit-content;
 }
 
 .section-title {
@@ -249,7 +255,7 @@ img {
 .consultation-information {
   display: flex;
   gap: 104px;
-  margin: 104px 240px 0 240px;
+  margin: 136px 240px 0 240px;
   &__text {
     &__presentation {
       margin: 0 0 56px 0;
@@ -271,8 +277,40 @@ img {
     border-radius: 5px;
 
     &__image {
-      width: 450px;
-      height: 550px;
+      width: 400px;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
+}
+
+.consultation-information-page-content {
+  display: flex;
+  gap: 104px;
+  margin: 136px 240px 120px 240px;
+  &__text {
+    &__presentation {
+      margin: 0 0 56px 0;
+
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__image-container {
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+
+    &__image {
+      width: 400px;
+      height: 500px;
       object-fit: cover;
     }
   }
@@ -281,7 +319,7 @@ img {
 .image-block-container {
   width: 100%;
   height: 600px;
-  margin-top: 144px;
+  margin-top: 136px;
 
   &__image {
     width: 100%;
@@ -334,7 +372,7 @@ img {
 
         &__image {
           width: 450px;
-          height: 550px;
+          height: 500px;
           object-fit: cover;
         }
       }
@@ -343,7 +381,7 @@ img {
 }
 
 .education-and-experience {
-  margin: 104px 240px 0 240px;
+  margin: 112px 240px 0 240px;
 
   &__title {
     font-family: 'Baskerville';
@@ -365,6 +403,7 @@ img {
       flex-direction: column;
       gap: 24px;
       padding: 0;
+      margin: 0;
 
       &__item {
         list-style-type: none;

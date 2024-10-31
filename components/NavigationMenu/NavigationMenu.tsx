@@ -8,6 +8,7 @@ function NavigationMenu() {
   const toggleHamburgerMenu = () => {
     setIsHamburgerMenuOpen((prevState) => !prevState);
   };
+
   return (
     <div className="navigation-container">
       <div
@@ -25,7 +26,7 @@ function NavigationMenu() {
               <Link href="/">Accueil</Link>
             </li>
             <li className="navigation-container__navigation-menu__list__item">
-              <Link href="/consultation">Consultations</Link>
+              <Link href="/consultations">Consultations</Link>
             </li>
             <li className="navigation-container__navigation-menu__list__item">
               <Link href="/duration-and-prices"> Durée & tarifs</Link>

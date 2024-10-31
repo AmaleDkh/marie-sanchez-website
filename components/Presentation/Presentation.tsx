@@ -24,26 +24,16 @@ function Presentation() {
           <h2 className="presentation-container__text__presentation__title">
             Psychologue-Clinicienne à Bordeaux
           </h2>
-          <p>
-            Spécialisée en psychopathologie de l’adulte et en neuropsychologie,
-            j’exerce de manière intégrative, en utilisant principalement des
-            outils tels que les Thérapies Cognitivo-Comportementales (TCC), la
-            thérapie par l’acceptation et l’engagement (ACT) ou encore la
-            thérapie des schémas. Je suis également formée à la prise en charge
-            des troubles du stress post-traumatique (PTSD) ainsi qu’aux
-            addictions. J’adapte mon approche selon votre demande et vos
-            préférences.
+          <p className="presentation-container__text__presentation__paragraph">
+            Psychologue clinicienne et psychothérapeute, je vous accompagne à
+            Cenon, près de Bordeaux, dans un espace bienveillant et
+            confidentiel. Mon rôle est de vous aider à surmonter vos difficultés
+            et à redécouvrir votre potentiel à votre rythme. Ensemble, nous
+            explorerons vos émotions et vos pensées pour vous permettre
+            d'avancer sereinement.
           </p>
-          {/* <p>
-            J’accueille tout type de public adulte (LGBTQIA+, profils neuro
-            atypiques, etc.)
-          </p>
-          <p>
-            J’exerce en parallèle de mon activité en libéral dans une clinique
-            psychiatrique au sein de laquelle je propose des ateliers de groupe.
-          </p> */}
         </div>
-        <Button text="Prendre rendez-vous" />
+        <Button link="" text="Prendre rendez-vous" />
       </div>
     </section>
   );
