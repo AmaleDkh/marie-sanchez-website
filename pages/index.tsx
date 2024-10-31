@@ -1,16 +1,8 @@
-// Components
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+// Component
 import MainContent from '../components/MainContent/MainContent';
 
 function Home() {
-  return (
-    <div>
-      <Header />
-      <MainContent />
-      <Footer />
-    </div>
-  );
+  return <MainContent />;
 }
 
 export default Home;

@@ -1,5 +1,6 @@
-// React element
+// React and Next elements
 import { useState } from 'react';
+import Link from 'next/link';
 
 function NavigationMenu() {
   const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false);
@@ -21,16 +22,21 @@ function NavigationMenu() {
         <nav className="navigation-container__navigation-menu">
           <ul className="navigation-container__navigation-menu__list">
             <li className="navigation-container__navigation-menu__list__item">
-              Consultations
+              <Link href="/">Accueil</Link>
             </li>
             <li className="navigation-container__navigation-menu__list__item">
-              Durée & tarifs
+              <Link href="/consultation">Consultations</Link>
             </li>
             <li className="navigation-container__navigation-menu__list__item">
-              Foire aux questions
+              <Link href="/duration-and-prices"> Durée & tarifs</Link>
             </li>
             <li className="navigation-container__navigation-menu__list__item">
-              Formations & expériences
+              <Link href="/frequently-asked-questions">
+                Foire aux questions
+              </Link>
+            </li>
+            <li className="navigation-container__navigation-menu__list__item">
+              <Link href="/education-and-experience">Mon parcours</Link>
             </li>
           </ul>
         </nav>
