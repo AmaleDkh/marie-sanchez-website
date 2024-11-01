@@ -588,3 +588,58 @@ img {
   display: flex;
   align-self: center;
 }
+
+.duration-prices-page-content {
+  margin: 80px 240px 96px 240px;
+}
+
+.duration-prices-page-content {
+  &__title {
+    color: $green-color;
+    font-style: italic;
+    margin: 0 0 72px 0;
+    text-align: center;
+    font-size: 32px;
+  }
+
+  &__content {
+    margin-top: 96px;
+    display: flex;
+    align-items: center;
+    gap: 104px;
+
+    &__texts {
+      &__title {
+        color: $light-brown-color;
+        margin: 0 0 40px 0;
+        font-family: 'Baskerville';
+        font-style: italic;
+        font-size: 24px;
+      }
+
+      &__list {
+        list-style-type: none;
+        padding: 0;
+
+        &__item {
+          margin-top: 32px;
+
+          &__title {
+            margin: 0 0 16px 0;
+            font-family: 'Baskerville';
+            font-size: 24px;
+            color: $green-color;
+          }
+          &__paragraph {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__price-information {
+    text-align: center;
+    font-style: italic;
+  }
+}

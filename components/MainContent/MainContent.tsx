@@ -16,7 +16,7 @@ function MainContent() {
       <Presentation />
       <PracticalInformation />
       <ConsultationInformation />
-      <DurationPrices className="" />
+      <DurationPrices />
       <FrequentlyAskedQuestions className="" />
       <ImageBlock
         src={OfficeDecoration2}
