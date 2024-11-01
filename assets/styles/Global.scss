@@ -33,7 +33,7 @@ img {
 }
 
 .header {
-  margin: 24px 40px;
+  margin: 32px 40px 0 40px;
   color: $dark-green-color;
   display: flex;
   justify-content: space-between;
@@ -106,14 +106,14 @@ img {
 }
 
 .footer {
-  margin: 24px 40px;
+  margin: 0 40px 32px 40px;
   text-align: center;
   color: $dark-green-color;
   width: 100%;
 }
 
 .main {
-  margin: 72px 0;
+  margin: 96px 0;
 }
 
 .presentation-container {
@@ -122,7 +122,7 @@ img {
   gap: 104px;
   background-color: $green-color;
   color: white;
-  padding: 136px 240px;
+  padding: 120px 240px;
 
   &__photo-container {
     width: 368px;
@@ -290,14 +290,27 @@ img {
 
 .consultation-information-page-content {
   display: flex;
-  gap: 104px;
-  margin: 136px 240px 120px 240px;
-  &__text {
-    &__presentation {
-      margin: 0 0 56px 0;
+  margin: 80px 240px 96px 240px;
+  flex-direction: column;
 
-      p {
-        margin-top: 0;
+  &__title {
+    color: $green-color;
+    font-style: italic;
+    margin: 0 0 80px 0;
+    text-align: center;
+    font-size: 32px;
+  }
+
+  &__content {
+    &__welcomed-profiles {
+      display: flex;
+      gap: 104px;
+
+      &__texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 48px;
       }
     }
   }
@@ -318,17 +331,139 @@ img {
       object-fit: cover;
     }
   }
+
+  &__conclusion {
+    margin-top: 96px;
+
+    &__paragraph {
+      margin: 0 0 32px 0;
+      font-family: 'Baskerville';
+      font-size: 24px;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+    }
+  }
+}
+
+.consultation-information-page-content__content__welcomed-profiles__texts {
+  &__text-block {
+    &__text {
+      &__title {
+        color: $light-brown-color;
+        margin: 0 0 40px 0;
+        font-family: 'Baskerville';
+        font-style: italic;
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.consultation-information-page-content__first-session {
+  margin-top: 96px;
+
+  &__blocks {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    text-align: center;
+
+    &__item {
+      flex: 1;
+
+      &__number {
+        font-size: 32px;
+        font-weight: bold;
+        color: $green-color;
+        font-family: 'Baskerville';
+      }
+
+      &__title {
+        font-family: 'Baskerville';
+        font-size: 24px;
+        margin: 24px 0 16px 0;
+        color: $green-color;
+        min-height: 48px;
+      }
+    }
+  }
+}
+
+.consultation-information-page-content__personalized-assessment {
+  display: flex;
+  gap: 104px;
+  align-items: center;
+  margin-top: 96px;
+
+  &__content {
+    &__texts {
+      display: flex;
+      flex-direction: column;
+
+      &__title {
+        color: $light-brown-color;
+        margin: 0 0 40px 0;
+        font-family: 'Baskerville';
+        font-style: italic;
+        font-size: 24px;
+      }
+
+      &__paragraph {
+        margin: 0 0 16px 0;
+      }
+    }
+  }
+}
+
+.consultation-information-page-content__therapeutic-approaches {
+  margin-top: 96px;
+
+  &__blocks {
+    text-align: center;
+
+    &__item {
+      flex: 1;
+      margin-top: 32px;
+
+      &__number {
+        font-size: 32px;
+        font-weight: bold;
+        color: $green-color;
+        font-family: 'Baskerville';
+      }
+
+      &__title {
+        font-family: 'Baskerville';
+        font-size: 24px;
+        margin: 0;
+        color: $green-color;
+      }
+
+      &__paragraph {
+        margin: 16px 0 0 0;
+      }
+    }
+  }
+}
+
+.consultation-information-page-content__troubles {
+  margin-top: 96px;
 }
 
 .image-block-container {
-  width: 100%;
-  height: 600px;
-  margin-top: 136px;
-
-  &__image {
+  &__higher-version {
     width: 100%;
     height: 600px;
     object-fit: cover;
+    margin-top: 96px;
+  }
+
+  &__smaller-version {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-top: 88px;
   }
 }
 
@@ -389,7 +524,7 @@ img {
 }
 
 .education-and-experience {
-  margin: 112px 240px 0 240px;
+  margin: 96px 240px 0 240px;
 
   &__title {
     font-family: 'Baskerville';

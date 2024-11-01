@@ -7,6 +7,9 @@ import ImageBlock from '../ImageBlock/ImageBlock';
 import FrequentlyAskedQuestions from '../FrequentlyAskedQuestions/FrequentlyAskedQuestions';
 import EducationAndExperience from '../EducationAndExperience/EducationAndExperience';
 
+// Image
+import OfficeDecoration2 from '../../assets/images/office-decoration2.webp';
+
 function MainContent() {
   return (
     <main className="main">
@@ -15,7 +18,11 @@ function MainContent() {
       <ConsultationInformation />
       <DurationPrices className="" />
       <FrequentlyAskedQuestions className="" />
-      <ImageBlock />
+      <ImageBlock
+        src={OfficeDecoration2}
+        alt="Image d'un meuble avec un tableau, une lumière en forme de lune et des plantes"
+        className={'image-block-container__higher-version'}
+      />
       <EducationAndExperience className="" />
     </main>
   );

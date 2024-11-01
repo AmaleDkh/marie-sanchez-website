@@ -1,21 +1,8 @@
 // Next element
 import Image from 'next/image';
 
-// Image
-import OfficeDecoration2 from '../../assets/images/office-decoration2.webp';
-
-function ImageBlock() {
-  return (
-    <div className="image-block-container">
-      <Image
-        src={OfficeDecoration2}
-        alt="Image d'une commode avec des objets de décoration"
-        className="image-block-container__image"
-        width={4000}
-        height={600}
-      />
-    </div>
-  );
+function ImageBlock({ src, alt, className }) {
+  return <Image src={src} alt={alt} className={className} />;
 }
 
 export default ImageBlock;

@@ -35,7 +35,7 @@ function FrequentlyAskedQuestions({ className }) {
         <div className="frequently-asked-questions__content-container__item__image-container">
           <Image
             src={officeDecoration}
-            alt="Photo d'une commode avec une lampe et des livres ainsi qu'une horloge au-dessus"
+            alt="Image d'un meuble avec une plante, une lampe, des livres et qu'une horloge au-dessus"
             className="frequently-asked-questions__content-container__item__image-container__image"
             width={450}
             height={550}
