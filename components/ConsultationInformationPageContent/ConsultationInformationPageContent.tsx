@@ -6,6 +6,7 @@ import PageIntroduction from '../PageIntroduction/PageIntroduction';
 import Subtitle from '../Subtitle/Subtitle';
 import ImageBlock from '../ImageBlock/ImageBlock';
 import Button from '../Button/Button';
+import TitleAndText from '../TitleAndText/TitleAndText';
 
 // Image
 import OfficeDecoration4 from '../../assets/images/office-decoration4.webp';
@@ -53,45 +54,27 @@ function ConsultationInformationPageContent() {
       <div className="consultation-information-page-content__first-session">
         <Subtitle text="Un accompagnement inclusif pour chacun" />
         <div className="consultation-information-page-content__first-session__blocks">
-          <div className="consultation-information-page-content__first-session__blocks__item">
-            <span className="consultation-information-page-content__first-session__blocks__item__number">
-              1.
-            </span>
-            <h4 className="consultation-information-page-content__first-session__blocks__item__title">
-              Première séance
-            </h4>
-            <p className="consultation-information-page-content__first-session__blocks__item__paragraph">
-              La première séance est dédiée à l'écoute attentive de vos besoins.
-              C'est l'occasion pour vous de partager vos attentes et ce qui vous
-              a amené à consulter.
-            </p>
-          </div>
-          <div className="consultation-information-page-content__first-session__blocks__item">
-            <span className="consultation-information-page-content__first-session__blocks__item__number">
-              2.
-            </span>
-            <h4 className="consultation-information-page-content__first-session__blocks__item__title">
-              Écoute et objectifs
-            </h4>
-            <p className="consultation-information-page-content__first-session__blocks__item__paragraph">
-              Nous discutons de votre situation et définissons ensemble les
-              objectifs de votre suivi, qu'il s'agisse d'émotions, de
-              comportements ou d'améliorer votre qualité de vie.
-            </p>
-          </div>
-          <div className="consultation-information-page-content__first-session__blocks__item">
-            <span className="consultation-information-page-content__first-session__blocks__item__number">
-              3.
-            </span>
-            <h4 className="consultation-information-page-content__first-session__blocks__item__title">
-              Modalités du suivi
-            </h4>
-            <p className="consultation-information-page-content__first-session__blocks__item__paragraph">
-              Nous convenons des modalités pratiques : fréquence des séances et
-              durée estimée de la thérapie, pour un accompagnement adapté à
-              votre rythme.
-            </p>
-          </div>
+          <TitleAndText
+            number="1."
+            title="Première séance"
+            text="La première séance est dédiée à l'écoute attentive de vos besoins.
+            C'est l'occasion pour vous de partager vos attentes et ce qui vous
+            a amené à consulter."
+          />
+          <TitleAndText
+            number="2."
+            title="Écoute et objectifs"
+            text="Nous discutons de votre situation et définissons ensemble les
+            objectifs de votre suivi, qu'il s'agisse d'émotions, de
+            comportements ou d'améliorer votre qualité de vie."
+          />
+          <TitleAndText
+            number="3."
+            title="Modalités du suivi"
+            text="Nous convenons des modalités pratiques : fréquence des séances et
+            durée estimée de la thérapie, pour un accompagnement adapté à
+            votre rythme."
+          />
         </div>
       </div>
 
@@ -123,42 +106,33 @@ function ConsultationInformationPageContent() {
       <div className="consultation-information-page-content__therapeutic-approaches">
         <Subtitle text="Approches thérapeutiques" />
         <div className="consultation-information-page-content__therapeutic-approaches__blocks">
-          <div className="consultation-information-page-content__therapeutic-approaches__blocks__item">
-            <h4 className="consultation-information-page-content__therapeutic-approaches__blocks__item__title">
-              Thérapies cognitivo-comportementales (TCC)
-            </h4>
-            <p className="consultation-information-page-content__therapeutic-approaches__blocks__item__paragraph">
-              Les TCC sont une approche structurée visant à identifier et à
+          <TitleAndText
+            number={null}
+            title="Thérapies cognitivo-comportementales (TCC)"
+            text="Les TCC sont une approche structurée visant à identifier et à
               modifier les pensées et comportements négatifs. Cette méthode vous
               aide à mieux comprendre le lien entre vos pensées, émotions et
               actions, afin de développer des stratégies pour les transformer et
-              améliorer votre bien-être au quotidien.
-            </p>
-          </div>
-          <div className="consultation-information-page-content__therapeutic-approaches__blocks__item">
-            <h4 className="consultation-information-page-content__therapeutic-approaches__blocks__item__title">
-              Thérapie par l'acceptation et l'engagement (ACT)
-            </h4>
-            <p className="consultation-information-page-content__therapeutic-approaches__blocks__item__paragraph">
-              L’ACT encourage la pleine conscience et l’acceptation des émotions
-              difficiles, plutôt que leur évitement. Elle vous aide à vous
-              concentrer sur ce qui compte vraiment pour vous, tout en vous
-              engageant dans des actions qui alignent vos valeurs personnelles
-              et vos objectifs de vie.
-            </p>
-          </div>
-          <div className="consultation-information-page-content__therapeutic-approaches__blocks__item">
-            <h4 className="consultation-information-page-content__therapeutic-approaches__blocks__item__title">
-              Thérapie des schémas
-            </h4>
-            <p className="consultation-information-page-content__therapeutic-approaches__blocks__item__paragraph">
-              La thérapie des schémas explore les schémas de pensée inconscients
-              développés depuis l’enfance, qui influencent vos comportements
-              actuels. L’objectif est de remettre en question ces schémas,
-              souvent dysfonctionnels, afin de favoriser des changements
-              durables et un mieux-être émotionnel.
-            </p>
-          </div>
+              améliorer votre bien-être au quotidien."
+          />
+          <TitleAndText
+            number={null}
+            title="Thérapie par l'acceptation et l'engagement (ACT)"
+            text="L’ACT encourage la pleine conscience et l’acceptation des émotions
+            difficiles, plutôt que leur évitement. Elle vous aide à vous
+            concentrer sur ce qui compte vraiment pour vous, tout en vous
+            engageant dans des actions qui alignent vos valeurs personnelles
+            et vos objectifs de vie."
+          />
+          <TitleAndText
+            number={null}
+            title="Thérapie des schémas"
+            text="La thérapie des schémas explore les schémas de pensée inconscients
+            développés depuis l’enfance, qui influencent vos comportements
+            actuels. L’objectif est de remettre en question ces schémas,
+            souvent dysfonctionnels, afin de favoriser des changements
+            durables et un mieux-être émotionnel."
+          />
         </div>
       </div>
 

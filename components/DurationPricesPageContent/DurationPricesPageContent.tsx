@@ -6,6 +6,8 @@ import PageIntroduction from '../PageIntroduction/PageIntroduction';
 import DurationPrices from '../DurationPrices/DurationPrices';
 import Subtitle from '../Subtitle/Subtitle';
 import ImageBlock from '../ImageBlock/ImageBlock';
+import Session from '../Session/Session';
+import TitleAndText from '../TitleAndText/TitleAndText';
 
 // Images
 import OfficeDecoration6 from '../../assets/images/office-decoration6.webp';
@@ -22,40 +24,22 @@ function DurationPricesPageContent() {
         <div className="duration-prices-page-content__content__texts">
           <Subtitle text="Déroulement des consultations" />
           <ul className="duration-prices-page-content__content__texts__list">
-            <li className="duration-prices-page-content__content__texts__list__item">
-              <h4 className="duration-prices-page-content__content__texts__list__item__title">
-                Première consultation
-              </h4>
-              <p className="duration-prices-page-content__content__texts__list__item__duration">
-                45 minutes
-              </p>
-              <p className="duration-prices-page-content__content__texts__list__item__paragraph">
-                Discussion initiale pour expliquer et comprendre la demande.
-              </p>
-            </li>
-            <li className="duration-prices-page-content__content__texts__list__item">
-              <h4 className="duration-prices-page-content__content__texts__list__item__title">
-                Séance de passation des tests
-              </h4>
-              <p className="duration-prices-page-content__content__texts__list__item__duration">
-                1h à 1h30
-              </p>
-              <p className="duration-prices-page-content__content__texts__list__item__paragraph">
-                Réalisation des tests adaptés selon la demande.
-              </p>
-            </li>
-            <li className="duration-prices-page-content__content__texts__list__item">
-              <h4 className="duration-prices-page-content__content__texts__list__item__title">
-                Restitution des résultats
-              </h4>
-              <p className="duration-prices-page-content__content__texts__list__item__duration">
-                50 minutes à 1h
-              </p>
-              <p className="duration-prices-page-content__content__texts__list__item__paragraph">
-                Retour des résultats avec remise d’un compte rendu écrit en
-                mains propres.
-              </p>
-            </li>
+            <Session
+              title="Première consultation"
+              duration="45 minutes"
+              paragraph="Discussion initiale pour expliquer et comprendre la demande."
+            />
+            <Session
+              title="Séance de passation des tests"
+              duration="1h à 1h30"
+              paragraph="Réalisation des tests adaptés selon la demande."
+            />
+            <Session
+              title="Restitution des résultats"
+              duration="50 minutes à 1h"
+              paragraph=" Retour des résultats avec remise d’un compte rendu écrit en
+              mains propres."
+            />
           </ul>
         </div>
 
@@ -71,22 +55,16 @@ function DurationPricesPageContent() {
       <div className="consultation-information-page-content__first-session">
         <Subtitle text=" Informations tarifaires" />
         <div className="consultation-information-page-content__first-session__blocks">
-          <div className="consultation-information-page-content__first-session__blocks__item">
-            <h4 className="consultation-information-page-content__first-session__blocks__item__title">
-              Paiement
-            </h4>
-            <p className="consultation-information-page-content__first-session__blocks__item__paragraph">
-              En deux ou trois fois possible
-            </p>
-          </div>
-          <div className="consultation-information-page-content__first-session__blocks__item">
-            <h4 className="consultation-information-page-content__first-session__blocks__item__title">
-              Options de réglement
-            </h4>
-            <p className="consultation-information-page-content__first-session__blocks__item__paragraph">
-              Espèces, chèque, ou virement bancaire
-            </p>
-          </div>
+          <TitleAndText
+            number={null}
+            title="Paiement"
+            text="En deux ou trois fois possible"
+          />
+          <TitleAndText
+            number={null}
+            title="Options de réglement"
+            text="En deux ou trois fois possible"
+          />
         </div>
 
         <p className="duration-prices-page-content__price-information">

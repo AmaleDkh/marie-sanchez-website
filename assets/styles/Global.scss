@@ -410,6 +410,25 @@ img {
   }
 }
 
+.title-and-text {
+  flex: 1;
+
+  &__number {
+    font-size: 32px;
+    font-weight: bold;
+    color: $green-color;
+    font-family: 'Baskerville';
+  }
+
+  &__title {
+    font-family: 'Baskerville';
+    font-size: 24px;
+    margin: 0 0 16px 0;
+    color: $green-color;
+    min-height: 24px;
+  }
+}
+
 .consultation-information-page-content__first-session {
   margin-top: 96px;
 
@@ -418,25 +437,6 @@ img {
     flex-direction: row;
     gap: 80px;
     text-align: center;
-
-    &__item {
-      flex: 1;
-
-      &__number {
-        font-size: 32px;
-        font-weight: bold;
-        color: $green-color;
-        font-family: 'Baskerville';
-      }
-
-      &__title {
-        font-family: 'Baskerville';
-        font-size: 24px;
-        margin: 0 0 16px 0;
-        color: $green-color;
-        min-height: 24px;
-      }
-    }
   }
 }
 

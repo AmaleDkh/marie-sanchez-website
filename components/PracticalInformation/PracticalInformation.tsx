@@ -6,33 +6,24 @@ import {
   faEnvelopeOpen,
 } from '@fortawesome/free-solid-svg-icons';
 
+import PracticalInformationIcon from '../PracticalInformationIcon/PracticalInformationIcon';
+
 function PracticalInformation() {
   return (
     <section className="practical-information">
-      <div className="practical-information__item">
-        <FontAwesomeIcon
-          icon={faLocationDot}
-          size="3x"
-          className="practical-information__item__icon"
-        />
-        <div className="practical-information__item__text">Lorem ipsum</div>
-      </div>
-      <div className="practical-information__item">
-        <FontAwesomeIcon
-          icon={faPhone}
-          size="3x"
-          className="practical-information__item__icon"
-        />
-        <div className="practical-information__item__text">Lorem ipsum</div>
-      </div>
-      <div className="practical-information__item">
-        <FontAwesomeIcon
-          icon={faEnvelopeOpen}
-          size="3x"
-          className="practical-information__item__icon"
-        />
-        <div className="practical-information__item__text">Lorem ipsum</div>
-      </div>
+      <PracticalInformationIcon
+        icon={faLocationDot}
+        size="3x"
+        text={'Lorem ipsum'}
+      />
+
+      <PracticalInformationIcon icon={faPhone} size="3x" text={'Lorem ipsum'} />
+
+      <PracticalInformationIcon
+        icon={faEnvelopeOpen}
+        size="3x"
+        text={'Lorem ipsum'}
+      />
     </section>
   );
 }
