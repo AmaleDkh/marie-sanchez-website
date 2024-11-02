@@ -1,7 +1,8 @@
 // Next element
 import Image from 'next/image';
 
-// Component
+// Components
+import PageIntroduction from '../PageIntroduction/PageIntroduction';
 import ImageBlock from '../ImageBlock/ImageBlock';
 
 // Images
@@ -11,9 +12,7 @@ import Plant2 from '../../assets/images/plant2.webp';
 function DurationPricesPageContent() {
   return (
     <section className="duration-prices-page-content">
-      <h2 className="duration-prices-page-content__title">
-        Une prise en charge adaptée à vos besoins et à votre rythme
-      </h2>
+      <PageIntroduction text="Une prise en charge adaptée à vos besoins et à votre rythme" />
 
       <section className="duration-prices">
         <div className="duration-prices__container">
@@ -134,7 +133,9 @@ function DurationPricesPageContent() {
       <ImageBlock
         src={Plant2}
         alt="Image d'une plante verte"
-        className={'image-block-container__smaller-version'}
+        className={
+          'image-block-container image-block-container__smaller-version image-block-container__smaller-version__margin-top'
+        }
       />
     </section>
   );

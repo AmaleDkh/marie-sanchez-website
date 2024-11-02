@@ -31,7 +31,11 @@ function ConsultationInformation() {
             vie, afin de retrouver bien-être et équilibre.
           </p>
         </div>
-        <Button link="/consultations" text="En savoir plus" />
+        <Button
+          link="/consultations"
+          text="En savoir plus"
+          className="button"
+        />
       </div>
       <div className="consultation-information__image-container">
         <Image

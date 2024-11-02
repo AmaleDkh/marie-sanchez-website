@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 // Components
 import ImageBlock from '../ImageBlock/ImageBlock';
+import PageIntroduction from '../PageIntroduction/PageIntroduction';
 import Button from '../Button/Button';
 
 // Image
@@ -13,9 +14,7 @@ import Plant from '../../assets/images/plant.jpg';
 function ConsultationInformationPageContent() {
   return (
     <section className="consultation-information-page-content">
-      <h2 className="consultation-information-page-content__title">
-        Bienvenue dans un espace d'écoute et de soutien
-      </h2>
+      <PageIntroduction text="Bienvenue dans un espace d'écoute et de soutien" />
 
       <div className="consultation-information-page-content__content">
         <div className="consultation-information-page-content__content__welcomed-profiles">
@@ -185,7 +184,9 @@ function ConsultationInformationPageContent() {
       <ImageBlock
         src={Plant}
         alt="Image d'une plante verte"
-        className={'image-block-container__smaller-version'}
+        className={
+          'image-block-container image-block-container__smaller-version image-block-container__smaller-version__margin-top'
+        }
       />
 
       <div className="consultation-information-page-content__conclusion">
@@ -195,7 +196,7 @@ function ConsultationInformationPageContent() {
           accompagner. Nous construirons un suivi personnalisé pour vous aider à
           mieux comprendre et surmonter ces difficultés.
         </p>
-        <Button link="" text="Prendre rendez-vous" />
+        <Button link="" text="Prendre rendez-vous" className="button" />
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ function Presentation() {
             d'avancer sereinement.
           </p>
         </div>
-        <Button link="" text="Prendre rendez-vous" />
+        <Button link="" text="Prendre rendez-vous" className="button" />
       </div>
     </section>
   );
