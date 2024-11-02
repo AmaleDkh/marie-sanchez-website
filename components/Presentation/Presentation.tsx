@@ -33,7 +33,11 @@ function Presentation() {
             d'avancer sereinement.
           </p>
         </div>
-        <Button link="" text="Prendre rendez-vous" className="button" />
+        <Button
+          link="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
+          text="Prendre rendez-vous"
+          className="button"
+        />
       </div>
     </section>
   );

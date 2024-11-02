@@ -16,8 +16,8 @@ function DurationAndPricesPage() {
       />
       <DurationPricesPageContent />
       <Button
-        link=""
-        text="Prendrez rendez-vous"
+        link="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
+        text="Prendre rendez-vous"
         className={'button button__margin'}
       />
     </div>

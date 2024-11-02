@@ -1,30 +1,30 @@
 [
   {
     "question": "Comment se passe la première séance ?",
-    "answer": "Lorem ipsum"
+    "answer": "Un rendez-vous avec un.e psychologue, c’est avant tout une rencontre entre deux personnes. Nous faisons d’abord le point, ensemble, sur ce qui a motivé à prendre rendez-vous et nous discutons de la manière dont on va procéder par la suite. Je reprends l’histoire personnelle et les différentes expériences vécues, et j’explique ma manière de travailler avec vous. Au terme de cette séance, si ma manière de travailler vous convient, nous pourrons commencer le suivi thérapeutique."
   },
   {
     "question": "Faut-il venir toutes les semaines ?",
-    "answer": "Lorem ipsum"
+    "answer": "Il n’y a aucun rythme obligatoire. Je pourrai vous conseiller sur un rythme de suivi en fonction de vos objectifs, mais nous irons selon votre cadence. Il est ainsi possible de consulter toutes les semaines, tous les 15 jours, 3 semaines ou une fois par mois."
   },
   {
-    "question": "Comment trouver le bon psychologue ?",
-    "answer": "Lorem ipsum"
+    "question": "Les séances peuvent-elles se faire en visioconférence ?",
+    "answer": "La visioconférence est réservée aux patients déjà en suivi."
   },
   {
     "question": "Comment annuler un rendez-vous déjà pris ?",
-    "answer": "Lorem ipsum"
+    "answer": "N’hésitez pas à me prévenir par téléphone ou par mail dès que vous savez que vous ne pourrez pas assister au rendez-vous. Nous pourrons décider ensemble de quand décaler votre séance (ou l’annuler si vous le souhaitez). Si la séance est annulée moins de 24 heures à l’avance, elle est due."
   },
   {
-    "question": "Est-il possible de faire la séance en visioconférence ?",
-    "answer": "Lorem ipsum"
+    "question": "Les séances sont-elles remboursées ?",
+    "answer": "Les séances de psychothérapie ne sont pas remboursées par la sécurité sociale, mais certaines mutuelles proposent des remboursements de quelques séances à l’année. Je vous invite à vous renseigner auprès de votre complémentaire santé."
   },
   {
-    "question": "Est-ce que les séances sont remboursées ? ",
-    "answer": "Lorem ipsum"
+    "question": "Comment trouver le bon psychologue ?",
+    "answer": "Pour pouvoir travailler sur les problématiques, il faut pouvoir se sentir en confiance. C’est ce qu’on appelle l’alliance thérapeutique, qui se construit progressivement entre le patient et le thérapeute. Bienveillance, respect et non-jugement sont les maîtres mots de ma pratique, mais le plus important restera votre ressenti. C’est aussi à cela que sert la première séance. Si, à n’importe quel moment du suivi, quelque chose ne vous convient pas, nous pouvons en discuter pour essayer de trouver des ajustements. Vous pouvez également décider de changer de psychologue. Le principal est que vous puissiez vous sentir en sécurité et écouté."
   },
   {
     "question": "Quelle est la différence entre un psychologue, un psychiatre et un psychopraticien ? ",
-    "answer": "Lorem ipsum"
+    "answer": "Le psychologue est un thérapeute qui utilise principalement la parole comme outil de travail. Le titre de psychologue est un titre protégé et reconnu par l’Etat, un Master 2 (Bac + 5) en psychologie est nécessaire pour l’avoir. Le psychiatre est un médecin, qui a donc fait des études de médecine. Il peut également proposer de la thérapie par la parole, mais il est le seul à pouvoir prescrire des médicaments. Le psychopraticien n’est pas un titre protégé ni reconnu par l’Etat. N’importe quelle formation peut permettre de prétendre au titre de psychopraticien."
   }
 ]

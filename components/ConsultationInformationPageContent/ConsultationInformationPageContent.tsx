@@ -47,7 +47,7 @@ function ConsultationInformationPageContent() {
       </div>
 
       <div className="consultation-information__page__first-session">
-        <Subtitle text="Un accompagnement inclusif pour chacun" />
+        <Subtitle text="Un accompagnement bienveillant à chaque étape" />
         <div className="consultation-information__page__first-session__blocks">
           <TitleAndText
             number="1."
@@ -152,7 +152,11 @@ function ConsultationInformationPageContent() {
           accompagner. Nous construirons un suivi personnalisé pour vous aider à
           mieux comprendre et surmonter ces difficultés.
         </p>
-        <Button link="" text="Prendre rendez-vous" className="button" />
+        <Button
+          link="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
+          text="Prendre rendez-vous"
+          className="button"
+        />
       </div>
     </section>
   );

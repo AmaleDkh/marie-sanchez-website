@@ -13,16 +13,20 @@ function PracticalInformation() {
       <PracticalInformationIcon
         icon={faLocationDot}
         size="3x"
-        text={'Lorem ipsum'}
+        text={
+          <div className="practical-information__address">
+            38 rue Fernand Favre <br></br> 33100 Cenon
+          </div>
+        }
       />
-
-      <PracticalInformationIcon icon={faPhone} size="3x" text={'Lorem ipsum'} />
 
       <PracticalInformationIcon
         icon={faEnvelopeOpen}
         size="3x"
-        text={'Lorem ipsum'}
+        text="mariesanchezpsy@gmail.com"
       />
+
+      <PracticalInformationIcon icon={faPhone} size="3x" text={'Lorem ipsum'} />
     </section>
   );
 }

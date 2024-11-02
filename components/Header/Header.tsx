@@ -16,7 +16,12 @@ function Header() {
         </div>
       </Link>
       <div className="header__navigation-menu">
-        <a className="header__navigation-menu__link">PRENDRE RENDEZ-VOUS</a>
+        <a
+          href="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
+          className="header__navigation-menu__link"
+        >
+          PRENDRE RENDEZ-VOUS
+        </a>
         <nav className="header__navigation-menu__hamburger-menu">
           <NavigationMenu />
         </nav>
