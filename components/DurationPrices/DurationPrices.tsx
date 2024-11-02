@@ -1,10 +1,17 @@
+// Next element
+import { useRouter } from 'next/router';
+
 // Component
 import SectionTitle from '../SectionTitle/SectionTitle';
 
-function DurationPrices() {
+function DurationPrices({ className }) {
+  const router = useRouter();
+
+  const isDurationsPrices = router.pathname === '/duration-and-prices';
+
   return (
-    <section className="duration-prices">
-      <SectionTitle title="DURÉE & TARIFS" />
+    <section className={className}>
+      {!isDurationsPrices && <SectionTitle title="DURÉE & TARIFS" />}
       <div className="duration-prices__container">
         <div className="duration-prices__container__block">
           <div className="duration-prices__container__block__item-block">

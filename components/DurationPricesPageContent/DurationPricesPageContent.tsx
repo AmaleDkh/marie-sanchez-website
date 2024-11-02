@@ -3,6 +3,8 @@ import Image from 'next/image';
 
 // Components
 import PageIntroduction from '../PageIntroduction/PageIntroduction';
+import DurationPrices from '../DurationPrices/DurationPrices';
+import Subtitle from '../Subtitle/Subtitle';
 import ImageBlock from '../ImageBlock/ImageBlock';
 
 // Images
@@ -12,78 +14,43 @@ import Plant2 from '../../assets/images/plant2.webp';
 function DurationPricesPageContent() {
   return (
     <section className="duration-prices-page-content">
-      <PageIntroduction text="Une prise en charge adaptée à vos besoins et à votre rythme" />
+      <PageIntroduction text="Une prise en charge adaptée à vos besoins" />
 
-      <section className="duration-prices">
-        <div className="duration-prices__container">
-          <div className="duration-prices__container__block">
-            <div className="duration-prices__container__block__item-block">
-              <div className="duration-prices__container__block__item-block__title">
-                DURÉE
-              </div>
-              <p className="duration-prices__container__block__item-block__paragraph">
-                <strong>50</strong> minutes
-              </p>
-            </div>
-            <div className="duration-prices__container__block__square"></div>
-          </div>
-
-          <div className="duration-prices__container__block">
-            <div className="duration-prices__container__block__item-block">
-              <div className="duration-prices__container__block__item-block__title">
-                TARIF
-              </div>
-              <p className="duration-prices__container__block__item-block__paragraph__first">
-                1ère consultation : <strong>50 €</strong>
-              </p>
-              <p className="duration-prices__container__block__item-block__paragrap__second">
-                Les suivantes : <strong>60 €</strong>
-              </p>
-            </div>
-            <div className="duration-prices__container__block__square"></div>
-          </div>
-
-          <div className="duration-prices__container__block">
-            <div className="duration-prices__container__block__item-block">
-              <div className="duration-prices__container__block__item-block__title">
-                BILANS
-              </div>
-              <p className="duration-prices__container__block__item-block__paragraph">
-                entre <strong>200 €</strong> et <strong>400 €</strong> <br></br>
-                (sur mesure)
-              </p>
-            </div>
-            <div className="duration-prices__container__block__square"></div>
-          </div>
-        </div>
-      </section>
+      <DurationPrices className="duration-prices duration-prices__page-content" />
 
       <div className="duration-prices-page-content__content">
         <div className="duration-prices-page-content__content__texts">
-          <h3 className="duration-prices-page-content__content__texts__title">
-            Déroulement des consultations
-          </h3>
+          <Subtitle text="Déroulement des consultations" />
           <ul className="duration-prices-page-content__content__texts__list">
             <li className="duration-prices-page-content__content__texts__list__item">
               <h4 className="duration-prices-page-content__content__texts__list__item__title">
-                Première consultation (45 minutes)
+                Première consultation
               </h4>
+              <p className="duration-prices-page-content__content__texts__list__item__duration">
+                45 minutes
+              </p>
               <p className="duration-prices-page-content__content__texts__list__item__paragraph">
                 Discussion initiale pour expliquer et comprendre la demande.
               </p>
             </li>
             <li className="duration-prices-page-content__content__texts__list__item">
               <h4 className="duration-prices-page-content__content__texts__list__item__title">
-                Séance de passation des tests (1h à 1h30)
+                Séance de passation des tests
               </h4>
+              <p className="duration-prices-page-content__content__texts__list__item__duration">
+                1h à 1h30
+              </p>
               <p className="duration-prices-page-content__content__texts__list__item__paragraph">
                 Réalisation des tests adaptés selon la demande.
               </p>
             </li>
             <li className="duration-prices-page-content__content__texts__list__item">
               <h4 className="duration-prices-page-content__content__texts__list__item__title">
-                Restitution des résultats (50 minutes à 1h)
+                Restitution des résultats
               </h4>
+              <p className="duration-prices-page-content__content__texts__list__item__duration">
+                50 minutes à 1h
+              </p>
               <p className="duration-prices-page-content__content__texts__list__item__paragraph">
                 Retour des résultats avec remise d’un compte rendu écrit en
                 mains propres.
@@ -102,9 +69,7 @@ function DurationPricesPageContent() {
       </div>
 
       <div className="consultation-information-page-content__first-session">
-        <h3 className="consultation-information-page-content__content__welcomed-profiles__texts__text-block__text__title">
-          Informations tarifaires
-        </h3>
+        <Subtitle text=" Informations tarifaires" />
         <div className="consultation-information-page-content__first-session__blocks">
           <div className="consultation-information-page-content__first-session__blocks__item">
             <h4 className="consultation-information-page-content__first-session__blocks__item__title">

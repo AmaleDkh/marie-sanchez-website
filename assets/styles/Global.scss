@@ -109,7 +109,6 @@ img {
   margin: 0 40px 32px 40px;
   text-align: center;
   color: $dark-green-color;
-  width: 100%;
 }
 
 .main {
@@ -244,7 +243,6 @@ img {
       &__square {
         width: 230px;
         height: 230px;
-
         background-color: $green-color;
         position: absolute;
         z-index: 0;
@@ -257,6 +255,10 @@ img {
 
   &__page-version {
     margin: 0 0 96px 0;
+  }
+
+  &__page-content {
+    margin-top: 0;
   }
 }
 
@@ -291,6 +293,12 @@ img {
             font-size: 24px;
             color: $green-color;
           }
+
+          &__duration {
+            margin: 0 0 24px 0;
+            font-weight: bold;
+          }
+
           &__paragraph {
             margin: 0;
           }
@@ -302,6 +310,7 @@ img {
   &__price-information {
     text-align: center;
     font-style: italic;
+    margin: 24px 0 0 0;
   }
 }
 
@@ -423,9 +432,9 @@ img {
       &__title {
         font-family: 'Baskerville';
         font-size: 24px;
-        margin: 24px 0 16px 0;
+        margin: 0 0 16px 0;
         color: $green-color;
-        min-height: 48px;
+        min-height: 24px;
       }
     }
   }
@@ -588,14 +597,6 @@ img {
 .education-and-experience {
   margin: 96px 240px 0 240px;
 
-  &__title {
-    font-family: 'Baskerville';
-    font-size: 24px;
-    font-style: italic;
-    color: $light-brown-color;
-    margin: 0;
-  }
-
   &__container {
     display: flex;
     align-items: center;
@@ -659,8 +660,16 @@ img {
   font-family: 'Baskerville';
   font-style: italic;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 24px;
   color: $green-color;
   margin: 0 0 88px 0;
   text-align: center;
+}
+
+.subtitle {
+  font-family: 'Baskerville';
+  font-size: 24px;
+  font-style: italic;
+  color: $light-brown-color;
+  margin: 0 0 40px 0;
 }

@@ -2,8 +2,9 @@
 import Image from 'next/image';
 
 // Components
-import ImageBlock from '../ImageBlock/ImageBlock';
 import PageIntroduction from '../PageIntroduction/PageIntroduction';
+import Subtitle from '../Subtitle/Subtitle';
+import ImageBlock from '../ImageBlock/ImageBlock';
 import Button from '../Button/Button';
 
 // Image
@@ -20,9 +21,7 @@ function ConsultationInformationPageContent() {
         <div className="consultation-information-page-content__content__welcomed-profiles">
           <div className="consultation-information-page-content__content__welcomed-profiles__texts">
             <div className="consultation-information-page-content__content__welcomed-profiles__texts__text-block">
-              <h3 className="consultation-information-page-content__content__welcomed-profiles__texts__text-block__text__title">
-                Un accompagnement inclusif pour chacun
-              </h3>
+              <Subtitle text="Un accompagnement inclusif pour chacun" />
               <p className="consultation-information-page-content__content__welcomed-profiles__texts__text-block__paragraph">
                 J’accueille des adultes et des jeunes adultes, y compris les
                 personnes issues des communautés LGBTQIA+ et celles avec des
@@ -31,9 +30,7 @@ function ConsultationInformationPageContent() {
             </div>
 
             <div className="consultation-information-page-content__content__welcomed-profiles__texts__text-block__text">
-              <h3 className="consultation-information-page-content__content__welcomed-profiles__texts__text-block__text__title">
-                Une approche personnalisée
-              </h3>
+              <Subtitle text="Une approche personnalisée" />
               <p className="consultation-information-page-content__content__welcomed-profiles__texts__text-block__paragraph">
                 Mon approche s’adapte à chaque patient pour répondre à vos
                 besoins uniques. L’objectif est d’explorer vos émotions et
@@ -54,9 +51,7 @@ function ConsultationInformationPageContent() {
       </div>
 
       <div className="consultation-information-page-content__first-session">
-        <h3 className="consultation-information-page-content__content__welcomed-profiles__texts__text-block__text__title">
-          Un accompagnement inclusif pour chacun
-        </h3>
+        <Subtitle text="Un accompagnement inclusif pour chacun" />
         <div className="consultation-information-page-content__first-session__blocks">
           <div className="consultation-information-page-content__first-session__blocks__item">
             <span className="consultation-information-page-content__first-session__blocks__item__number">
@@ -110,9 +105,7 @@ function ConsultationInformationPageContent() {
         </div>
         <div className="consultation-information-page-content__personalized-assessment__content">
           <div className="consultation-information-page-content__personalized-assessment__content__texts">
-            <h3 className="consultation-information-page-content__personalized-assessment__content__texts__title">
-              Bilans psychologiques
-            </h3>
+            <Subtitle text="Bilans psychologiques" />
             <p className="consultation-information-page-content__personalized-assessment__content__texts__paragraph">
               En tant que neuropsychologue, je propose des bilans psychologiques
               pour enfants, adolescents et adultes.
@@ -128,9 +121,7 @@ function ConsultationInformationPageContent() {
       </div>
 
       <div className="consultation-information-page-content__therapeutic-approaches">
-        <h3 className="consultation-information-page-content__content__welcomed-profiles__texts__text-block__text__title">
-          Approches thérapeutiques
-        </h3>
+        <Subtitle text="Approches thérapeutiques" />
         <div className="consultation-information-page-content__therapeutic-approaches__blocks">
           <div className="consultation-information-page-content__therapeutic-approaches__blocks__item">
             <h4 className="consultation-information-page-content__therapeutic-approaches__blocks__item__title">
@@ -172,9 +163,7 @@ function ConsultationInformationPageContent() {
       </div>
 
       <div className="consultation-information-page-content__troubles">
-        <h3 className="consultation-information-page-content__content__welcomed-profiles__texts__text-block__text__title">
-          Prise en charge des troubles
-        </h3>
+        <Subtitle text="Prise en charge des troubles" />
         <div className="consultation-information-page-content__content__troubles__text">
           Je suis également formée à la prise en charge des troubles du stress
           post-traumatique (PTSD) ainsi qu’aux addictions.
