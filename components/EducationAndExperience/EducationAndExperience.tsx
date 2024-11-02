@@ -1,15 +1,23 @@
-// Component
+// Next element
+import { useRouter } from 'next/router';
+
+// Components
 import SectionTitle from '../SectionTitle/SectionTitle';
 import VerticalLine from '../VerticalLine/VerticalLine';
 
-// Datas
+// Data
 import educationList from '../../assets/datas/educationList.json';
 import experienceList from '../../assets/datas/experienceList.json';
 
 function EducationAndExperience({ className }) {
+  const router = useRouter();
+
+  const isEducationAndExperiencePage =
+    router.pathname === '/education-and-experience';
+
   return (
     <section className={`education-and-experience ${className}`}>
-      <SectionTitle title="MON PARCOURS" />
+      {!isEducationAndExperiencePage && <SectionTitle title="MON PARCOURS" />}
 
       <div className="education-and-experience__container">
         <ul className="education-and-experience__container__experience-list">

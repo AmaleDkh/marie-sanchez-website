@@ -624,8 +624,12 @@ img {
     }
   }
 
+  &__page-content {
+    margin: 0 0 80px 0;
+  }
+
   &__page-version {
-    margin-bottom: 120px;
+    margin: 80px 240px 96px 240px;
   }
 }
 
