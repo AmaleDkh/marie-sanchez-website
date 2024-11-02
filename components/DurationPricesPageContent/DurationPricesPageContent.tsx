@@ -1,6 +1,3 @@
-// Next element
-import Image from 'next/image';
-
 // Components
 import PageIntroduction from '../PageIntroduction/PageIntroduction';
 import DurationPrices from '../DurationPrices/DurationPrices';
@@ -8,6 +5,7 @@ import Subtitle from '../Subtitle/Subtitle';
 import ImageBlock from '../ImageBlock/ImageBlock';
 import Session from '../Session/Session';
 import TitleAndText from '../TitleAndText/TitleAndText';
+import ImageContainer from '../ImageContainer/ImageContainer';
 
 // Images
 import OfficeDecoration6 from '../../assets/images/office-decoration6.webp';
@@ -15,15 +13,15 @@ import Plant2 from '../../assets/images/plant2.webp';
 
 function DurationPricesPageContent() {
   return (
-    <section className="duration-prices-page-content">
+    <section className="duration-prices__page">
       <PageIntroduction text="Une prise en charge adaptée à vos besoins" />
 
       <DurationPrices className="duration-prices duration-prices__page-content" />
 
-      <div className="duration-prices-page-content__content">
-        <div className="duration-prices-page-content__content__texts">
+      <div className="duration-prices__page__content">
+        <div className="duration-prices__page__content__texts">
           <Subtitle text="Déroulement des consultations" />
-          <ul className="duration-prices-page-content__content__texts__list">
+          <ul className="duration-prices__page__content__texts__list">
             <Session
               title="Première consultation"
               duration="45 minutes"
@@ -43,18 +41,15 @@ function DurationPricesPageContent() {
           </ul>
         </div>
 
-        <div className="consultation-information-page-content__image-container">
-          <Image
-            src={OfficeDecoration6}
-            alt="Image d'un fauteuil avec un coussin et une plante verte en arrière-plan"
-            className="consultation-information-page-content__image-container__image"
-          />
-        </div>
+        <ImageContainer
+          src={OfficeDecoration6}
+          alt="Image d'un fauteuil avec un coussin et une plante verte en arrière-plan"
+        />
       </div>
 
-      <div className="consultation-information-page-content__first-session">
-        <Subtitle text=" Informations tarifaires" />
-        <div className="consultation-information-page-content__first-session__blocks">
+      <div className="duration-prices__page__price-information">
+        <Subtitle text="Informations tarifaires" />
+        <div className="duration-prices__page__price-information__blocks">
           <TitleAndText
             number={null}
             title="Paiement"
@@ -67,7 +62,7 @@ function DurationPricesPageContent() {
           />
         </div>
 
-        <p className="duration-prices-page-content__price-information">
+        <p className="duration-prices__page__price-information__important-point">
           Attention : toute séance non annulée 24h en avance sera considérée
           comme due.
         </p>

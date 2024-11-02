@@ -115,6 +115,147 @@ img {
   margin: 96px 0;
 }
 
+.page-introduction {
+  font-family: 'Baskerville';
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+  color: $green-color;
+  margin: 0 0 88px 0;
+  text-align: center;
+}
+
+.section-title {
+  color: $dark-green-color;
+  font-size: 40px;
+  margin: 0 0 56px 0;
+}
+
+.subtitle {
+  font-family: 'Baskerville';
+  font-size: 24px;
+  font-style: italic;
+  color: $light-brown-color;
+  margin: 0 0 40px 0;
+}
+
+.button {
+  background-color: $light-brown-color;
+  color: white;
+  border: none;
+  border-radius: 90px;
+  padding: 16px 24px;
+  font-weight: bold;
+  display: flex;
+  margin: auto;
+  width: fit-content;
+
+  &__margin {
+    margin-top: 80px;
+  }
+}
+
+.vertical-line {
+  border-left: 2px solid $light-brown-color;
+  height: 240px;
+  width: 0;
+  display: flex;
+  align-self: center;
+}
+
+.title-and-text {
+  flex: 1;
+
+  &__number {
+    font-size: 32px;
+    font-weight: bold;
+    color: $green-color;
+    font-family: 'Baskerville';
+  }
+
+  &__title {
+    font-family: 'Baskerville';
+    font-size: 24px;
+    margin: 0 0 16px 0;
+    color: $green-color;
+    min-height: 24px;
+  }
+}
+
+.card {
+  position: relative;
+
+  &__item {
+    text-align: center;
+    width: 230px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    position: relative;
+    z-index: 1;
+    background-color: $light-brown-color;
+    color: white;
+    border-radius: 5px;
+
+    &__title {
+      margin-bottom: 24px;
+      font-weight: bold;
+      font-family: 'EB Garamond';
+      font-size: 24px;
+    }
+  }
+
+  &__square {
+    width: 230px;
+    height: 230px;
+    background-color: $green-color;
+    position: absolute;
+    z-index: 0;
+    top: 16px;
+    left: 16px;
+    border-radius: 5px;
+  }
+}
+
+.image-block-container {
+  &__higher-version {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin-top: 96px;
+  }
+
+  &__smaller-version {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+    &__margin-top {
+      margin-top: 88px;
+    }
+
+    &__margins {
+      margin: 88px 240px 0 240px;
+      width: -webkit-fill-available;
+    }
+  }
+}
+
+.image-container {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+
 .presentation-container {
   display: flex;
   align-items: center;
@@ -174,28 +315,6 @@ img {
   }
 }
 
-.button {
-  background-color: $light-brown-color;
-  color: white;
-  border: none;
-  border-radius: 90px;
-  padding: 16px 24px;
-  font-weight: bold;
-  display: flex;
-  margin: auto;
-  width: fit-content;
-
-  &__margin {
-    margin-top: 80px;
-  }
-}
-
-.section-title {
-  color: $dark-green-color;
-  font-size: 40px;
-  margin: 0 0 56px 0;
-}
-
 .duration-prices {
   margin: 120px 240px 0 240px;
 
@@ -203,54 +322,6 @@ img {
     display: flex;
     justify-content: center;
     gap: 104px;
-
-    &__block {
-      position: relative;
-
-      &__item-block {
-        text-align: center;
-        width: 230px;
-        height: 230px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 0 8px;
-        position: relative;
-        z-index: 1;
-        background-color: $light-brown-color;
-        color: white;
-        border-radius: 5px;
-
-        &__title {
-          margin-bottom: 24px;
-          font-weight: bold;
-          font-family: 'EB Garamond';
-          font-size: 24px;
-        }
-
-        &__paragraph,
-        &__paragraph__first,
-        &__paragraph__second {
-          margin: 0;
-        }
-
-        &__paragraph__first {
-          margin-bottom: 8px;
-        }
-      }
-
-      &__square {
-        width: 230px;
-        height: 230px;
-        background-color: $green-color;
-        position: absolute;
-        z-index: 0;
-        top: 16px;
-        left: 16px;
-        border-radius: 5px;
-      }
-    }
   }
 
   &__page-version {
@@ -260,57 +331,66 @@ img {
   &__page-content {
     margin-top: 0;
   }
-}
 
-.duration-prices-page-content {
-  margin: 80px 240px 96px 240px;
+  &__page {
+    margin: 80px 240px 96px 240px;
 
-  &__content {
-    margin-top: 96px;
-    display: flex;
-    align-items: center;
-    gap: 104px;
+    &__content {
+      margin-top: 96px;
+      display: flex;
+      align-items: center;
+      gap: 104px;
 
-    &__texts {
-      &__title {
-        color: $light-brown-color;
-        margin: 0 0 40px 0;
-        font-family: 'Baskerville';
-        font-style: italic;
-        font-size: 24px;
-      }
+      &__texts {
+        &__title {
+          color: $light-brown-color;
+          margin: 0 0 40px 0;
+          font-family: 'Baskerville';
+          font-style: italic;
+          font-size: 24px;
+        }
 
-      &__list {
-        list-style-type: none;
-        padding: 0;
+        &__list {
+          list-style-type: none;
+          padding: 0;
 
-        &__item {
-          margin-top: 32px;
+          &__item {
+            margin-top: 32px;
 
-          &__title {
-            margin: 0 0 16px 0;
-            font-family: 'Baskerville';
-            font-size: 24px;
-            color: $green-color;
-          }
+            &__title {
+              margin: 0 0 16px 0;
+              font-family: 'Baskerville';
+              font-size: 24px;
+              color: $green-color;
+            }
 
-          &__duration {
-            margin: 0 0 24px 0;
-            font-weight: bold;
-          }
+            &__duration {
+              margin: 0 0 24px 0;
+              font-weight: bold;
+            }
 
-          &__paragraph {
-            margin: 0;
+            &__paragraph {
+              margin: 0;
+            }
           }
         }
       }
     }
-  }
 
-  &__price-information {
-    text-align: center;
-    font-style: italic;
-    margin: 24px 0 0 0;
+    &__price-information {
+      margin-top: 80px;
+
+      &__blocks {
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+      &__important-point {
+        text-align: center;
+        font-style: italic;
+        margin: 24px 0 0 0;
+      }
+    }
   }
 }
 
@@ -318,6 +398,7 @@ img {
   display: flex;
   gap: 104px;
   margin: 136px 240px 0 240px;
+
   &__text {
     &__presentation {
       margin: 0 0 56px 0;
@@ -328,199 +409,79 @@ img {
     }
   }
 
-  &__image-container {
-    width: 400px;
-    height: 500px;
-    overflow: hidden;
+  &__page {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 5px;
+    margin: 80px 240px 96px 240px;
+    flex-direction: column;
 
-    &__image {
-      width: 400px;
-      height: 500px;
-      object-fit: cover;
+    &__content {
+      &__welcomed-profiles {
+        display: flex;
+        align-items: center;
+        gap: 104px;
+      }
     }
-  }
-}
 
-.consultation-information-page-content {
-  display: flex;
-  margin: 80px 240px 96px 240px;
-  flex-direction: column;
+    &__first-session {
+      margin-top: 96px;
 
-  &__content {
-    &__welcomed-profiles {
+      &__blocks {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+        text-align: center;
+      }
+    }
+
+    &__personalized-assessment {
       display: flex;
       gap: 104px;
+      align-items: center;
+      margin-top: 96px;
 
-      &__texts {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 48px;
+      &__content {
+        &__texts {
+          display: flex;
+          flex-direction: column;
+
+          &__title {
+            color: $light-brown-color;
+            margin: 0 0 40px 0;
+            font-family: 'Baskerville';
+            font-style: italic;
+            font-size: 24px;
+          }
+
+          &__paragraph {
+            margin: 0 0 16px 0;
+          }
+        }
       }
     }
-  }
 
-  &__image-container {
-    width: 400px;
-    height: 500px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 5px;
+    &__therapeutic-approaches {
+      margin-top: 96px;
 
-    &__image {
-      width: 400px;
-      height: 500px;
-      object-fit: cover;
-    }
-  }
-
-  &__conclusion {
-    margin-top: 96px;
-
-    &__paragraph {
-      margin: 0 0 32px 0;
-      font-family: 'Baskerville';
-      font-size: 24px;
-      font-weight: bold;
-      font-style: italic;
-      text-align: center;
-    }
-  }
-}
-
-.consultation-information-page-content__content__welcomed-profiles__texts {
-  &__text-block {
-    &__text {
-      &__title {
-        color: $light-brown-color;
-        margin: 0 0 40px 0;
-        font-family: 'Baskerville';
-        font-style: italic;
-        font-size: 24px;
+      &__blocks {
+        text-align: center;
       }
     }
-  }
-}
 
-.title-and-text {
-  flex: 1;
+    &__troubles {
+      margin-top: 96px;
+    }
 
-  &__number {
-    font-size: 32px;
-    font-weight: bold;
-    color: $green-color;
-    font-family: 'Baskerville';
-  }
-
-  &__title {
-    font-family: 'Baskerville';
-    font-size: 24px;
-    margin: 0 0 16px 0;
-    color: $green-color;
-    min-height: 24px;
-  }
-}
-
-.consultation-information-page-content__first-session {
-  margin-top: 96px;
-
-  &__blocks {
-    display: flex;
-    flex-direction: row;
-    gap: 80px;
-    text-align: center;
-  }
-}
-
-.consultation-information-page-content__personalized-assessment {
-  display: flex;
-  gap: 104px;
-  align-items: center;
-  margin-top: 96px;
-
-  &__content {
-    &__texts {
-      display: flex;
-      flex-direction: column;
-
-      &__title {
-        color: $light-brown-color;
-        margin: 0 0 40px 0;
-        font-family: 'Baskerville';
-        font-style: italic;
-        font-size: 24px;
-      }
+    &__conclusion {
+      margin-top: 96px;
 
       &__paragraph {
-        margin: 0 0 16px 0;
-      }
-    }
-  }
-}
-
-.consultation-information-page-content__therapeutic-approaches {
-  margin-top: 96px;
-
-  &__blocks {
-    text-align: center;
-
-    &__item {
-      flex: 1;
-      margin-top: 32px;
-
-      &__number {
-        font-size: 32px;
+        margin: 0 0 32px 0;
+        font-family: 'Baskerville';
+        font-size: 24px;
         font-weight: bold;
-        color: $green-color;
-        font-family: 'Baskerville';
+        font-style: italic;
+        text-align: center;
       }
-
-      &__title {
-        font-family: 'Baskerville';
-        font-size: 24px;
-        margin: 0;
-        color: $green-color;
-      }
-
-      &__paragraph {
-        margin: 16px 0 0 0;
-      }
-    }
-  }
-}
-
-.consultation-information-page-content__troubles {
-  margin-top: 96px;
-}
-
-.image-block-container {
-  &__higher-version {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
-    margin-top: 96px;
-  }
-
-  &__smaller-version {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-
-    &__margin-top {
-      margin-top: 88px;
-    }
-
-    &__margins {
-      margin: 88px 240px 0 240px;
-      width: -webkit-fill-available;
     }
   }
 }
@@ -556,23 +517,6 @@ img {
           max-height: 500px;
         }
       }
-
-      &__image-container {
-        width: 400px;
-        height: 500px;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
-        border-radius: 5px;
-
-        &__image {
-          width: 450px;
-          height: 500px;
-          object-fit: cover;
-        }
-      }
     }
   }
 
@@ -601,28 +545,6 @@ img {
     display: flex;
     align-items: center;
     gap: 48px;
-
-    &__experience-list,
-    &__education-list {
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
-      padding: 0;
-      margin: 0;
-
-      &__item {
-        list-style-type: none;
-        margin-bottom: 16px;
-        display: flex;
-        align-items: center;
-        gap: 16px;
-      }
-    }
-
-    &__education-list {
-      padding-left: 16px;
-    }
   }
 
   &__page-content {
@@ -634,42 +556,30 @@ img {
   }
 }
 
-.education-and-experience__container__education-list__item__degree {
-  &__name {
-    font-weight: bold;
-    margin-bottom: 8px;
+.education-container,
+.experience-container {
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+
+    &__item {
+      list-style-type: none;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      &__degree,
+      &__experience {
+        &__name {
+          font-weight: bold;
+          margin-bottom: 8px;
+        }
+      }
+    }
   }
-}
-
-.education-and-experience__container__experience-list__item__experience {
-  &__name {
-    font-weight: bold;
-    margin-bottom: 8px;
-  }
-}
-
-.vertical-line {
-  border-left: 2px solid $light-brown-color;
-  height: 240px;
-  width: 0;
-  display: flex;
-  align-self: center;
-}
-
-.page-introduction {
-  font-family: 'Baskerville';
-  font-style: italic;
-  font-weight: bold;
-  font-size: 24px;
-  color: $green-color;
-  margin: 0 0 88px 0;
-  text-align: center;
-}
-
-.subtitle {
-  font-family: 'Baskerville';
-  font-size: 24px;
-  font-style: italic;
-  color: $light-brown-color;
-  margin: 0 0 40px 0;
 }

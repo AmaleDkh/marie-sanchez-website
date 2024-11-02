@@ -1,12 +1,10 @@
-// Next element
-import Image from 'next/image';
-
 // Components
 import PageIntroduction from '../PageIntroduction/PageIntroduction';
 import Subtitle from '../Subtitle/Subtitle';
 import ImageBlock from '../ImageBlock/ImageBlock';
 import Button from '../Button/Button';
 import TitleAndText from '../TitleAndText/TitleAndText';
+import ImageContainer from '../ImageContainer/ImageContainer';
 
 // Image
 import OfficeDecoration4 from '../../assets/images/office-decoration4.webp';
@@ -15,15 +13,15 @@ import Plant from '../../assets/images/plant.jpg';
 
 function ConsultationInformationPageContent() {
   return (
-    <section className="consultation-information-page-content">
+    <section className="consultation-information__page">
       <PageIntroduction text="Bienvenue dans un espace d'écoute et de soutien" />
 
-      <div className="consultation-information-page-content__content">
-        <div className="consultation-information-page-content__content__welcomed-profiles">
-          <div className="consultation-information-page-content__content__welcomed-profiles__texts">
-            <div className="consultation-information-page-content__content__welcomed-profiles__texts__text-block">
+      <div className="consultation-information__page__content">
+        <div className="consultation-information__page__content__welcomed-profiles">
+          <div className="consultation-information__page__content__welcomed-profiles__texts">
+            <div className="consultation-information__page__content__welcomed-profiles__texts__text-block">
               <Subtitle text="Un accompagnement inclusif pour chacun" />
-              <p className="consultation-information-page-content__content__welcomed-profiles__texts__text-block__paragraph">
+              <p className="consultation-information__page__content__welcomed-profiles__texts__paragraph">
                 J’accueille des adultes et des jeunes adultes, y compris les
                 personnes issues des communautés LGBTQIA+ et celles avec des
                 profils neuroatypiques.
@@ -41,19 +39,16 @@ function ConsultationInformationPageContent() {
             </div>
           </div>
 
-          <div className="consultation-information-page-content__image-container">
-            <Image
-              src={OfficeDecoration4}
-              alt="Image d'un fauteuil avec un coussin et une plante verte en arrière-plan"
-              className="consultation-information-page-content__image-container__image"
-            />
-          </div>
+          <ImageContainer
+            src={OfficeDecoration4}
+            alt="Image d'un fauteuil avec un coussin et une plante verte en arrière-plan"
+          />
         </div>
       </div>
 
-      <div className="consultation-information-page-content__first-session">
+      <div className="consultation-information__page__first-session">
         <Subtitle text="Un accompagnement inclusif pour chacun" />
-        <div className="consultation-information-page-content__first-session__blocks">
+        <div className="consultation-information__page__first-session__blocks">
           <TitleAndText
             number="1."
             title="Première séance"
@@ -78,22 +73,20 @@ function ConsultationInformationPageContent() {
         </div>
       </div>
 
-      <div className="consultation-information-page-content__personalized-assessment">
-        <div className="consultation-information-page-content__image-container">
-          <Image
-            src={OfficeDecoration5}
-            alt="Image de 2 pots avec des plantes vertes sur fond blanc"
-            className="consultation-information-page-content__image-container__image"
-          />
-        </div>
-        <div className="consultation-information-page-content__personalized-assessment__content">
-          <div className="consultation-information-page-content__personalized-assessment__content__texts">
+      <div className="consultation-information__page__personalized-assessment">
+        <ImageContainer
+          src={OfficeDecoration5}
+          alt="Image de 2 pots avec des plantes vertes sur fond blanc"
+        />
+
+        <div className="consultation-information__page__personalized-assessment__content">
+          <div className="consultation-information__page__personalized-assessment__content__texts">
             <Subtitle text="Bilans psychologiques" />
-            <p className="consultation-information-page-content__personalized-assessment__content__texts__paragraph">
+            <p className="consultation-information__page__personalized-assessment__content__texts__paragraph">
               En tant que neuropsychologue, je propose des bilans psychologiques
               pour enfants, adolescents et adultes.
             </p>
-            <p className="consultation-information-page-content__personalized-assessment__content__texts__paragraph">
+            <p className="consultation-information__page__personalized-assessment__content__texts__paragraph">
               Ces évaluations peuvent vous aider à mieux vous comprendre (bilans
               de personnalité) ou à poser un diagnostic, comme le Trouble du
               Spectre Autistique, le Trouble Déficitaire de l’Attention, ou
@@ -103,9 +96,9 @@ function ConsultationInformationPageContent() {
         </div>
       </div>
 
-      <div className="consultation-information-page-content__therapeutic-approaches">
+      <div className="consultation-information__page__therapeutic-approaches">
         <Subtitle text="Approches thérapeutiques" />
-        <div className="consultation-information-page-content__therapeutic-approaches__blocks">
+        <div className="consultation-information__page__therapeutic-approaches__blocks">
           <TitleAndText
             number={null}
             title="Thérapies cognitivo-comportementales (TCC)"
@@ -136,7 +129,7 @@ function ConsultationInformationPageContent() {
         </div>
       </div>
 
-      <div className="consultation-information-page-content__troubles">
+      <div className="consultation-information__page__troubles">
         <Subtitle text="Prise en charge des troubles" />
         <div className="consultation-information-page-content__content__troubles__text">
           Je suis également formée à la prise en charge des troubles du stress
@@ -152,8 +145,8 @@ function ConsultationInformationPageContent() {
         }
       />
 
-      <div className="consultation-information-page-content__conclusion">
-        <p className="consultation-information-page-content__conclusion__paragraph">
+      <div className="consultation-information__page__conclusion">
+        <p className="consultation-information__page__conclusion__paragraph">
           Quel que soit le trouble que vous rencontrez, vous n’êtes pas seul.
           Ensemble, nous trouverons des solutions adaptées pour vous
           accompagner. Nous construirons un suivi personnalisé pour vous aider à

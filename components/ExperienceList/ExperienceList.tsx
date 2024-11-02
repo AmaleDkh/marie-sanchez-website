@@ -6,19 +6,19 @@ import experienceList from '../../assets/datas/experienceList.json';
 
 function ExperienceList() {
   return (
-    <ul className="education-and-experience__container__experience-list">
+    <ul className="experience-container">
       <Subtitle text="Expériences professionnelles" />
-      <div className="education-and-experience__container__experience-list__list">
+      <div className="experience-container__list">
         {experienceList.map((item, index) => (
           <li
             key={`${item}-${index}`}
-            className="education-and-experience__container__experience-list__item"
+            className="experience-container__list__item"
           >
-            <div className="education-and-experience__container__experience-list__item__experience">
-              <div className="education-and-experience__container__experience-list__item__experience__name">
+            <div className="experience-container__list__item__experience">
+              <div className="experience-container__list__item__experience__name">
                 {item.experience}
               </div>
-              <div className="education-and-experience__container__experience-list__item__experience__location">
+              <div className="experience-container__list__item__experience__location">
                 {item.location}
               </div>
             </div>

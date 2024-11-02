@@ -1,8 +1,9 @@
 // Next element
 import { useRouter } from 'next/router';
 
-// Component
+// Components
 import SectionTitle from '../SectionTitle/SectionTitle';
+import Card from '../Card/Card';
 
 function DurationPrices({ className }) {
   const router = useRouter();
@@ -13,45 +14,13 @@ function DurationPrices({ className }) {
     <section className={className}>
       {!isDurationsPrices && <SectionTitle title="DURÉE & TARIFS" />}
       <div className="duration-prices__container">
-        <div className="duration-prices__container__block">
-          <div className="duration-prices__container__block__item-block">
-            <div className="duration-prices__container__block__item-block__title">
-              DURÉE
-            </div>
-            <p className="duration-prices__container__block__item-block__paragraph">
-              <strong>50</strong> minutes
-            </p>
-          </div>
-          <div className="duration-prices__container__block__square"></div>
-        </div>
-
-        <div className="duration-prices__container__block">
-          <div className="duration-prices__container__block__item-block">
-            <div className="duration-prices__container__block__item-block__title">
-              TARIF
-            </div>
-            <p className="duration-prices__container__block__item-block__paragraph__first">
-              1ère consultation : <strong>50 €</strong>
-            </p>
-            <p className="duration-prices__container__block__item-block__paragrap__second">
-              Les suivantes : <strong>60 €</strong>
-            </p>
-          </div>
-          <div className="duration-prices__container__block__square"></div>
-        </div>
-
-        <div className="duration-prices__container__block">
-          <div className="duration-prices__container__block__item-block">
-            <div className="duration-prices__container__block__item-block__title">
-              BILANS
-            </div>
-            <p className="duration-prices__container__block__item-block__paragraph">
-              entre <strong>200 €</strong> et <strong>400 €</strong> <br></br>
-              (sur mesure)
-            </p>
-          </div>
-          <div className="duration-prices__container__block__square"></div>
-        </div>
+        <Card title="DURÉE" text1="50 minutes" text2={null} />
+        <Card
+          title="TARIF"
+          text1="1ère consultation : 50 €"
+          text2="Les suivantes : 60 €"
+        />
+        <Card title="BILANS" text1="entre 200 € et 400 €" text2={null} />
       </div>
     </section>
   );

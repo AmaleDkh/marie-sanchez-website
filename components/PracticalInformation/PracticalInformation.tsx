@@ -1,5 +1,4 @@
 // Font Awesome icons
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faLocationDot,
   faPhone,

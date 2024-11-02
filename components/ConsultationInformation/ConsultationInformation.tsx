@@ -4,6 +4,7 @@ import Image from 'next/image';
 // Components
 import SectionTitle from '../SectionTitle/SectionTitle';
 import Button from '../Button/Button';
+import ImageContainer from '../ImageContainer/ImageContainer';
 
 // Image
 import OfficeDecoration from '../../assets/images/office-decoration.webp';
@@ -37,13 +38,11 @@ function ConsultationInformation() {
           className="button"
         />
       </div>
-      <div className="consultation-information__image-container">
-        <Image
-          src={OfficeDecoration}
-          alt="Image d'une chaise et de décoration"
-          className="consultation-information__image-container__image"
-        />
-      </div>
+
+      <ImageContainer
+        src={OfficeDecoration}
+        alt="Image d'une chaise et de décoration"
+      />
     </section>
   );
 }

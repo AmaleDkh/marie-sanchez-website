@@ -1,4 +1,4 @@
-// Component
+// Components
 import ImageBlock from '../components/ImageBlock/ImageBlock';
 import ConsultationInformationPageContent from '../components/ConsultationInformationPageContent/ConsultationInformationPageContent';
 
