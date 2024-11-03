@@ -3,9 +3,8 @@ import { useRouter } from 'next/router';
 
 // Components
 import SectionTitle from '../SectionTitle/SectionTitle';
-import VerticalLine from '../VerticalLine/VerticalLine';
-import ExperienceList from '../ExperienceList/ExperienceList';
-import EducationList from '../EducationList/EducationList';
+import ExperienceBlock from '../ExperienceBlock/ExperienceBlock';
+import EducationBlock from '../EducationBlock/EducationBlock';
 
 function EducationAndExperience({ className }) {
   const router = useRouter();
@@ -18,9 +17,8 @@ function EducationAndExperience({ className }) {
       {!isEducationAndExperiencePage && <SectionTitle title="MON PARCOURS" />}
 
       <div className="education-and-experience__container">
-        <ExperienceList />
-        <VerticalLine />
-        <EducationList />
+        <ExperienceBlock />
+        <EducationBlock />
       </div>
     </section>
   );

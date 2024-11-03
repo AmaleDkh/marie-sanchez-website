@@ -1,4 +1,4 @@
-// React and element
+// React element
 import { useRouter } from 'next/router';
 
 // Components
@@ -7,7 +7,7 @@ import Questions from '../Questions/Questions';
 import ImageContainer from '../ImageContainer/ImageContainer';
 
 // Image
-import officeDecoration from '../../assets/images/office-decoration3.webp';
+import OfficeDecoration from '../../assets/images/office-decoration9.webp';
 
 function FrequentlyAskedQuestions({ className }) {
   const router = useRouter();
@@ -20,7 +20,7 @@ function FrequentlyAskedQuestions({ className }) {
 
       <div className="frequently-asked-questions__content-container">
         <ImageContainer
-          src={officeDecoration}
+          src={OfficeDecoration}
           alt="Image d'un meuble avec une plante, une lampe, des livres et qu'une horloge au-dessus"
         />
 

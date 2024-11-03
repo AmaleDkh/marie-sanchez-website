@@ -9,6 +9,12 @@ function NavigationMenu() {
     setIsHamburgerMenuOpen((prevState) => !prevState);
   };
 
+  const closeHamburgerMenu = () => {
+    setTimeout(() => {
+      setIsHamburgerMenuOpen(false);
+    }, 500);
+  };
+
   return (
     <div className="navigation-container">
       <div
@@ -23,21 +29,35 @@ function NavigationMenu() {
         <nav className="navigation-container__navigation-menu">
           <ul className="navigation-container__navigation-menu__list">
             <li className="navigation-container__navigation-menu__list__item">
-              <Link href="/">Accueil</Link>
+              <Link onClick={closeHamburgerMenu} href="/">
+                Accueil
+              </Link>
             </li>
             <li className="navigation-container__navigation-menu__list__item">
-              <Link href="/consultations">Consultations</Link>
+              <Link onClick={closeHamburgerMenu} href="/consultations">
+                Consultations
+              </Link>
             </li>
             <li className="navigation-container__navigation-menu__list__item">
-              <Link href="/duration-and-prices"> Durée & tarifs</Link>
+              <Link onClick={closeHamburgerMenu} href="/duration-and-prices">
+                Durée & tarifs
+              </Link>
             </li>
             <li className="navigation-container__navigation-menu__list__item">
-              <Link href="/frequently-asked-questions">
+              <Link
+                onClick={closeHamburgerMenu}
+                href="/frequently-asked-questions"
+              >
                 Foire aux questions
               </Link>
             </li>
             <li className="navigation-container__navigation-menu__list__item">
-              <Link href="/education-and-experience">Mon parcours</Link>
+              <Link
+                onClick={closeHamburgerMenu}
+                href="/education-and-experience"
+              >
+                Mon parcours
+              </Link>
             </li>
           </ul>
         </nav>
