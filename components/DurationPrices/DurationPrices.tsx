@@ -17,8 +17,8 @@ function DurationPrices({ className }) {
         <Card title="DURÉE" text1="50 minutes" text2={null} />
         <Card
           title="TARIF"
-          text1="1ère consultation : 50 €"
-          text2="Les suivantes : 60 €"
+          text1={'1ère consultation : \n50 €'}
+          text2={'Les suivantes : \n60 €'}
         />
         <Card title="BILANS" text1="entre 200 € et 400 €" text2={null} />
       </div>

@@ -13,7 +13,9 @@ function EducationAndExperience({ className }) {
     router.pathname === '/education-and-experience';
 
   return (
-    <section className={`education-and-experience ${className}`}>
+    <section
+      className={`education-and-experience education-and-experience__not-displayed ${className}`}
+    >
       {!isEducationAndExperiencePage && <SectionTitle title="MON PARCOURS" />}
 
       <div className="education-and-experience__container">

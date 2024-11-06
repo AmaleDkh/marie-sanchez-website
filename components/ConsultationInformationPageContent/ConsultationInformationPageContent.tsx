@@ -21,16 +21,16 @@ function ConsultationInformationPageContent() {
           <div className="consultation-information__page__content__welcomed-profiles__texts">
             <div className="consultation-information__page__content__welcomed-profiles__texts__text-block">
               <Subtitle text="Un accompagnement inclusif pour chacun" />
-              <p className="consultation-information__page__content__welcomed-profiles__texts__paragraph">
+              <p className="consultation-information__page__content__welcomed-profiles__texts__text-block__paragraph">
                 J’accueille des adultes et des jeunes adultes, y compris les
                 personnes issues des communautés LGBTQIA+ et celles avec des
                 profils neuroatypiques.
               </p>
             </div>
 
-            <div className="consultation-information-page-content__content__welcomed-profiles__texts__text-block__text">
+            <div className="consultation-information__page__content__welcomed-profiles__texts__text-block">
               <Subtitle text="Une approche personnalisée" />
-              <p className="consultation-information-page-content__content__welcomed-profiles__texts__text-block__paragraph">
+              <p className="consultation-information__page__content__welcomed-profiles__texts__text-block__paragraph">
                 Mon approche s’adapte à chaque patient pour répondre à vos
                 besoins uniques. L’objectif est d’explorer vos émotions et
                 pensées, afin de vous aider à retrouver en vous les ressources

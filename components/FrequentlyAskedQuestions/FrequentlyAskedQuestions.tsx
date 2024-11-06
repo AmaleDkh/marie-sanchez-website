@@ -19,10 +19,12 @@ function FrequentlyAskedQuestions({ className }) {
       {!isFAQPage && <SectionTitle title="FOIRE AUX QUESTIONS" />}
 
       <div className="frequently-asked-questions__content-container">
-        <ImageContainer
-          src={OfficeDecoration}
-          alt="Image d'un meuble avec une plante, une lampe, des livres et qu'une horloge au-dessus"
-        />
+        <div className="frequently-asked-questions__content-container__image-wrapper">
+          <ImageContainer
+            src={OfficeDecoration}
+            alt="Image d'un meuble avec une plante, une lampe, des livres et qu'une horloge au-dessus"
+          />
+        </div>
 
         <Questions />
       </div>

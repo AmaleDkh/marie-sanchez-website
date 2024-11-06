@@ -20,7 +20,7 @@ function ConsultationInformation() {
             j'accompagne chaque personne avec une approche bienveillante et sur
             mesure, adaptée à vos besoins uniques.
           </p>
-          <p className="consultation-information__text__presentation__paragraph">
+          <p className="consultation-information__text__presentation__second-paragraph">
             Nous explorons ensemble vos émotions et pensées grâce à des méthodes
             comme les Thérapies Cognitivo-Comportementales (TCC), la thérapie
             par l'acceptation et l'engagement (ACT) et la thérapie des schémas.

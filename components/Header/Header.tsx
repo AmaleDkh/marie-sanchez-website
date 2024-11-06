@@ -1,5 +1,6 @@
-// Next element
+// React and Next elements
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 
 // Component
 import NavigationMenu from '../NavigationMenu/NavigationMenu';
@@ -15,6 +16,7 @@ function Header() {
           Psychologue Clinicienne
         </div>
       </Link>
+
       <div className="header__navigation-menu">
         <a
           href="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
@@ -22,6 +24,7 @@ function Header() {
         >
           PRENDRE RENDEZ-VOUS
         </a>
+
         <nav className="header__navigation-menu__hamburger-menu">
           <NavigationMenu />
         </nav>

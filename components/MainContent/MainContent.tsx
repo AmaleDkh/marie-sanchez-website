@@ -17,7 +17,9 @@ function MainContent() {
       <PracticalInformation />
       <ConsultationInformation />
       <DurationPrices className="duration-prices" />
-      <FrequentlyAskedQuestions className="" />
+      <FrequentlyAskedQuestions
+        className={'frequently-asked-questions__homepage-version'}
+      />
       <ImageBlock
         src={OfficeDecoration2}
         alt="Image d'un meuble avec un tableau, une lumière en forme de lune et des plantes"
