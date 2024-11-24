@@ -1,6 +1,3 @@
-// Next element
-import Image from 'next/image';
-
 // Components
 import SectionTitle from '../SectionTitle/SectionTitle';
 import Button from '../Button/Button';
@@ -13,7 +10,10 @@ function ConsultationInformation() {
   return (
     <section className="consultation-information">
       <div className="consultation-information__text">
-        <SectionTitle title="CONSULTATIONS" />
+        <SectionTitle
+          title="CONSULTATIONS"
+          className="section-title not-centred"
+        />
         <div className="consultation-information__text__presentation">
           <p className="consultation-information__text__presentation__paragraph">
             En tant que Psychologue-Clinicienne et Neuropsychologue,
@@ -32,11 +32,13 @@ function ConsultationInformation() {
             vie, afin de retrouver bien-être et équilibre.
           </p>
         </div>
-        <Button
-          link="/consultations"
-          text="En savoir plus"
-          className="button"
-        />
+        <div className="consultation-information__text__presentation__button-container">
+          <Button
+            link="/consultations"
+            text="En savoir plus"
+            className="button"
+          />
+        </div>
       </div>
 
       <ImageContainer

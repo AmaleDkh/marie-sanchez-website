@@ -1,7 +1,8 @@
 // Components
-import ImageBlock from '../ImageBlock/ImageBlock';
 import PageIntroduction from '../PageIntroduction/PageIntroduction';
-import EducationAndExperience from '../EducationAndExperience/EducationAndExperience';
+import ExperienceBlock from '../ExperienceBlock/ExperienceBlock';
+import EducationBlock from '../EducationBlock/EducationBlock';
+import ImageBlock from '../ImageBlock/ImageBlock';
 import Button from '../Button/Button';
 
 // Image
@@ -11,17 +12,20 @@ function EducationAndExperiencePageContent() {
   return (
     <div className="education-and-experience__page-version">
       <PageIntroduction text="Les grandes lignes de mon parcours" />
-      <EducationAndExperience className="education-and-experience__page-content" />
+      <ExperienceBlock />
+      <EducationBlock />
       <ImageBlock
         src={Plant4}
         alt="Image avec des feuilles, représentant la nature"
         className={'image-block-container__smaller-version'}
       />
-      <Button
-        link="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
-        text="Prendre rendez-vous"
-        className={'button button__margin'}
-      />
+      <div className="education-and-experience__page-version__button-container">
+        <Button
+          link="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
+          text="Prendre rendez-vous"
+          className={'button button__margin'}
+        />
+      </div>
     </div>
   );
 }

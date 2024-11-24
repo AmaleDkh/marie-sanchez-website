@@ -2,6 +2,13 @@
 import { useState } from 'react';
 import Link from 'next/link';
 
+// Component
+import ButtonWithIcon from '../ButtonWithIcon/ButtonWithIcon';
+
+// Font Awesome icon
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+
 function NavigationMenu() {
   const [isHamburgerMenuOpen, setIsHamburgerMenuOpen] = useState(false);
 
@@ -16,52 +23,89 @@ function NavigationMenu() {
   };
 
   return (
-    <div className="navigation-container">
+    <div className="navigation-container__mobile-version">
       <div
-        className="navigation-container__hamburger-menu"
+        className="navigation-container__mobile-version__hamburger-menu"
         onClick={toggleHamburgerMenu}
       >
-        <span className="navigation-container__hamburger-menu__bar"></span>
-        <span className="navigation-container__hamburger-menu__bar"></span>
-        <span className="navigation-container__hamburger-menu__bar"></span>
+        <span className="navigation-container__mobile-version__hamburger-menu__bar"></span>
+        <span className="navigation-container__mobile-version__hamburger-menu__bar"></span>
+        <span className="navigation-container__mobile-version__hamburger-menu__bar"></span>
       </div>
       {isHamburgerMenuOpen === true && (
-        <nav className="navigation-container__navigation-menu">
-          <ul className="navigation-container__navigation-menu__list">
-            <li className="navigation-container__navigation-menu__list__item">
-              <Link onClick={closeHamburgerMenu} href="/">
-                Accueil
-              </Link>
-            </li>
-            <li className="navigation-container__navigation-menu__list__item">
-              <Link onClick={closeHamburgerMenu} href="/consultations">
-                Consultations
-              </Link>
-            </li>
-            <li className="navigation-container__navigation-menu__list__item">
-              <Link onClick={closeHamburgerMenu} href="/duration-and-prices">
-                Durée & tarifs
-              </Link>
-            </li>
-            <li className="navigation-container__navigation-menu__list__item">
-              <Link
-                onClick={closeHamburgerMenu}
-                href="/frequently-asked-questions"
-              >
-                Foire aux questions
-              </Link>
-            </li>
-            <li className="navigation-container__navigation-menu__list__item">
-              <Link
-                onClick={closeHamburgerMenu}
-                href="/education-and-experience"
-              >
-                Mon parcours
-              </Link>
-            </li>
-          </ul>
-        </nav>
+        <div>
+          <FontAwesomeIcon
+            icon={faXmark}
+            onClick={() => setIsHamburgerMenuOpen(false)}
+          />
+
+          <nav
+            className={`navigation-container__mobile-version__navigation-menu ${
+              isHamburgerMenuOpen
+                ? 'navigation-container__mobile-version__navigation-menu--open'
+                : ''
+            }`}
+          >
+            <ul className="navigation-container__mobile-version__navigation-menu__list">
+              <li className="navigation-container__mobile-version__navigation-menu__list__item">
+                <Link onClick={closeHamburgerMenu} href="/consultations">
+                  CONSULTATIONS
+                </Link>
+              </li>
+              <li className="navigation-container__mobile-version__navigation-menu__list__item">
+                <Link onClick={closeHamburgerMenu} href="/duration-and-prices">
+                  DURÉE & TARIFS
+                </Link>
+              </li>
+              <li className="navigation-container__mobile-version__navigation-menu__list__item">
+                <Link
+                  onClick={closeHamburgerMenu}
+                  href="/frequently-asked-questions"
+                >
+                  QUESTIONS
+                </Link>
+              </li>
+              <li className="navigation-container__mobile-version__navigation-menu__list__item">
+                <Link
+                  onClick={closeHamburgerMenu}
+                  href="/education-and-experience"
+                >
+                  À PROPOS
+                </Link>
+              </li>
+            </ul>
+
+            <ButtonWithIcon />
+          </nav>
+        </div>
       )}
+      <nav className="navigation-container__navigation-menu">
+        <ul className="navigation-container__navigation-menu__list">
+          <li className="navigation-container__navigation-menu__list__item">
+            <Link onClick={closeHamburgerMenu} href="/consultations">
+              CONSULTATIONS
+            </Link>
+          </li>
+          <li className="navigation-container__navigation-menu__list__item">
+            <Link onClick={closeHamburgerMenu} href="/duration-and-prices">
+              DURÉES & TARIFS
+            </Link>
+          </li>
+          <li className="navigation-container__navigation-menu__list__item">
+            <Link
+              onClick={closeHamburgerMenu}
+              href="/frequently-asked-questions"
+            >
+              QUESTIONS
+            </Link>
+          </li>
+          <li className="navigation-container__navigation-menu__list__item">
+            <Link onClick={closeHamburgerMenu} href="/education-and-experience">
+              À PROPOS
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }

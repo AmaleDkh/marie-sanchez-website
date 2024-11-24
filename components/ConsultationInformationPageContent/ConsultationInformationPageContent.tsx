@@ -6,7 +6,7 @@ import Button from '../Button/Button';
 import TitleAndText from '../TitleAndText/TitleAndText';
 import ImageContainer from '../ImageContainer/ImageContainer';
 
-// Image
+// Images
 import OfficeDecoration4 from '../../assets/images/office-decoration4.webp';
 import OfficeDecoration5 from '../../assets/images/office-decoration5.webp';
 import Plant from '../../assets/images/plant.jpg';
@@ -20,7 +20,7 @@ function ConsultationInformationPageContent() {
         <div className="consultation-information__page__content__welcomed-profiles">
           <div className="consultation-information__page__content__welcomed-profiles__texts">
             <div className="consultation-information__page__content__welcomed-profiles__texts__text-block">
-              <Subtitle text="Un accompagnement inclusif pour chacun" />
+              <Subtitle text="Un accompagnement inclusif" />
               <p className="consultation-information__page__content__welcomed-profiles__texts__text-block__paragraph">
                 J’accueille des adultes et des jeunes adultes, y compris les
                 personnes issues des communautés LGBTQIA+ et celles avec des
@@ -47,7 +47,7 @@ function ConsultationInformationPageContent() {
       </div>
 
       <div className="consultation-information__page__first-session">
-        <Subtitle text="Un accompagnement bienveillant à chaque étape" />
+        <Subtitle text="Un suivi bienveillant à chaque étape" />
         <div className="consultation-information__page__first-session__blocks">
           <TitleAndText
             number="1."
@@ -148,15 +148,18 @@ function ConsultationInformationPageContent() {
       <div className="consultation-information__page__conclusion">
         <p className="consultation-information__page__conclusion__paragraph">
           Quel que soit le trouble que vous rencontrez, vous n’êtes pas seul.
+          <br></br>
           Ensemble, nous trouverons des solutions adaptées pour vous
           accompagner. Nous construirons un suivi personnalisé pour vous aider à
           mieux comprendre et surmonter ces difficultés.
         </p>
-        <Button
-          link="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
-          text="Prendre rendez-vous"
-          className="button"
-        />
+        <div className="consultation-information__page__conclusion__button-container">
+          <Button
+            link="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
+            text="Prendre rendez-vous"
+            className="button"
+          />
+        </div>
       </div>
     </section>
   );

@@ -25,7 +25,7 @@ function Presentation() {
             Psychologue-Clinicienne à Bordeaux
           </h2>
           <p className="presentation-container__text__presentation__paragraph">
-            Psychologue clinicienne et psychothérapeute, je vous accompagne à
+            Psychologue-Clinicienne et Psychothérapeute, je vous accompagne à
             Cenon, près de Bordeaux, dans un espace bienveillant et
             confidentiel. Mon rôle est de vous aider à surmonter vos difficultés
             et à redécouvrir votre potentiel à votre rythme. Ensemble, nous
@@ -33,11 +33,13 @@ function Presentation() {
             d'avancer sereinement.
           </p>
         </div>
-        <Button
-          link="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
-          text="Prendre rendez-vous"
-          className="button"
-        />
+        <div className="presentation-container__text__button-container">
+          <Button
+            link="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
+            text="Prendre rendez-vous"
+            className="button"
+          />
+        </div>
       </div>
     </section>
   );

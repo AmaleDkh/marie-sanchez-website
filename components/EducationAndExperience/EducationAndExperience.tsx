@@ -16,7 +16,9 @@ function EducationAndExperience({ className }) {
     <section
       className={`education-and-experience education-and-experience__not-displayed ${className}`}
     >
-      {!isEducationAndExperiencePage && <SectionTitle title="MON PARCOURS" />}
+      {!isEducationAndExperiencePage && (
+        <SectionTitle title="MON PARCOURS" className="section-title centred" />
+      )}
 
       <div className="education-and-experience__container">
         <ExperienceBlock />

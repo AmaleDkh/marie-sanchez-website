@@ -25,11 +25,13 @@ function FrequentlyAskedQuestionsPageContent() {
           'image-block-container image-block-container__smaller-version image-block-container__smaller-version__margin-top'
         }
       />
-      <Button
-        link="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
-        text="Prendre rendez-vous"
-        className={'button button__margin'}
-      />
+      <div className="frequently-asked-questions__page-content__button-container">
+        <Button
+          link="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
+          text="Prendre rendez-vous"
+          className={'button button__margin'}
+        />
+      </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@ function EducationBlock() {
   return (
     <ul className="education-container">
       <div className="education-container__content">
-        <div>
+        <div className="experience-container__content__texts">
           <Subtitle text="Diplômes" />
           <EducationList />
         </div>

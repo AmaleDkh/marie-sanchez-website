@@ -10,6 +10,3 @@ function Button({ link, text, className }) {
 }
 
 export default Button;
-
-{
-}

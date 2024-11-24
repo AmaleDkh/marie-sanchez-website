@@ -1,5 +1,5 @@
-function SectionTitle({ title }) {
-  return <h2 className="section-title">{title}</h2>;
+function SectionTitle({ title, className }) {
+  return <h2 className={className}>{title}</h2>;
 }
 
 export default SectionTitle;

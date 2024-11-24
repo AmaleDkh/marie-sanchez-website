@@ -10,15 +10,15 @@ function ExperienceBlock() {
   return (
     <ul className="experience-container">
       <div className="experience-container__content">
-        <div>
-          <Subtitle text="Expériences professionnelles" />
-          <ExperienceList />
-        </div>
-
         <ImageContainer
           src={OfficeDecoration3}
           alt="Image d'une chaise et de décoration"
         />
+
+        <div className="experience-container__content__texts">
+          <Subtitle text="Expériences professionnelles" />
+          <ExperienceList />
+        </div>
       </div>
     </ul>
   );
