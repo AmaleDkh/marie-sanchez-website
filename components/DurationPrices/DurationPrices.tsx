@@ -1,5 +1,7 @@
+'use client';
+
 // Next element
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 // Components
 import SectionTitle from '../SectionTitle/SectionTitle';
@@ -7,9 +9,9 @@ import Card from '../Card/Card';
 import Button from '../Button/Button';
 
 function DurationPrices({ className }) {
-  const router = useRouter();
+  const pathname = usePathname();
 
-  const isDurationsPrices = router.pathname === '/duration-and-prices';
+  const isDurationsPrices = pathname === '/duration-and-prices';
 
   return (
     <section className={className}>
@@ -29,7 +31,7 @@ function DurationPrices({ className }) {
           />
           <Card title="BILANS" text1="entre 200 € et 400 €" text2={null} />
         </div>
-        {router.pathname === '/' && (
+        {pathname === '/' && (
           <div className="consultation-information__text__presentation__button-container">
             <Button
               link="/duration-and-prices"

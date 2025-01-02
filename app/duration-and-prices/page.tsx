@@ -1,10 +1,14 @@
 // Components
-import DurationPricesPageContent from '../components/DurationPricesPageContent/DurationPricesPageContent';
-import ImageBlock from '../components/ImageBlock/ImageBlock';
-import Button from '../components/Button/Button';
+import DurationPricesPageContent from '../../components/DurationPricesPageContent/DurationPricesPageContent';
+import ImageBlock from '../../components/ImageBlock/ImageBlock';
+import Button from '../../components/Button/Button';
 
 // Image
-import Nature2 from '../assets/images/nature2.webp';
+import Nature2 from '../../assets/images/nature2.webp';
+
+// Style
+import '../../assets/styles/Global.scss';
+import '../../assets/styles/Fonts.scss';
 
 function DurationAndPricesPage() {
   return (

@@ -1,19 +1,21 @@
+'use client';
+
 // React element
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 // Components
 import SectionTitle from '../SectionTitle/SectionTitle';
 import Questions from '../Questions/Questions';
 
 function FrequentlyAskedQuestions({ className }) {
-  const router = useRouter();
+  const router = usePathname();
 
-  const isFAQPage = router.pathname === '/frequently-asked-questions';
+  const isFAQPage = router === '/frequently-asked-questions';
 
   return (
     <section
       className={
-        router.pathname === '/'
+        router === '/'
           ? 'frequently-asked-questions'
           : 'frequently-asked-questions--page-version'
       }

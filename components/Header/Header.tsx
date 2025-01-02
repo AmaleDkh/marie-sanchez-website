@@ -5,6 +5,7 @@ import Link from 'next/link';
 // Components
 import NavigationMenu from '../NavigationMenu/NavigationMenu';
 import Button from '../Button/Button';
+import ButtonWithIcon from '../ButtonWithIcon/ButtonWithIcon';
 
 function Header() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -50,14 +51,10 @@ function Header() {
           </>
         ) : (
           <>
-            <Button
-              link="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
-              text="PRENDRE RENDEZ-VOUS"
-              className="button"
-            />
             <nav className="header__navigation-menu__hamburger-menu">
               <NavigationMenu />
             </nav>
+            <ButtonWithIcon />
           </>
         )}
       </div>

@@ -1,7 +1,8 @@
 function Footer() {
   return (
     <div className="footer">
-      © 2024 MARIE SANCHEZ PSYCHOLOGUE-CLINICIENNE | TOUS DROITS RÉSERVÉS
+      DESIGN & CODE PAR AMALE DKHISSI |{' '}
+      <a href="https://amale-dkhissi.com/">PORTFOLIO</a>
     </div>
   );
 }

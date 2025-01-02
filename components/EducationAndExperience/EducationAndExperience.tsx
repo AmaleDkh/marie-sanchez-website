@@ -1,5 +1,7 @@
+'use client';
+
 // Next element
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 // Components
 import SectionTitle from '../SectionTitle/SectionTitle';
@@ -7,10 +9,9 @@ import ExperienceBlock from '../ExperienceBlock/ExperienceBlock';
 import EducationBlock from '../EducationBlock/EducationBlock';
 
 function EducationAndExperience({ className }) {
-  const router = useRouter();
+  const router = usePathname();
 
-  const isEducationAndExperiencePage =
-    router.pathname === '/education-and-experience';
+  const isEducationAndExperiencePage = router === '/education-and-experience';
 
   return (
     <section

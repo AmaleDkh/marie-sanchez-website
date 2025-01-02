@@ -73,9 +73,8 @@ function NavigationMenu() {
                   À PROPOS
                 </Link>
               </li>
+              <ButtonWithIcon />
             </ul>
-
-            <ButtonWithIcon />
           </nav>
         </div>
       )}
@@ -88,7 +87,7 @@ function NavigationMenu() {
           </li>
           <li className="navigation-container__navigation-menu__list__item">
             <Link onClick={closeHamburgerMenu} href="/duration-and-prices">
-              DURÉES & TARIFS
+              DURÉE & TARIFS
             </Link>
           </li>
           <li className="navigation-container__navigation-menu__list__item">

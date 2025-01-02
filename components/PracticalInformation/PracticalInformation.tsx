@@ -26,7 +26,11 @@ function PracticalInformation() {
         text="mariesanchezpsy@gmail.com"
       />
 
-      <PracticalInformationIcon icon={faPhone} size="3x" text={'Lorem ipsum'} />
+      <PracticalInformationIcon
+        icon={faPhone}
+        size="3x"
+        text={'07 56 97 91 14'}
+      />
     </section>
   );
 }

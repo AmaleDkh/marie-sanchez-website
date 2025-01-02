@@ -52,13 +52,13 @@ function DurationPricesPageContent() {
         <div className="duration-prices__page__price-information__blocks">
           <TitleAndText
             number={null}
-            title="Paiement"
-            text="En deux ou trois fois possible"
+            title="Options de réglement"
+            text="Espèce, chèque ou virement bancaire"
           />
           <TitleAndText
             number={null}
-            title="Options de réglement"
-            text="En deux ou trois fois possible"
+            title="Paiement"
+            text="En 2 ou 3 fois possible"
           />
         </div>
 

@@ -1,9 +1,13 @@
 // Components
-import ImageBlock from '../components/ImageBlock/ImageBlock';
-import FrequentlyAskedQuestionsPageContent from '../components/FrequentlyAskedQuestionsPageContent/FrequentlyAskedQuestionsPageContent';
+import ImageBlock from '../../components/ImageBlock/ImageBlock';
+import FrequentlyAskedQuestionsPageContent from '../../components/FrequentlyAskedQuestionsPageContent/FrequentlyAskedQuestionsPageContent';
 
 // Image
-import Nature3 from '../assets/images/nature3.webp';
+import Nature3 from '../../assets/images/nature3.webp';
+
+// Style
+import '../../assets/styles/Global.scss';
+import '../../assets/styles/Fonts.scss';
 
 function FrequentlyAskedQuestionsPage() {
   return (

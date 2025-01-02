@@ -1,6 +1,8 @@
+'use client';
+
 // React and Next elements
 import { useState } from 'react';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 // Font Awesome icon
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,7 +14,7 @@ import frequentlyAskedQuestions from '../../assets/datas/frequently-asked-questi
 function Questions() {
   const [isAnswerIndexVisible, setIsAnswerIndexVisible] = useState(null);
 
-  const router = useRouter();
+  const router = usePathname();
 
   const toggleAnswerIndex = (index) => {
     if (isAnswerIndexVisible === index) {
@@ -24,7 +26,7 @@ function Questions() {
 
   return (
     <>
-      {router.pathname === '/' ? (
+      {router === '/' ? (
         <div className="collapse-container">
           <div className="collapse-container__cards">
             {frequentlyAskedQuestions.map((item, index) => (
