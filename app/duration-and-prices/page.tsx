@@ -6,17 +6,13 @@ import Button from '../../components/Button/Button';
 // Image
 import Nature2 from '../../assets/images/nature2.webp';
 
-// Style
-import '../../assets/styles/Global.scss';
-import '../../assets/styles/Fonts.scss';
-
 function DurationAndPricesPage() {
   return (
     <div className="duration-prices__page-version">
       <ImageBlock
         src={Nature2}
         alt="Image avec des feuilles, représentant la nature"
-        className={'image-block-container__higher-version'}
+        className={'image-block-container__higher-version '}
       />
       <DurationPricesPageContent />
       <div className="duration-prices__page-version__button-container">

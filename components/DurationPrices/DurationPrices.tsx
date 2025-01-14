@@ -35,8 +35,14 @@ function DurationPrices({ className }) {
           <div className="consultation-information__text__presentation__button-container">
             <Button
               link="/duration-and-prices"
-              text="En savoir plus"
-              className="button"
+              text="Choisissez la consultation qui vous convient"
+              className="button button-to-hide"
+            />
+
+            <Button
+              link="/duration-and-prices"
+              text="Toutes les informations"
+              className="button button-mobile-version"
             />
           </div>
         )}

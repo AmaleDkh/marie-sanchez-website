@@ -5,10 +5,6 @@ import ConsultationInformationPageContent from '../../components/ConsultationInf
 // Image
 import nature from '../../assets/images/nature.jpg';
 
-// Style
-import '../../assets/styles/Global.scss';
-import '../../assets/styles/Fonts.scss';
-
 function ConsultationsPage() {
   return (
     <>

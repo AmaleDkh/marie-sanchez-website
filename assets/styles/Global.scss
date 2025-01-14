@@ -8,7 +8,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: $beige-color;
   font-family: 'Montserrat';
 }
 
@@ -36,7 +35,7 @@ img {
 }
 
 .header {
-  margin: 48px 56px 0 56px;
+  margin: 72px;
   color: $dark-green-color;
   display: flex;
   justify-content: space-between;
@@ -78,6 +77,14 @@ img {
     display: flex;
     align-items: center;
     gap: 40px;
+
+    @include respond-to-extra-large {
+      flex-direction: column;
+    }
+
+    @include respond-to-medium {
+      flex-direction: row;
+    }
   }
 }
 
@@ -128,7 +135,7 @@ img {
       margin: auto;
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 40px;
       justify-content: center;
       align-items: center;
       height: 100%;
@@ -190,7 +197,7 @@ img {
 }
 
 .footer {
-  padding: 40px 40px;
+  padding: 72px;
   text-align: center;
   background-color: $medium-green-color;
   color: white;
@@ -201,14 +208,14 @@ img {
 }
 
 .main {
-  margin: 96px 0;
+  margin: 0 0 96px 0;
 
   @include respond-to-extra-large {
     margin: 80px 0;
   }
 
   @include respond-to-small {
-    margin: 56px 0;
+    margin: 80px 0;
   }
 }
 
@@ -218,26 +225,49 @@ img {
   font-weight: bold;
   font-size: 40px;
   color: $green-color;
-  margin: 0 0 88px 0;
+  margin: 0 0 136px 0;
   text-align: center;
 
+  @include respond-to-medium {
+    margin: 0 0 80px 0;
+  }
+
   @include respond-to-small {
-    margin: 0 80px 40px 80px;
+    margin: 0 40px 80px 40px;
+    font-size: 32px;
+  }
+}
+
+.image-block-mobile-version {
+  @include respond-to-medium {
+    margin: 0 0 80px 0;
+  }
+
+  @include respond-to-medium {
+    margin: 0 56px 80px 56px;
   }
 }
 
 .section-title {
   color: $dark-green-color;
   font-size: 40px;
+
+  @include respond-to-small {
+    font-size: 32px;
+  }
 }
 
 .not-centred {
   margin: 0 0 56px 0;
+
+  @include respond-to-small {
+    margin: 0 0 40px 0;
+  }
 }
 
 .centred {
   margin: 0 auto 56px auto;
-  width: max-content;
+  text-align: center;
 
   @include respond-to-small {
     margin: 0 auto 40px auto;
@@ -255,6 +285,7 @@ img {
 
   @include respond-to-small {
     margin: 0 0 24px 0;
+    font-size: 24px;
   }
 }
 
@@ -277,7 +308,19 @@ img {
   }
 
   &__margin {
-    margin-top: 40px;
+    margin-top: 80px;
+  }
+}
+
+.button-to-hide {
+  display: none;
+}
+
+.button--mobile-version {
+  display: none;
+
+  @include respond-to-medium {
+    display: block;
   }
 }
 
@@ -316,8 +359,6 @@ img {
 }
 
 .title-and-text {
-  flex: 1;
-
   &__number {
     font-size: 32px;
     font-weight: bold;
@@ -340,8 +381,16 @@ img {
   }
 }
 
+.align-text-version {
+  text-align: center;
+}
+
 .card {
   position: relative;
+
+  @include respond-to-extra-large {
+    width: 100%;
+  }
 
   @include respond-to-large {
     width: 100%;
@@ -361,6 +410,10 @@ img {
     background-color: $light-green-color;
     color: white;
     border-radius: 5px;
+
+    @include respond-to-extra-large {
+      width: 100%;
+    }
 
     @include respond-to-large {
       width: 100%;
@@ -399,6 +452,10 @@ img {
     left: 16px;
     border-radius: 5px;
 
+    @include respond-to-extra-large {
+      width: 100%;
+    }
+
     @include respond-to-large {
       width: 100%;
       height: 192px;
@@ -411,11 +468,9 @@ img {
     width: 100%;
     height: 600px;
     object-fit: cover;
-    margin-top: 96px;
 
     @include respond-to-small {
       height: 320px;
-      margin-top: 80px;
     }
   }
 
@@ -425,13 +480,27 @@ img {
     object-fit: cover;
 
     &__margin-top {
-      margin-top: 40px;
+      margin-top: 80px;
     }
 
     &__margins {
       margin: 88px 240px 0 240px;
       width: -webkit-fill-available;
     }
+  }
+}
+
+.higher-margin {
+  margin-top: 136px;
+
+  @include respond-to-medium {
+    margin-top: 80px;
+  }
+}
+
+.mobile-version {
+  @include respond-to-small {
+    display: none;
   }
 }
 
@@ -449,7 +518,8 @@ img {
   @include respond-to-small {
     width: 100%;
     height: 592px;
-    margin-top: 48px;
+    margin-top: 80px;
+    border-radius: 0;
   }
 }
 
@@ -460,16 +530,28 @@ img {
   background-color: $green-color;
   background-color: $medium-green-color;
   color: white;
-  padding: 112px 240px;
+  padding: 136px 240px;
+
+  @include respond-to-extra-extra-large {
+    padding: 136px 200px;
+  }
 
   @include respond-to-extra-large {
-    padding: 80px 104px;
+    padding: 104px;
   }
 
   @include respond-to-large {
     flex-direction: column;
     padding: 64px 80px;
     gap: 40px;
+  }
+
+  @include respond-to-medium {
+    padding: 80px 56px;
+  }
+
+  @include respond-to-small {
+    padding: 80px 40px;
   }
 
   &__photo-container {
@@ -499,6 +581,10 @@ img {
     flex-direction: column;
     gap: 56px;
 
+    @include respond-to-small {
+      gap: 40px;
+    }
+
     &__presentation {
       &__title {
         font-style: italic;
@@ -523,13 +609,17 @@ img {
 }
 
 .practical-information {
-  margin: 104px 120px 0 120px;
+  margin: 136px 240px 0 240px;
   display: flex;
-  justify-content: center;
-  gap: 240px;
+  justify-content: space-between;
+
+  @include respond-to-extra-extra-large {
+    justify-content: space-between;
+    margin: 136px 200px 0 200px;
+  }
 
   @include respond-to-extra-large {
-    margin: 80px 104px 0 104px;
+    margin: 136px 104px 0 104px;
     gap: 136px;
   }
 
@@ -538,6 +628,14 @@ img {
     flex-direction: column;
     gap: 40px;
     text-align: center;
+  }
+
+  @include respond-to-medium {
+    margin: 80px 56px 0 56px;
+  }
+
+  @include respond-to-small {
+    margin: 80px 40px 0 40px;
   }
 
   &__item {
@@ -555,25 +653,51 @@ img {
 }
 
 .duration-prices {
-  margin: 120px 240px 0 240px;
+  margin: 136px 240px 0 240px;
+
+  @include respond-to-extra-extra-large {
+    margin: 136px 200px 0 200px;
+  }
 
   @include respond-to-extra-large {
-    margin: 120px 104px 0 104px;
+    margin: 136px 104px 0 104px;
   }
 
   @include respond-to-large {
-    margin: 80px 80px 0 80px;
+    margin: 80px 0 0 0;
+  }
+
+  @include respond-to-small {
+    margin: 80px 0 0 0;
   }
 
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 96px;
+
+    @include respond-to-large {
+      margin: 0 96px 0 80px;
+    }
+
+    @include respond-to-medium {
+      margin: 0 64px 0 56px;
+      gap: 56px;
+    }
+
+    @include respond-to-small {
+      gap: 72px;
+      margin: 0 56px 0 40px;
+    }
 
     &__content {
       display: flex;
-      justify-content: center;
-      gap: 136px;
+      justify-content: space-between;
+
+      @include respond-to-extra-large {
+        flex-direction: column;
+        gap: 80px;
+      }
 
       @include respond-to-large {
         flex-direction: column;
@@ -582,14 +706,18 @@ img {
         width: 100%;
       }
 
-      @include respond-to-extra-large {
-        gap: 80px;
+      @include respond-to-small {
+        gap: 40px;
       }
     }
   }
 
   &__page-version {
-    margin: 0 0 96px 0;
+    margin: 0 0 136px 0;
+
+    @include respond-to-medium {
+      margin: 0 0 80px 0;
+    }
 
     &__button-container {
       width: 100%;
@@ -599,14 +727,22 @@ img {
   }
 
   &__page-content {
-    margin-top: 0;
+    margin: 0;
   }
 
   &__page {
-    margin: 80px 240px 0 240px;
+    margin: 136px 240px 0 240px;
+
+    @include respond-to-extra-extra-large {
+      margin: 136px 200px 0 200px;
+    }
 
     @include respond-to-extra-large {
-      margin: 80px 96px 0 96px;
+      margin: 136px 104px 0 104px;
+    }
+
+    @include respond-to-medium {
+      margin: 80px 0 0 0;
     }
 
     @include respond-to-small {
@@ -614,19 +750,37 @@ img {
     }
 
     &__content {
-      margin-top: 96px;
+      margin-top: 152px;
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 88px;
+
+      @include respond-to-medium {
+        margin-top: 96px;
+      }
 
       @include respond-to-small {
         flex-direction: column;
-        gap: 32px;
+        gap: 0;
+        margin-top: 96px;
+      }
+
+      @include respond-to-large {
+        flex-direction: column;
       }
 
       &__texts {
-        @include respond-to-small {
+        @include respond-to-large {
           margin: 0 80px;
+        }
+
+        @include respond-to-medium {
+          margin: 0 56px;
+        }
+
+        @include respond-to-small {
+          margin: 0 40px;
         }
 
         &__title {
@@ -654,7 +808,7 @@ img {
 
             &__duration {
               margin: 0 0 16px 0;
-              font-weight: bold;
+              font-weight: 500;
             }
 
             &__paragraph {
@@ -666,39 +820,54 @@ img {
     }
 
     &__price-information {
-      margin-top: 80px;
+      margin-top: 136px;
+
+      @include respond-to-large {
+        margin: 56px 80px 0 80px;
+      }
+
+      @include respond-to-medium {
+        margin: 80px 56px 0 56px;
+      }
 
       @include respond-to-small {
-        margin: 48px 80px 0 80px;
+        margin: 80px 40px 0 40px;
       }
 
       &__blocks {
         display: flex;
         align-items: center;
-        text-align: center;
+        justify-content: space-evenly;
+        width: 100%;
 
-        @include respond-to-small {
+        @include respond-to-large {
           flex-direction: column;
           gap: 24px;
+        }
+
+        @include respond-to-medium {
+          align-items: flex-start;
+          justify-content: flex-start;
         }
       }
 
       &__important-point {
-        text-align: center;
         font-style: italic;
-        margin: 24px 0 0 0;
+        margin: 40px 0 0 0;
       }
     }
   }
 }
 
 .consultation-information {
-  display: flex;
-  gap: 104px;
   margin: 136px 240px 0 240px;
 
+  @include respond-to-extra-extra-large {
+    margin: 136px 200px 0 200px;
+  }
+
   @include respond-to-extra-large {
-    margin: 80px 104px 0 104px;
+    margin: 136px 104px 0 104px;
   }
 
   @include respond-to-large {
@@ -708,21 +877,51 @@ img {
     gap: 32px;
   }
 
+  @include respond-to-small {
+    margin: 0;
+    gap: 0;
+  }
+
+  &__main-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+
+    @include respond-to-extra-large {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      gap: 104px;
+    }
+
+    @include respond-to-large {
+      flex-direction: column-reverse;
+      gap: 56px;
+    }
+  }
+
   &__text {
     @include respond-to-large {
       margin: 0 80px 0 80px;
     }
 
-    &__presentation {
-      margin: 0 0 56px 0;
+    @include respond-to-medium {
+      margin: 0 56px;
+    }
 
+    @include respond-to-small {
+      margin: 0 40px;
+    }
+
+    &__presentation {
       @include respond-to-small {
-        margin: 0 0 32px 0;
+        margin: 0;
       }
 
-      &__paragraph,
-      &__second-paragraph {
-        margin-top: 0;
+      &__paragraph {
+        margin-bottom: 0;
       }
 
       &__second-paragraph {
@@ -741,15 +940,23 @@ img {
 
   &__page {
     display: flex;
-    margin: 80px 240px 96px 240px;
+    margin: 136px 240px;
     flex-direction: column;
 
+    @include respond-to-extra-extra-large {
+      margin: 136px 200px;
+    }
+
     @include respond-to-extra-large {
-      margin: 80px 96px 96px 96px;
+      margin: 136px 104px;
+    }
+
+    @include respond-to-medium {
+      margin: 80px 56px;
     }
 
     @include respond-to-small {
-      margin: 56px 0 96px 0;
+      margin: 80px 0;
     }
 
     &__content {
@@ -758,18 +965,21 @@ img {
         align-items: center;
         gap: 104px;
 
-        @include respond-to-small {
+        @include respond-to-large {
           flex-direction: column;
+        }
+
+        @include respond-to-small {
           gap: 0;
         }
 
         &__texts {
           display: flex;
           flex-direction: column;
-          gap: 56px;
+          gap: 40px;
 
           @include respond-to-small {
-            margin: 0 80px;
+            margin: 0 40px;
           }
 
           &__text-block {
@@ -782,21 +992,27 @@ img {
     }
 
     &__first-session {
-      margin-top: 96px;
+      margin-top: 136px;
+
+      @include respond-to-medium {
+        margin-top: 80px;
+      }
 
       @include respond-to-small {
-        margin: 56px 80px 0 80px;
+        margin: 80px 40px 0 40px;
       }
 
       &__blocks {
         display: flex;
         flex-direction: row;
         gap: 80px;
-        text-align: center;
 
         @include respond-to-small {
-          flex-direction: column;
           gap: 32px;
+        }
+
+        @include respond-to-large {
+          flex-direction: column;
         }
       }
     }
@@ -805,12 +1021,19 @@ img {
       display: flex;
       gap: 104px;
       align-items: center;
-      margin-top: 96px;
+      margin-top: 136px;
+
+      @include respond-to-large {
+        flex-direction: column;
+      }
+
+      @include respond-to-medium {
+        margin-top: 80px;
+      }
 
       @include respond-to-small {
-        gap: 48px;
+        gap: 80px;
         margin-top: 0;
-        flex-direction: column;
       }
 
       &__content {
@@ -819,7 +1042,7 @@ img {
           flex-direction: column;
 
           @include respond-to-small {
-            margin: 0 80px 0 80px;
+            margin: 0 40px 0 40px;
           }
 
           &__title {
@@ -833,19 +1056,26 @@ img {
           &__paragraph {
             margin: 0 0 16px 0;
           }
+
+          &__second-paragraph {
+            margin: 0;
+          }
         }
       }
     }
 
     &__therapeutic-approaches {
-      margin-top: 96px;
+      margin-top: 136px;
+
+      @include respond-to-medium {
+        margin-top: 80px;
+      }
 
       @include respond-to-small {
-        margin: 56px 80px 0 80px;
+        margin: 80px 40px 0 40px;
       }
 
       &__blocks {
-        text-align: center;
         display: flex;
         flex-direction: column;
         gap: 32px;
@@ -853,23 +1083,26 @@ img {
     }
 
     &__troubles {
-      margin-top: 96px;
+      margin-top: 136px;
+
+      @include respond-to-medium {
+        margin-top: 80px;
+      }
 
       @include respond-to-small {
-        margin: 56px 80px 0 80px;
+        margin: 80px 40px 0 40px;
       }
     }
 
     &__conclusion {
-      margin-top: 40px;
+      margin-top: 80px;
 
       @include respond-to-small {
-        margin: 80px 80px 0 80px;
+        margin: 80px 40px 0 40px;
       }
 
       &__paragraph {
-        margin: 0 0 32px 0;
-        text-align: center;
+        margin: 0 0 80px 0;
       }
 
       &__button-container {
@@ -881,17 +1114,51 @@ img {
   }
 }
 
+.large-responsive-version {
+  margin-top: 56px;
+
+  @include respond-to-extra-extra-large {
+    display: none;
+  }
+}
+
+.responsive-version {
+  display: none;
+
+  @include respond-to-extra-extra-large {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+
+  @include respond-to-medium {
+    margin-top: 56px;
+  }
+
+  @include respond-to-small {
+    margin-top: 40px;
+  }
+}
+
 .frequently-asked-questions {
-  margin-top: 96px;
-  padding: 40px 240px;
+  margin-top: 136px;
+  padding: 80px 240px;
   background-color: $light-green-color;
 
   @include respond-to-extra-large {
-    padding: 40px 104px;
+    padding: 80px 104px;
   }
 
   @include respond-to-large {
-    padding: 40px 80px;
+    padding: 80px;
+  }
+
+  @include respond-to-medium {
+    margin-top: 80px;
+  }
+
+  @include respond-to-small {
+    padding: 80px 40px;
   }
 
   &__content-container {
@@ -899,7 +1166,7 @@ img {
     align-items: center;
     gap: 104px;
     margin: auto;
-    width: fit-content;
+    max-width: 783px;
 
     @include respond-to-small {
       flex-direction: column;
@@ -960,22 +1227,34 @@ img {
   }
 
   &__page-content {
-    margin: 80px 240px 96px 240px;
+    margin: 136px 240px;
+
+    @include respond-to-extra-extra-large {
+      margin: 136px 200px;
+    }
 
     @include respond-to-extra-large {
-      margin: 80px 96px 96px 96px;
+      margin: 136px 104px;
+    }
+
+    @include respond-to-medium {
+      margin: 80px 56px;
     }
 
     @include respond-to-small {
-      margin: 80px 0 96px 0;
+      margin: 80px 0;
     }
 
     &__paragraph {
       text-align: center;
-      margin: 80px 0 0 0;
+      margin: 40px 0 0 0;
+
+      @include respond-to-large {
+        text-align: left;
+      }
 
       @include respond-to-small {
-        margin: 40px 80px 0 80px;
+        margin: 40px 40px 0 40px;
       }
     }
 
@@ -992,13 +1271,12 @@ img {
 
   &__cards {
     color: white;
-    font-weight: 700;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
     flex-direction: column;
-    width: 850px;
+    gap: 24px;
 
     @include respond-to-large {
       width: 100%;
@@ -1014,15 +1292,27 @@ img {
         width: -webkit-fill-available;
         justify-content: space-between;
         cursor: pointer;
+
+        @include respond-to-small {
+          gap: 24px;
+        }
+
+        &__name {
+          margin: 0;
+          font-weight: 500;
+        }
       }
     }
 
     &__icon {
-      margin-right: 20px;
       cursor: pointer;
       transition: transform 0.5s ease;
       width: 32px;
       height: 32px;
+
+      @include respond-to-small {
+        margin-right: 0;
+      }
     }
 
     .angle-down {
@@ -1053,21 +1343,23 @@ img {
 
   &__cards {
     color: white;
-    font-weight: 700;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
     flex-direction: column;
-    width: 850px;
 
     @include respond-to-small {
-      width: 100%;
-      margin: 0 80px;
+      width: fit-content;
+      margin: 0 40px;
     }
 
     &__card {
       width: -webkit-fill-available;
+
+      @include respond-to-large {
+        width: 100%;
+      }
 
       &__question {
         display: flex;
@@ -1077,17 +1369,26 @@ img {
         justify-content: space-between;
         cursor: pointer;
 
+        @include respond-to-large {
+          gap: 24px;
+          width: -webkit-fill-available;
+        }
+
         &__name {
-          color: $light-brown-color;
+          color: black;
+          font-weight: 500;
         }
 
         &__icon {
-          margin-right: 20px;
           cursor: pointer;
           transition: transform 0.5s ease;
           width: 32px;
           height: 32px;
           color: black;
+
+          @include respond-to-small {
+            margin-right: 0;
+          }
         }
       }
 
@@ -1138,14 +1439,29 @@ img {
 }
 
 .education-and-experience {
-  margin: 96px 240px 0 240px;
+  margin: 136px 240px 0 240px;
+
+  @include respond-to-extra-extra-large {
+    margin: 136px 200px 0 200px;
+  }
 
   @include respond-to-extra-large {
-    margin: 96px 104px 0 104px;
+    margin: 136px 104px 0 104px;
   }
 
   @include respond-to-large {
     margin: 80px 0 96px 0;
+  }
+
+  @include respond-to-medium {
+    margin: 80px 0;
+  }
+
+  @include respond-to-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   &__page-content {
@@ -1153,14 +1469,18 @@ img {
   }
 
   &__page-version {
-    margin: 80px 240px 96px 240px;
+    margin: 136px 240px;
 
-    @include respond-to-extra-large {
-      margin: 96px;
+    @include respond-to-extra-extra-large {
+      margin: 136px 200px;
     }
 
-    @include respond-to-small {
-      margin: 80px 0 96px 0;
+    @include respond-to-extra-large {
+      margin: 136px 104px;
+    }
+
+    @include respond-to-medium {
+      margin: 80px 0;
     }
 
     &__button-container {
@@ -1200,7 +1520,7 @@ img {
       &__degree,
       &__experience {
         &__name {
-          font-weight: bold;
+          font-weight: 500;
           margin-bottom: 8px;
         }
       }
@@ -1210,40 +1530,72 @@ img {
   &__content {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 104px;
   }
 }
 
 .experience-container {
   &__content {
-    margin-bottom: 80px;
-
-    @include respond-to-large {
-      flex-direction: column;
-      gap: 56px;
-    }
-
-    &__texts {
-      @include respond-to-small {
-        margin: 0 80px;
-      }
-    }
-  }
-}
-
-.education-container {
-  &__content {
-    margin-bottom: 80px;
+    margin-bottom: 136px;
 
     @include respond-to-large {
       flex-direction: column-reverse;
       gap: 56px;
     }
 
+    @include respond-to-medium {
+      margin-bottom: 80px;
+      gap: 80px;
+    }
+
+    @include respond-to-small {
+      gap: 0;
+    }
+
+    &__texts {
+      @include respond-to-large {
+        margin: 0 80px;
+      }
+
+      @include respond-to-medium {
+        margin: 0 56px;
+      }
+
+      @include respond-to-small {
+        margin: 0 40px;
+      }
+    }
+  }
+}
+
+.education-container {
+  @include respond-to-small {
+    margin-bottom: 80px;
+  }
+
+  &__content {
+    margin-bottom: 136px;
+
+    @include respond-to-large {
+      flex-direction: column;
+      gap: 56px;
+    }
+
+    @include respond-to-medium {
+      margin-bottom: 80px;
+      gap: 80px;
+    }
+
+    @include respond-to-small {
+      gap: 0;
+      margin-bottom: 0;
+    }
+
     &__texts {
       @include respond-to-small {
         gap: 56px;
-        margin: 0 80px 40px 80px;
+        margin: 0 40px 40px 40px;
       }
     }
   }

@@ -14,7 +14,10 @@ import Plant from '../../assets/images/plant.jpg';
 function ConsultationInformationPageContent() {
   return (
     <section className="consultation-information__page">
-      <PageIntroduction text="Bienvenue dans un espace d'écoute et de soutien" />
+      <PageIntroduction
+        text="Bienvenue dans un espace d'écoute et de soutien"
+        className="page-introduction"
+      />
 
       <div className="consultation-information__page__content">
         <div className="consultation-information__page__content__welcomed-profiles">
@@ -55,6 +58,7 @@ function ConsultationInformationPageContent() {
             text="La première séance est dédiée à l'écoute attentive de vos besoins.
             C'est l'occasion pour vous de partager vos attentes et ce qui vous
             a amené à consulter."
+            textAlignVersion=""
           />
           <TitleAndText
             number="2."
@@ -62,6 +66,7 @@ function ConsultationInformationPageContent() {
             text="Nous discutons de votre situation et définissons ensemble les
             objectifs de votre suivi, qu'il s'agisse d'émotions, de
             comportements ou d'améliorer votre qualité de vie."
+            textAlignVersion=""
           />
           <TitleAndText
             number="3."
@@ -69,6 +74,7 @@ function ConsultationInformationPageContent() {
             text="Nous convenons des modalités pratiques : fréquence des séances et
             durée estimée de la thérapie, pour un accompagnement adapté à
             votre rythme."
+            textAlignVersion=""
           />
         </div>
       </div>
@@ -86,7 +92,7 @@ function ConsultationInformationPageContent() {
               En tant que neuropsychologue, je propose des bilans psychologiques
               pour enfants, adolescents et adultes.
             </p>
-            <p className="consultation-information__page__personalized-assessment__content__texts__paragraph">
+            <p className="consultation-information__page__personalized-assessment__content__texts__second-paragraph">
               Ces évaluations peuvent vous aider à mieux vous comprendre (bilans
               de personnalité) ou à poser un diagnostic, comme le Trouble du
               Spectre Autistique, le Trouble Déficitaire de l’Attention, ou
@@ -107,6 +113,7 @@ function ConsultationInformationPageContent() {
               aide à mieux comprendre le lien entre vos pensées, émotions et
               actions, afin de développer des stratégies pour les transformer et
               améliorer votre bien-être au quotidien."
+            textAlignVersion=""
           />
           <TitleAndText
             number={null}
@@ -116,6 +123,7 @@ function ConsultationInformationPageContent() {
             concentrer sur ce qui compte vraiment pour vous, tout en vous
             engageant dans des actions qui alignent vos valeurs personnelles
             et vos objectifs de vie."
+            textAlignVersion=""
           />
           <TitleAndText
             number={null}
@@ -125,6 +133,7 @@ function ConsultationInformationPageContent() {
             actuels. L’objectif est de remettre en question ces schémas,
             souvent dysfonctionnels, afin de favoriser des changements
             durables et un mieux-être émotionnel."
+            textAlignVersion=""
           />
         </div>
       </div>

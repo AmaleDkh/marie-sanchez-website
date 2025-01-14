@@ -14,7 +14,10 @@ import Plant2 from '../../assets/images/plant2.webp';
 function DurationPricesPageContent() {
   return (
     <section className="duration-prices__page">
-      <PageIntroduction text="Une prise en charge adaptée à vos besoins" />
+      <PageIntroduction
+        text="Une prise en charge adaptée à vos besoins"
+        className="page-introduction page-introduction__mobile-version image-block-mobile-version"
+      />
 
       <DurationPrices className="duration-prices duration-prices__page-content" />
 
@@ -54,11 +57,13 @@ function DurationPricesPageContent() {
             number={null}
             title="Options de réglement"
             text="Espèce, chèque ou virement bancaire"
+            textAlignVersion="text-align-version"
           />
           <TitleAndText
             number={null}
             title="Paiement"
             text="En 2 ou 3 fois possible"
+            textAlignVersion="text-align-version"
           />
         </div>
 

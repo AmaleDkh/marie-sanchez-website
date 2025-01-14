@@ -1,5 +1,5 @@
-function PageIntroduction({ text }) {
-  return <div className="page-introduction">{text}</div>;
+function PageIntroduction({ text, className }) {
+  return <div className={className}>{text}</div>;
 }
 
 export default PageIntroduction;

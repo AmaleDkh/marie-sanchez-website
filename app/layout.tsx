@@ -1,10 +1,11 @@
 'use client';
 
-import { Head } from 'next/document';
-
 // Components
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
+
+// Style
+import '../assets/styles/Global.scss';
 
 function Layout({ children }) {
   return (

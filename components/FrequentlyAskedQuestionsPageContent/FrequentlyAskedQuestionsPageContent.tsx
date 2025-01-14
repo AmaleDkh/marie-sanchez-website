@@ -10,7 +10,10 @@ import Plant3 from '../../assets/images/plant3.webp';
 function FrequentlyAskedQuestionsPageContent() {
   return (
     <div className="frequently-asked-questions__page-content">
-      <PageIntroduction text="Des réponses à vos interrogations" />
+      <PageIntroduction
+        text="Des réponses à vos interrogations"
+        className="page-introduction"
+      />
       <FrequentlyAskedQuestions
         className={'frequently-asked-questions__page-version'}
       />
@@ -22,7 +25,7 @@ function FrequentlyAskedQuestionsPageContent() {
         src={Plant3}
         alt="Image avec des feuilles, représentant la nature"
         className={
-          'image-block-container image-block-container__smaller-version image-block-container__smaller-version__margin-top'
+          'image-block-container image-block-container__smaller-version image-block-container__smaller-version__margin-top mobile-version'
         }
       />
       <div className="frequently-asked-questions__page-content__button-container">

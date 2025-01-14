@@ -11,7 +11,10 @@ import Plant4 from '../../assets/images/plant4.webp';
 function EducationAndExperiencePageContent() {
   return (
     <div className="education-and-experience__page-version">
-      <PageIntroduction text="Les grandes lignes de mon parcours" />
+      <PageIntroduction
+        text="Les grandes lignes de mon parcours"
+        className="page-introduction image-block-mobile-version"
+      />
       <ExperienceBlock />
       <EducationBlock />
       <ImageBlock
