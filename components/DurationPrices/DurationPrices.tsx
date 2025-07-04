@@ -4,23 +4,22 @@
 import { usePathname } from 'next/navigation';
 
 // Components
-import SectionTitle from '../SectionTitle/SectionTitle';
 import Card from '../Card/Card';
 import Button from '../Button/Button';
 
 function DurationPrices({ className }) {
   const pathname = usePathname();
-
-  const isDurationsPrices = pathname === '/duration-and-prices';
+  const isHomepage = pathname === '/';
 
   return (
     <section className={className}>
-      {!isDurationsPrices && (
+      {/* {isHomepage && (
         <SectionTitle
-          title="DURÉE & TARIFS"
+          title="Durée & tarifs"
           className="section-title centred"
         />
-      )}
+      )} */}
+
       <div className="duration-prices__container">
         <div className="duration-prices__container__content">
           <Card title="DURÉE" text1="50 minutes" text2={null} />
@@ -31,16 +30,16 @@ function DurationPrices({ className }) {
           />
           <Card title="BILANS" text1="entre 200 € et 400 €" text2={null} />
         </div>
-        {pathname === '/' && (
+        {isHomepage && (
           <div className="consultation-information__text__presentation__button-container">
             <Button
-              link="/duration-and-prices"
+              link="/practical-information"
               text="Choisissez la consultation qui vous convient"
               className="button button-to-hide"
             />
 
             <Button
-              link="/duration-and-prices"
+              link="/practical-information"
               text="Toutes les informations"
               className="button button-mobile-version"
             />

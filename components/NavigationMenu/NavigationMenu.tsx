@@ -5,7 +5,7 @@ import Link from 'next/link';
 // Component
 import ButtonWithIcon from '../ButtonWithIcon/ButtonWithIcon';
 
-// Font Awesome icon
+// Font Awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
@@ -53,7 +53,10 @@ function NavigationMenu() {
                 </Link>
               </li>
               <li className="navigation-container__mobile-version__navigation-menu__list__item">
-                <Link onClick={closeHamburgerMenu} href="/duration-and-prices">
+                <Link
+                  onClick={closeHamburgerMenu}
+                  href="/practical-information"
+                >
                   DURÉE & TARIFS
                 </Link>
               </li>
@@ -66,10 +69,7 @@ function NavigationMenu() {
                 </Link>
               </li>
               <li className="navigation-container__mobile-version__navigation-menu__list__item">
-                <Link
-                  onClick={closeHamburgerMenu}
-                  href="/education-and-experience"
-                >
+                <Link onClick={closeHamburgerMenu} href="/about">
                   À PROPOS
                 </Link>
               </li>
@@ -86,7 +86,7 @@ function NavigationMenu() {
             </Link>
           </li>
           <li className="navigation-container__navigation-menu__list__item">
-            <Link onClick={closeHamburgerMenu} href="/duration-and-prices">
+            <Link onClick={closeHamburgerMenu} href="/practical-information">
               DURÉE & TARIFS
             </Link>
           </li>
@@ -99,7 +99,7 @@ function NavigationMenu() {
             </Link>
           </li>
           <li className="navigation-container__navigation-menu__list__item">
-            <Link onClick={closeHamburgerMenu} href="/education-and-experience">
+            <Link onClick={closeHamburgerMenu} href="/about">
               À PROPOS
             </Link>
           </li>

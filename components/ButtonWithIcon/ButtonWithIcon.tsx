@@ -1,13 +1,13 @@
 // Next element
 import Link from 'next/link';
 
-// Font Awesome icon
+// Font Awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 function ButtonWithIcon() {
   return (
-    <Link href="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466">
+    <Link href="https://www.maiia.com/psychologue/33150-cenon/sanchez-marie">
       <button className="button-with-icon__container">
         <FontAwesomeIcon
           icon={faCalendarDays}

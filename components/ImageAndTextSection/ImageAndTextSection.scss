@@ -1,0 +1,142 @@
+// @use '../../../../assets/styles/Colors.scss' as colors;
+@use '../../assets/styles/mixins/breakpoints.scss' as breakpoints;
+@use '../../assets/styles/Colors.scss' as colors;
+
+.image-and-text-section {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  // padding: 4rem 104px;
+
+  // @include breakpoints.respond-to-extra-large {
+  //   padding: 4rem 40px;
+  // }
+
+  // @include breakpoints.respond-to-medium {
+  //   padding: 2rem 16px;
+  // }
+
+  &--all-padding-version {
+    padding: 4rem 104px;
+
+    @include breakpoints.respond-to-extra-large {
+      padding: 4rem 40px;
+    }
+
+    @include breakpoints.respond-to-medium {
+      padding: 2rem 16px;
+    }
+  }
+
+  &--padding-top-version {
+    padding: 4rem 104px 0 104px;
+
+    @include breakpoints.respond-to-extra-large {
+      padding: 4rem 40px 0 40px;
+    }
+
+    @include breakpoints.respond-to-medium {
+      padding: 2rem 16px 0 16px;
+    }
+  }
+
+  &--padding-bottom-version {
+    padding: 0 104px 4rem 104px;
+
+    @include breakpoints.respond-to-extra-large {
+      padding: 0 40px 4rem 40px;
+    }
+
+    @include breakpoints.respond-to-medium {
+      padding: 0 16px 2rem 16px;
+    }
+  }
+
+  &--beige {
+    background-color: colors.$beige-color;
+  }
+
+  &--light-brown {
+    background-color: colors.$light-brown-color;
+  }
+
+  &--dark-green {
+    background-color: colors.$dark-green-color;
+    color: colors.$beige-color;
+  }
+
+  &--medium-green {
+    background-color: colors.$medium-green-color;
+    color: colors.$beige-color;
+  }
+
+  &--green {
+    background-color: colors.$green-color;
+    color: colors.$beige-color;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+
+    @include breakpoints.respond-to-medium {
+      grid-template-columns: 1fr;
+    }
+
+    &--image-left {
+      .image-and-text-section__image-container {
+        order: 1;
+
+        @include breakpoints.respond-to-medium {
+          order: 0;
+        }
+      }
+
+      .image-and-text-section__content {
+        order: 2;
+
+        @include breakpoints.respond-to-medium {
+          order: 1;
+        }
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 700px;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    box-shadow:
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    @include breakpoints.respond-to-extra-large {
+      height: 600px;
+    }
+
+    @include breakpoints.respond-to-large {
+      height: 500px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    line-height: 1.2;
+  }
+
+  &__description {
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  &__cta {
+    padding-top: 0.5rem;
+  }
+}

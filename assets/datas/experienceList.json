@@ -1,22 +1,27 @@
 [
   {
-    "experience": "Psychologue en Hôpital de Jour Psychiatrique et Hôpital de Jour Addictologie",
+    "year": 2020,
+    "title": "Psychologue en Hôpital de Jour Psychiatrique et Hôpital de Jour Addictologie",
     "location": "Clinique Béthanie, Talence"
   },
   {
-    "experience": "Psychologue en équipe mobile de géronto-psychiatrie",
+    "year": 2020,
+    "title": "Psychologue en équipe mobile de géronto-psychiatrie",
     "location": "Charles Perrens sur toute la Gironde"
   },
   {
-    "experience": "Psychologue en CMP (Centre Médico-Psychologique) et HDJ (Hôpital de Jour)",
+    "year": 2020,
+    "title": "Psychologue en CMP (Centre Médico-Psychologique) et HDJ (Hôpital de Jour)",
     "location": "Biganos"
   },
   {
-    "experience": "Psychologue en Hospitalisation à Domicile",
+    "year": 2020,
+    "title": "Psychologue en Hospitalisation à Domicile",
     "location": "HAD Saint-Simon, Paris"
   },
   {
-    "experience": "Psychologue en unité semi-fermée en service de psychiatrie",
+    "year": 2020,
+    "title": "Psychologue en unité semi-fermée en service de psychiatrie",
     "location": "Sainte-Anne, Paris"
   }
 ]

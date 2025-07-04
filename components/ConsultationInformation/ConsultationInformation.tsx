@@ -1,10 +1,6 @@
 // Components
 import SectionTitle from '../SectionTitle/SectionTitle';
 import Button from '../Button/Button';
-import ImageContainer from '../ImageContainer/ImageContainer';
-
-// Image
-import OfficeDecoration from '../../assets/images/office-decoration.webp';
 
 function ConsultationInformation() {
   return (
@@ -12,8 +8,9 @@ function ConsultationInformation() {
       <div className="consultation-information__main-block">
         <div className="consultation-information__text">
           <SectionTitle
-            title="CONSULTATIONS"
-            className="section-title not-centred"
+            title="Consultations"
+            textAlignVersion="center"
+            colorVersion="dark-green"
           />
           <div className="consultation-information__text__presentation">
             <p className="consultation-information__text__presentation__paragraph">
@@ -43,14 +40,9 @@ function ConsultationInformation() {
             />
           </div>
         </div>
-
-        <ImageContainer
-          src={OfficeDecoration}
-          alt="Image d'une chaise et de décoration"
-        />
       </div>
 
-      <div className="consultation-information__text__presentation__button-container responsive-version">
+      {/* <div className="consultation-information__text__presentation__button-container responsive-version">
         <Button
           link="/consultations"
           text="Découvrez les solutions personnalisées"
@@ -62,7 +54,7 @@ function ConsultationInformation() {
           text="Les solutions personnalisées"
           className="button button-mobile-version"
         />
-      </div>
+      </div> */}
     </section>
   );
 }

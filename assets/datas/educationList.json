@@ -1,18 +1,22 @@
 [
   {
+    "year": 2020,
     "degree": "Diplôme de Psychologie clinique, psychopathologie et psychologie de la santé",
-    "location": "École de Psychologues Praticiens"
+    "institution": "École de Psychologues Praticiens"
   },
   {
+    "year": 2020,
     "degree": "Formation en Psycho-Sexologie",
-    "location": "AFPRO"
+    "institution": "AFPRO"
   },
   {
+    "year": 2020,
     "degree": "Formation ICV LI-1",
-    "location": "Institut Double Hélice"
+    "institution": "Institut Double Hélice"
   },
   {
+    "year": 2020,
     "degree": "Formation urgences psychiatriques",
-    "location": "Hôpital Charles Perrens"
+    "institution": "Hôpital Charles Perrens"
   }
 ]

@@ -1,0 +1,61 @@
+@use '../../assets/styles/mixins/breakpoints.scss' as breakpoints;
+
+.cta {
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 104px;
+
+  @include breakpoints.respond-to-extra-large {
+    padding: 4rem 40px;
+  }
+
+  @include breakpoints.respond-to-medium {
+    padding: 2rem 16px;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
+  &__background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      rgba(43, 104, 96, 0.85),
+      rgba(43, 104, 96, 0.95)
+    );
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+  }
+
+  &__description {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+    line-height: 1.6;
+
+    @media (max-width: 767px) {
+      font-size: 1.1rem;
+    }
+  }
+}

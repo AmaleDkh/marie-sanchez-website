@@ -1,19 +1,31 @@
 // Components
-import ImageBlock from '../../components/ImageBlock/ImageBlock';
-import FrequentlyAskedQuestionsPageContent from '../../components/FrequentlyAskedQuestionsPageContent/FrequentlyAskedQuestionsPageContent';
+import HeroBanner from '../../components/HeroBanner/HeroBanner';
+import FrequentlyAskedQuestions from '../../components/FrequentlyAskedQuestions/FrequentlyAskedQuestions';
+import Services from '../../components/Services/Services';
+import LastSectionWithCTA from '../../components/LastSectionWithCTA/LastSectionWithCTA';
 
-// Image
+// Images
 import Nature3 from '../../assets/images/nature3.webp';
+import plant3 from '../../assets/images/plant3.webp';
 
 function FrequentlyAskedQuestionsPage() {
   return (
     <>
-      <ImageBlock
-        src={Nature3}
-        alt="Image avec des feuilles, représentant la nature"
-        className={'image-block-container__higher-version'}
+      <HeroBanner
+        title="Des réponses à vos interrogations"
+        imageSrc={Nature3}
       />
-      <FrequentlyAskedQuestionsPageContent />
+
+      <FrequentlyAskedQuestions />
+
+      <Services paddingVersion="padding-bottom-version" />
+
+      <LastSectionWithCTA
+        title="Prêt à commencer votre chemin vers le mieux-être ?"
+        description="Prenez rendez-vous pour une première consultation et découvrez comment la thérapie peut vous aider à retrouver l'équilibre."
+        imageSrc={plant3}
+        imageAlt=""
+      />
     </>
   );
 }

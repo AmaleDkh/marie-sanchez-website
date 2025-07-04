@@ -17,6 +17,7 @@ function Presentation() {
           className="presentation-container__photo-container__photo"
           width={300}
           height={300}
+          loading="eager"
         />
       </div>
       <div className="presentation-container__text">
@@ -35,7 +36,7 @@ function Presentation() {
         </div>
         <div className="presentation-container__text__button-container">
           <Button
-            link="https://www.doctolib.fr/psychologue/cenon/marie-sanchez-cenon?pid=practice-624466"
+            link="https://www.maiia.com/psychologue/33150-cenon/sanchez-marie"
             text="Prendre rendez-vous"
             className="button"
           />

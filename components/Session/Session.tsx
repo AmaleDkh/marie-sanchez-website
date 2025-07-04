@@ -1,16 +1,25 @@
-function Session({ title, duration, paragraph }) {
+// Style
+import './Session.scss';
+
+export interface SessionProps {
+  title: string;
+  duration?: string;
+  paragraph: string;
+  number?: number;
+}
+
+function Session({ title, duration, paragraph, number }: SessionProps) {
   return (
-    <li className="duration-prices__page__content__texts__list__item">
-      <h4 className="duration-prices__page__content__texts__list__item__title">
-        {title}
-      </h4>
-      <p className="duration-prices__page__content__texts__list__item__duration">
-        {duration}
-      </p>
-      <p className="duration-prices__page__content__texts__list__item__paragraph">
-        {paragraph}
-      </p>
-    </li>
+    <div className="session">
+      {number && <div className="session__number">{number}</div>}
+      <div className="session__content">
+        <div className="session__header">
+          <h3 className="session__title">{title}</h3>
+          <span className="session__duration">{duration}</span>
+        </div>
+        <p className="session__description">{paragraph}</p>
+      </div>
+    </div>
   );
 }
 

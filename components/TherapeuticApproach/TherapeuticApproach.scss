@@ -1,0 +1,35 @@
+@use '../../assets/styles/Colors.scss' as colors;
+
+.approach {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  height: 100%;
+  text-align: center;
+
+  &__icon {
+    margin-bottom: 16px;
+    color: #5b8371;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__content {
+    p {
+      margin: 0 0 16px 0;
+      line-height: 1.7;
+
+      &:last-child {
+        // margin-top: auto;
+        font-style: italic;
+        // color: #5b8371;
+      }
+    }
+  }
+}

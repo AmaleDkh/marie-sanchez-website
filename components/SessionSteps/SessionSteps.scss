@@ -1,0 +1,33 @@
+@use '../../assets/styles/mixins/breakpoints.scss' as breakpoints;
+
+.session-steps {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 4rem 104px;
+
+  @include breakpoints.respond-to-extra-large {
+    padding: 4rem 40px;
+  }
+
+  @include breakpoints.respond-to-medium {
+    padding: 2rem 16px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 36px;
+    left: 16px;
+    width: 2px;
+    height: calc(100% - 36px);
+    z-index: 0;
+  }
+
+  @include breakpoints.respond-to-medium {
+    &:before {
+      top: 32px;
+      left: 14px;
+    }
+  }
+}

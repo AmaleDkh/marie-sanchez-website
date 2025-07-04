@@ -1,0 +1,70 @@
+@use '../../assets/styles/Colors.scss' as colors;
+
+.session {
+  display: flex;
+  margin-bottom: 32px;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__number {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    // background-color: colors.$light-brown-color;
+    background-color: colors.$green-color;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1rem;
+    flex-shrink: 0;
+    margin-right: 24px;
+    position: relative;
+    z-index: 1;
+    margin-top: 4px;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    // color: colors.$dark-green-color;
+    margin: 0;
+  }
+
+  &__duration {
+    color: colors.$green-color;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  &__description {
+    margin: 0;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 767px) {
+  .session {
+    margin-left: 16px;
+
+    &__number {
+      width: 28px;
+      height: 28px;
+      font-size: 0.9rem;
+      margin-right: 16px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@use '../../assets/styles/Colors.scss' as colors;
+
+.section-title {
+  &--beige {
+    color: colors.$beige-color;
+  }
+
+  &--dark-green {
+    color: colors.$dark-green-color;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}

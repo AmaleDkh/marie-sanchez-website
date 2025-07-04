@@ -13,11 +13,45 @@ body {
 
 * {
   font-family: 'Montserrat';
+  font-weight: 200;
+}
+
+// h1 {
+//   margin: 0 0 40px 0;
+// }
+
+// h2 {
+//   font-family: 'Baskerville';
+//   font-size: 32px;
+//   font-weight: 600;
+//   margin: 0 0 32px 0;
+// }
+
+// h3 {
+//   font-family: 'Baskerville';
+//   margin: 0 0 16px 0;
+// }
+
+h1,
+h2,
+h3 {
+  font-family: 'Baskerville';
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0 0 32px 0;
 }
 
 h2 {
-  font-family: 'Baskerville';
+  font-size: 48px;
+  margin: 0 0 24px 0;
+}
+
+h3 {
   font-size: 24px;
+  color: $light-brown-color;
+  margin: 0 0 16px 0;
 }
 
 a {
@@ -34,58 +68,71 @@ img {
   height: auto;
 }
 
-.header {
-  margin: 72px;
+// .header {
+//   margin: 40px 104px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+
+//   @include respond-to-extra-large {
+//     gap: 24px;
+//     margin: 40px;
+//     flex-direction: column;
+//   }
+
+//   @include respond-to-medium {
+//     margin: 24px 16px;
+//   }
+
+//   &__principal-information {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+
+//     &__names {
+//       font-size: 32px;
+//       font-weight: 600;
+//       font-family: 'Baskerville';
+//       font-style: italic;
+//     }
+//   }
+
+//   &__navigation-menu {
+//     display: flex;
+//     align-items: center;
+//     gap: 40px;
+
+//     &__link {
+//       font-weight: 700;
+
+//       @include respond-to-small {
+//         display: none;
+//       }
+//     }
+//   }
+
+//   &__block {
+//     display: flex;
+//     align-items: center;
+//     gap: 40px;
+
+//     @include respond-to-extra-large {
+//       justify-content: space-between;
+//     }
+
+//     @include respond-to-medium {
+//       flex-direction: row-reverse;
+//       gap: 32px;
+//     }
+//   }
+// }
+
+.name-green-color {
   color: $dark-green-color;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
 
-  @include respond-to-extra-large {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  &__principal-information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &__names {
-      font-size: 32px;
-      font-weight: 700;
-      font-family: 'Baskerville';
-      font-style: italic;
-    }
-  }
-
-  &__navigation-menu {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-
-    &__link {
-      font-weight: 700;
-
-      @include respond-to-small {
-        display: none;
-      }
-    }
-  }
-
-  &__block {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-
-    @include respond-to-extra-large {
-      flex-direction: column;
-    }
-
-    @include respond-to-medium {
-      flex-direction: row;
-    }
-  }
+.name-white-color {
+  color: white;
 }
 
 .navigation-container__mobile-version {
@@ -196,69 +243,83 @@ img {
   }
 }
 
-.footer {
-  padding: 72px;
-  text-align: center;
-  background-color: $medium-green-color;
-  color: white;
+// .footer {
+//   padding: 40px 104px;
+//   text-align: center;
+//   background-color: $medium-green-color;
+//   color: white;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
 
-  @include respond-to-small {
-    font-size: 8px;
-  }
-}
+//   @include respond-to-extra-large {
+//     padding: 40px;
+//     gap: 40px;
+//   }
 
-.main {
-  margin: 0 0 96px 0;
+//   @include respond-to-small {
+//     font-size: 8px;
+//   }
 
-  @include respond-to-extra-large {
-    margin: 80px 0;
-  }
+//   &__contact {
+//     &__title {
+//       font-family: 'Baskerville';
+//       font-size: 32px;
+//       font-style: italic;
+//       margin: 0 0 24px 0;
+//     }
 
-  @include respond-to-small {
-    margin: 80px 0;
-  }
-}
+//     &__icons-list {
+//       margin: 0;
+//       list-style-type: none;
+//       padding: 0;
+//       display: flex;
+//       justify-content: center;
+//       gap: 40px;
+//     }
 
-.page-introduction {
-  font-family: 'Baskerville';
-  font-style: italic;
-  font-weight: bold;
-  font-size: 40px;
-  color: $green-color;
-  margin: 0 0 136px 0;
-  text-align: center;
+//     &__address {
+//       &__second-part {
+//         margin: 0;
+//       }
 
-  @include respond-to-medium {
-    margin: 0 0 80px 0;
-  }
+//       &__first-part {
+//         margin: 24px 0 8px 0;
+//       }
+//     }
+//   }
+// }
 
-  @include respond-to-small {
-    margin: 0 40px 80px 40px;
-    font-size: 32px;
-  }
-}
+// .main {
+//   margin: 0 0 96px 0;
+
+//   @include respond-to-extra-large {
+//     margin: 80px 0;
+//   }
+
+//   @include respond-to-small {
+//     margin: 80px 0;
+//   }
+// }
 
 .image-block-mobile-version {
   @include respond-to-medium {
-    margin: 0 0 80px 0;
-  }
-
-  @include respond-to-medium {
-    margin: 0 56px 80px 56px;
+    margin: 0 16px 32px 16px;
   }
 }
 
-.section-title {
-  color: $dark-green-color;
-  font-size: 40px;
+// .section-title {
+//   color: $dark-green-color;
+//   font-style: italic;
+//   font-size: 40px;
 
-  @include respond-to-small {
-    font-size: 32px;
-  }
-}
+//   @include respond-to-small {
+//     font-size: 32px;
+//   }
+// }
 
 .not-centred {
-  margin: 0 0 56px 0;
+  margin: 0 0 32px 0;
 
   @include respond-to-small {
     margin: 0 0 40px 0;
@@ -266,7 +327,7 @@ img {
 }
 
 .centred {
-  margin: 0 auto 56px auto;
+  margin: 0 auto 32px auto;
   text-align: center;
 
   @include respond-to-small {
@@ -281,35 +342,15 @@ img {
   font-size: 32px;
   font-style: italic;
   color: $light-brown-color;
-  margin: 0 0 40px 0;
 
-  @include respond-to-small {
-    margin: 0 0 24px 0;
-    font-size: 24px;
-  }
-}
-
-.button {
-  background-color: $light-brown-color;
-  color: white;
-  border: none;
-  border-radius: 90px;
-  padding: 16px 24px;
-  font-weight: bold;
-  display: flex;
-  width: fit-content;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: darken($light-brown-color, 2%);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-    transform: translateY(-2px);
+  @include respond-to-medium {
+    margin: 0 0 16px 0;
   }
 
-  &__margin {
-    margin-top: 80px;
-  }
+  // @include respond-to-small {
+  //   margin: 0 0 24px 0;
+  //   font-size: 24px;
+  // }
 }
 
 .button-to-hide {
@@ -361,7 +402,7 @@ img {
 .title-and-text {
   &__number {
     font-size: 32px;
-    font-weight: bold;
+    // font-weight: bold;
     color: $green-color;
     font-family: 'Baskerville';
     display: block;
@@ -424,8 +465,7 @@ img {
 
     &__title {
       margin-bottom: 24px;
-      font-weight: bold;
-      font-family: 'EB Garamond';
+      font-family: 'Libre Baskerville';
       font-size: 24px;
 
       @include respond-to-large {
@@ -480,7 +520,15 @@ img {
     object-fit: cover;
 
     &__margin-top {
-      margin-top: 80px;
+      margin-top: 64px;
+
+      @include respond-to-extra-large {
+        margin-top: 56px;
+      }
+
+      @include respond-to-medium {
+        margin-top: 48px;
+      }
     }
 
     &__margins {
@@ -488,14 +536,16 @@ img {
       width: -webkit-fill-available;
     }
   }
+
+  &--none-version {
+    @include respond-to-medium {
+      display: none;
+    }
+  }
 }
 
 .higher-margin {
-  margin-top: 136px;
-
-  @include respond-to-medium {
-    margin-top: 80px;
-  }
+  margin-top: 0;
 }
 
 .mobile-version {
@@ -515,9 +565,12 @@ img {
   flex-shrink: 0;
   border-radius: 5px;
 
-  @include respond-to-small {
+  @include respond-to-medium {
     width: 100%;
-    height: 592px;
+    height: 600px;
+  }
+
+  @include respond-to-small {
     margin-top: 80px;
     border-radius: 0;
   }
@@ -530,14 +583,10 @@ img {
   background-color: $green-color;
   background-color: $medium-green-color;
   color: white;
-  padding: 136px 240px;
-
-  @include respond-to-extra-extra-large {
-    padding: 136px 200px;
-  }
+  padding: 152px 104px;
 
   @include respond-to-extra-large {
-    padding: 104px;
+    padding: 32px 40px;
   }
 
   @include respond-to-large {
@@ -547,11 +596,7 @@ img {
   }
 
   @include respond-to-medium {
-    padding: 80px 56px;
-  }
-
-  @include respond-to-small {
-    padding: 80px 40px;
+    padding: 24px 16px;
   }
 
   &__photo-container {
@@ -570,16 +615,23 @@ img {
     }
 
     &__photo {
-      width: 100%;
-      height: 100%;
+      // width: 100%;
+      // height: 100%;
+      width: 368px;
+      height: 368px;
       object-fit: cover;
+
+      @include respond-to-small {
+        width: 312px;
+        height: 312px;
+      }
     }
   }
 
   &__text {
     display: flex;
     flex-direction: column;
-    gap: 56px;
+    gap: 24px;
 
     @include respond-to-small {
       gap: 40px;
@@ -588,7 +640,7 @@ img {
     &__presentation {
       &__title {
         font-style: italic;
-        margin: 0 0 56px;
+        margin: 0 0 40px;
 
         @include respond-to-small {
           margin: 0 0 24px;
@@ -609,17 +661,16 @@ img {
 }
 
 .practical-information {
-  margin: 136px 240px 0 240px;
+  margin: 64px 104px 0 104px;
   display: flex;
   justify-content: space-between;
 
   @include respond-to-extra-extra-large {
     justify-content: space-between;
-    margin: 136px 200px 0 200px;
   }
 
   @include respond-to-extra-large {
-    margin: 136px 104px 0 104px;
+    margin: 56px 40px 0 40px;
     gap: 136px;
   }
 
@@ -631,11 +682,8 @@ img {
   }
 
   @include respond-to-medium {
-    margin: 80px 56px 0 56px;
-  }
-
-  @include respond-to-small {
-    margin: 80px 40px 0 40px;
+    gap: 32px;
+    margin: 48px 16px 0 16px;
   }
 
   &__item {
@@ -653,41 +701,36 @@ img {
 }
 
 .duration-prices {
-  margin: 136px 240px 0 240px;
-
-  @include respond-to-extra-extra-large {
-    margin: 136px 200px 0 200px;
-  }
+  margin: 64px 104px 0 104px;
 
   @include respond-to-extra-large {
-    margin: 136px 104px 0 104px;
+    margin: 56px 40px 0 40px;
   }
 
   @include respond-to-large {
     margin: 80px 0 0 0;
   }
 
-  @include respond-to-small {
-    margin: 80px 0 0 0;
+  @include respond-to-medium {
+    margin: 48px 0 0 0;
   }
 
   &__container {
     display: flex;
     flex-direction: column;
-    gap: 96px;
+    gap: 40px;
 
     @include respond-to-large {
       margin: 0 96px 0 80px;
     }
 
     @include respond-to-medium {
-      margin: 0 64px 0 56px;
-      gap: 56px;
+      margin: 0 32px 0 16px;
+      gap: 32px;
     }
 
     @include respond-to-small {
       gap: 72px;
-      margin: 0 56px 0 40px;
     }
 
     &__content {
@@ -695,28 +738,27 @@ img {
       justify-content: space-between;
 
       @include respond-to-extra-large {
-        flex-direction: column;
         gap: 80px;
       }
 
       @include respond-to-large {
         flex-direction: column;
         align-items: center;
-        gap: 32px;
+
         width: 100%;
       }
 
-      @include respond-to-small {
-        gap: 40px;
+      @include respond-to-medium {
+        gap: 48px;
       }
     }
   }
 
   &__page-version {
-    margin: 0 0 136px 0;
+    margin: 0 0 64px 0;
 
     @include respond-to-medium {
-      margin: 0 0 80px 0;
+      margin: 0 0 48px 0;
     }
 
     &__button-container {
@@ -727,47 +769,40 @@ img {
   }
 
   &__page-content {
-    margin: 0;
-  }
-
-  &__page {
-    margin: 136px 240px 0 240px;
-
-    @include respond-to-extra-extra-large {
-      margin: 136px 200px 0 200px;
-    }
+    margin: 64px 0 0 0;
 
     @include respond-to-extra-large {
-      margin: 136px 104px 0 104px;
+      margin: 56px 0 0 0;
     }
 
     @include respond-to-medium {
-      margin: 80px 0 0 0;
+      margin: 48px 0 0 0;
+    }
+  }
+
+  &__page {
+    margin: 64px 104px 0 104px;
+
+    @include respond-to-extra-large {
+      margin: 56px 40px 0 40px;
     }
 
-    @include respond-to-small {
-      margin: 80px 0 0 0;
+    @include respond-to-medium {
+      margin: 48px 16px 0 16px;
     }
 
     &__content {
-      margin-top: 152px;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       gap: 88px;
-
-      @include respond-to-medium {
-        margin-top: 96px;
-      }
-
-      @include respond-to-small {
-        flex-direction: column;
-        gap: 0;
-        margin-top: 96px;
-      }
 
       @include respond-to-large {
         flex-direction: column;
+      }
+
+      @include respond-to-medium {
+        gap: 32px;
       }
 
       &__texts {
@@ -776,11 +811,8 @@ img {
         }
 
         @include respond-to-medium {
-          margin: 0 56px;
-        }
-
-        @include respond-to-small {
-          margin: 0 40px;
+          margin: 0;
+          width: 100%;
         }
 
         &__title {
@@ -795,20 +827,21 @@ img {
           list-style-type: none;
           padding: 0;
           margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
 
           &__item {
-            margin-top: 32px;
-
             &__title {
-              margin: 0 0 8px 0;
+              margin: 0 0 16px 0;
               font-family: 'Baskerville';
               font-size: 24px;
               color: $green-color;
             }
 
             &__duration {
-              margin: 0 0 16px 0;
-              font-weight: 500;
+              margin: 0 0 8px 0;
+              font-weight: 400;
             }
 
             &__paragraph {
@@ -820,18 +853,18 @@ img {
     }
 
     &__price-information {
-      margin-top: 136px;
+      margin-top: 80px;
+
+      @include respond-to-extra-large {
+        margin-top: 72px;
+      }
 
       @include respond-to-large {
         margin: 56px 80px 0 80px;
       }
 
       @include respond-to-medium {
-        margin: 80px 56px 0 56px;
-      }
-
-      @include respond-to-small {
-        margin: 80px 40px 0 40px;
+        margin: 64px 0 0 0;
       }
 
       &__blocks {
@@ -854,20 +887,20 @@ img {
       &__important-point {
         font-style: italic;
         margin: 40px 0 0 0;
+
+        @include respond-to-medium {
+          margin: 24px 0 0 0;
+        }
       }
     }
   }
 }
 
 .consultation-information {
-  margin: 136px 240px 0 240px;
-
-  @include respond-to-extra-extra-large {
-    margin: 136px 200px 0 200px;
-  }
+  margin: 64px 104px 0 104px;
 
   @include respond-to-extra-large {
-    margin: 136px 104px 0 104px;
+    margin: 56px 40px 0 40px;
   }
 
   @include respond-to-large {
@@ -875,6 +908,10 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 32px;
+  }
+
+  @include respond-to-medium {
+    margin: 48px 16px 0 16px;
   }
 
   @include respond-to-small {
@@ -900,6 +937,10 @@ img {
       flex-direction: column-reverse;
       gap: 56px;
     }
+
+    @include respond-to-medium {
+      gap: 32px;
+    }
   }
 
   &__text {
@@ -908,11 +949,8 @@ img {
     }
 
     @include respond-to-medium {
-      margin: 0 56px;
-    }
-
-    @include respond-to-small {
-      margin: 0 40px;
+      margin: 0;
+      text-align: center;
     }
 
     &__presentation {
@@ -940,23 +978,15 @@ img {
 
   &__page {
     display: flex;
-    margin: 136px 240px;
+    margin: 64px 104px;
     flex-direction: column;
 
-    @include respond-to-extra-extra-large {
-      margin: 136px 200px;
-    }
-
     @include respond-to-extra-large {
-      margin: 136px 104px;
+      margin: 56px 40px;
     }
 
     @include respond-to-medium {
-      margin: 80px 56px;
-    }
-
-    @include respond-to-small {
-      margin: 80px 0;
+      margin: 48px 16px;
     }
 
     &__content {
@@ -969,8 +999,8 @@ img {
           flex-direction: column;
         }
 
-        @include respond-to-small {
-          gap: 0;
+        @include respond-to-medium {
+          gap: 32px;
         }
 
         &__texts {
@@ -978,8 +1008,8 @@ img {
           flex-direction: column;
           gap: 40px;
 
-          @include respond-to-small {
-            margin: 0 40px;
+          @include respond-to-medium {
+            gap: 32px;
           }
 
           &__text-block {
@@ -992,14 +1022,15 @@ img {
     }
 
     &__first-session {
-      margin-top: 136px;
+      text-align: center;
+      margin-top: 64px;
 
-      @include respond-to-medium {
-        margin-top: 80px;
+      @include respond-to-extra-large {
+        margin-top: 56px;
       }
 
-      @include respond-to-small {
-        margin: 80px 40px 0 40px;
+      @include respond-to-medium {
+        margin-top: 48px;
       }
 
       &__blocks {
@@ -1007,12 +1038,12 @@ img {
         flex-direction: row;
         gap: 80px;
 
-        @include respond-to-small {
-          gap: 32px;
-        }
-
         @include respond-to-large {
           flex-direction: column;
+        }
+
+        @include respond-to-medium {
+          gap: 32px;
         }
       }
     }
@@ -1021,19 +1052,19 @@ img {
       display: flex;
       gap: 104px;
       align-items: center;
-      margin-top: 136px;
+      margin-top: 64px;
+
+      @include respond-to-extra-large {
+        margin-top: 56px;
+      }
 
       @include respond-to-large {
         flex-direction: column;
       }
 
       @include respond-to-medium {
-        margin-top: 80px;
-      }
-
-      @include respond-to-small {
-        gap: 80px;
-        margin-top: 0;
+        margin-top: 48px;
+        gap: 32px;
       }
 
       &__content {
@@ -1042,7 +1073,7 @@ img {
           flex-direction: column;
 
           @include respond-to-small {
-            margin: 0 40px 0 40px;
+            margin: 0 24px 0 24px;
           }
 
           &__title {
@@ -1065,14 +1096,16 @@ img {
     }
 
     &__therapeutic-approaches {
-      margin-top: 136px;
+      text-align: center;
+      margin-top: 64px;
 
-      @include respond-to-medium {
-        margin-top: 80px;
+      @include respond-to-extra-large {
+        margin-top: 56px;
       }
 
-      @include respond-to-small {
-        margin: 80px 40px 0 40px;
+      @include respond-to-medium {
+        margin-top: 48px;
+        text-align: start;
       }
 
       &__blocks {
@@ -1083,26 +1116,37 @@ img {
     }
 
     &__troubles {
-      margin-top: 136px;
+      text-align: center;
+      margin-top: 64px;
 
-      @include respond-to-medium {
-        margin-top: 80px;
+      @include respond-to-extra-large {
+        margin-top: 56px;
       }
 
-      @include respond-to-small {
-        margin: 80px 40px 0 40px;
+      @include respond-to-medium {
+        margin-top: 48px;
+        text-align: start;
       }
     }
 
     &__conclusion {
-      margin-top: 80px;
+      margin-top: 64px;
 
-      @include respond-to-small {
-        margin: 80px 40px 0 40px;
+      @include respond-to-extra-large {
+        margin-top: 56px;
+      }
+
+      @include respond-to-medium {
+        margin-top: 48px;
       }
 
       &__paragraph {
-        margin: 0 0 80px 0;
+        text-align: center;
+        margin: 0 0 24px 0;
+
+        @include respond-to-medium {
+          margin: 0 0 16px 0;
+        }
       }
 
       &__button-container {
@@ -1115,7 +1159,7 @@ img {
 }
 
 .large-responsive-version {
-  margin-top: 56px;
+  margin-top: 24px;
 
   @include respond-to-extra-extra-large {
     display: none;
@@ -1128,25 +1172,22 @@ img {
   @include respond-to-extra-extra-large {
     display: flex;
     justify-content: center;
-    margin-top: 80px;
-  }
-
-  @include respond-to-medium {
     margin-top: 56px;
   }
 
-  @include respond-to-small {
-    margin-top: 40px;
+  @include respond-to-medium {
+    margin-top: 16px;
   }
 }
 
 .frequently-asked-questions {
-  margin-top: 136px;
-  padding: 80px 240px;
+  margin-top: 64px;
+  padding: 80px 120px;
   background-color: $light-green-color;
 
   @include respond-to-extra-large {
-    padding: 80px 104px;
+    margin-top: 56px;
+    padding: 32px 40px;
   }
 
   @include respond-to-large {
@@ -1154,11 +1195,8 @@ img {
   }
 
   @include respond-to-medium {
-    margin-top: 80px;
-  }
-
-  @include respond-to-small {
-    padding: 80px 40px;
+    margin-top: 48px;
+    padding: 32px 16px;
   }
 
   &__content-container {
@@ -1199,12 +1237,10 @@ img {
           transition:
             max-height 0.5s ease-in-out,
             opacity 0.5s ease-in-out;
-          font-weight: 400;
 
           &--page-version {
             margin-bottom: 5px;
             color: black;
-            font-weight: 400;
           }
         }
 
@@ -1227,22 +1263,14 @@ img {
   }
 
   &__page-content {
-    margin: 136px 240px;
-
-    @include respond-to-extra-extra-large {
-      margin: 136px 200px;
-    }
+    margin: 64px 104px;
 
     @include respond-to-extra-large {
-      margin: 136px 104px;
+      margin: 56px 40px;
     }
 
     @include respond-to-medium {
-      margin: 80px 56px;
-    }
-
-    @include respond-to-small {
-      margin: 80px 0;
+      margin: 48px 0;
     }
 
     &__paragraph {
@@ -1253,15 +1281,26 @@ img {
         text-align: left;
       }
 
-      @include respond-to-small {
-        margin: 40px 40px 0 40px;
+      @include respond-to-medium {
+        margin: 24px 16px 0 16px;
+        text-align: center;
       }
+
+      // @include respond-to-small {
+      //   margin: 40px 40px 0 40px;
+      // }
     }
 
     &__button-container {
       width: 100%;
       display: flex;
       justify-content: center;
+    }
+  }
+
+  &--page-version {
+    @include respond-to-medium {
+      margin: 0 24px;
     }
   }
 }
@@ -1299,7 +1338,6 @@ img {
 
         &__name {
           margin: 0;
-          font-weight: 500;
         }
       }
     }
@@ -1351,7 +1389,7 @@ img {
 
     @include respond-to-small {
       width: fit-content;
-      margin: 0 40px;
+      // margin: 0 24px;
     }
 
     &__card {
@@ -1376,7 +1414,6 @@ img {
 
         &__name {
           color: black;
-          font-weight: 500;
         }
 
         &__icon {
@@ -1439,22 +1476,14 @@ img {
 }
 
 .education-and-experience {
-  margin: 136px 240px 0 240px;
-
-  @include respond-to-extra-extra-large {
-    margin: 136px 200px 0 200px;
-  }
+  margin: 64px 104px;
 
   @include respond-to-extra-large {
-    margin: 136px 104px 0 104px;
-  }
-
-  @include respond-to-large {
-    margin: 80px 0 96px 0;
+    margin: 56px 40px;
   }
 
   @include respond-to-medium {
-    margin: 80px 0;
+    margin: 48px 16px 0 16px;
   }
 
   @include respond-to-small {
@@ -1469,18 +1498,14 @@ img {
   }
 
   &__page-version {
-    margin: 136px 240px;
-
-    @include respond-to-extra-extra-large {
-      margin: 136px 200px;
-    }
+    margin: 64px 104px;
 
     @include respond-to-extra-large {
-      margin: 136px 104px;
+      margin: 56px 40px;
     }
 
     @include respond-to-medium {
-      margin: 80px 0;
+      margin: 48px 0;
     }
 
     &__button-container {
@@ -1490,116 +1515,121 @@ img {
     }
   }
 
-  &__not-displayed {
-    @include respond-to-small {
-      display: none;
-    }
-  }
+  // &__not-displayed {
+  //   @include respond-to-small {
+  //     display: none;
+  //   }
+  // }
 }
 
-.education-container,
-.experience-container {
-  padding: 0;
-  margin: 0;
+// .education-container,
+// .experience-container {
+//   padding: 0;
+//   margin: 0;
 
-  &__list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 0;
-    margin: 0;
+//   &__list {
+//     list-style-type: none;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 16px;
+//     padding: 0;
+//     margin: 0;
 
-    &__item {
-      list-style-type: none;
-      margin-bottom: 16px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
+//     &__item {
+//       list-style-type: none;
+//       margin-bottom: 16px;
+//       display: flex;
+//       align-items: center;
+//       gap: 16px;
 
-      &__degree,
-      &__experience {
-        &__name {
-          font-weight: 500;
-          margin-bottom: 8px;
-        }
-      }
-    }
-  }
+//       &__degree,
+//       &__experience {
+//         &__name {
+//           font-weight: 400;
+//           margin-bottom: 8px;
+//         }
+//       }
+//     }
+//   }
 
-  &__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 104px;
-  }
-}
+//   &__content {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     gap: 104px;
+//   }
+// }
 
-.experience-container {
-  &__content {
-    margin-bottom: 136px;
+// .experience-container {
+//   @include respond-to-medium {
+//     margin: 0 16px;
+//   }
 
-    @include respond-to-large {
-      flex-direction: column-reverse;
-      gap: 56px;
-    }
+//   &__content {
+//     margin-bottom: 24px;
 
-    @include respond-to-medium {
-      margin-bottom: 80px;
-      gap: 80px;
-    }
+//     @include respond-to-large {
+//       flex-direction: column-reverse;
+//       gap: 56px;
+//     }
 
-    @include respond-to-small {
-      gap: 0;
-    }
+//     @include respond-to-medium {
+//       margin-bottom: 32px;
+//       gap: 32px;
+//     }
 
-    &__texts {
-      @include respond-to-large {
-        margin: 0 80px;
-      }
+//     @include respond-to-small {
+//       gap: 0;
+//     }
 
-      @include respond-to-medium {
-        margin: 0 56px;
-      }
+//     &__texts {
+//       @include respond-to-large {
+//         margin: 0 80px;
+//       }
 
-      @include respond-to-small {
-        margin: 0 40px;
-      }
-    }
-  }
-}
+//       @include respond-to-medium {
+//         margin: 0;
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
 
-.education-container {
-  @include respond-to-small {
-    margin-bottom: 80px;
-  }
+// .education-container {
+//   @include respond-to-medium {
+//     margin: 0 16px;
+//   }
 
-  &__content {
-    margin-bottom: 136px;
+//   &__content {
+//     margin-bottom: 64px;
 
-    @include respond-to-large {
-      flex-direction: column;
-      gap: 56px;
-    }
+//     @include respond-to-extra-large {
+//       margin-bottom: 56px;
+//     }
 
-    @include respond-to-medium {
-      margin-bottom: 80px;
-      gap: 80px;
-    }
+//     @include respond-to-large {
+//       flex-direction: column;
+//       gap: 56px;
+//     }
 
-    @include respond-to-small {
-      gap: 0;
-      margin-bottom: 0;
-    }
+//     @include respond-to-medium {
+//       margin: 0;
+//       gap: 32px;
+//     }
 
-    &__texts {
-      @include respond-to-small {
-        gap: 56px;
-        margin: 0 40px 40px 40px;
-      }
-    }
-  }
-}
+//     @include respond-to-small {
+//       gap: 0;
+//       margin-bottom: 0;
+//     }
+
+//     &__texts {
+//       @include respond-to-small {
+//         gap: 56px;
+//         margin: 0 40px 40px 40px;
+//       }
+//     }
+//   }
+// }
 
 .fa-xmark {
   align-self: flex-end;
@@ -1612,4 +1642,14 @@ img {
   top: 0;
   right: 0;
   font-size: 1.5rem;
+}
+
+.no-title {
+  display: none;
+}
+
+a {
+  &:hover {
+    font-weight: 500;
+  }
 }
