@@ -1,25 +1,34 @@
 @use '../../assets/styles/Colors.scss' as colors;
+@use '../../assets/styles/mixins/breakpoints.scss' as breakpoints;
 
 .secondary-button {
-  display: flex;
+  border: 1px solid colors.$black-color;
+  color: colors.$black-color;
+  padding: 16px 12px;
+  font-weight: var(--weight-medium);
   width: fit-content;
-  align-items: center;
-  gap: 0.5rem;
-  font-weight: 500;
-  text-decoration: none;
-  background-color: white;
-
-  color: colors.$light-brown-color;
-  padding: 12px 24px;
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
-  border: 1px solid colors.$light-brown-color;
-
-  &--center-version {
-    margin: auto;
-  }
-
-  &--margin-top-version {
-    margin-top: 32px;
-  }
 }
+
+// .secondary-button {
+//   display: flex;
+//   width: fit-content;
+//   align-items: center;
+//   gap: 0.5rem;
+//   font-weight: 500;
+//   text-decoration: none;
+//   background-color: white;
+
+//   // color: colors.$light-brown-color;
+//   padding: 12px 24px;
+//   border-radius: 0.5rem;
+//   transition: all 0.3s ease;
+//   // border: 1px solid colors.$light-brown-color;
+
+//   &--center-version {
+//     margin: auto;
+//   }
+
+//   &--margin-top-version {
+//     margin-top: 32px;
+//   }
+// }

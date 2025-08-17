@@ -1,19 +1,47 @@
 @use '../../assets/styles/Colors.scss' as colors;
 
 .approach {
-  background-color: white;
-  border-radius: 8px;
-  padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  height: 100%;
+  // background-color: white;
+
+  // box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  // transition:
+  //   transform 0.3s ease,
+  //   box-shadow 0.3s ease;
+  // height: 100%;
+  height: -webkit-fill-available;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  // align-items: stretch;
+  gap: 16px;
+
+  &__title-block {
+    // flex: 1;
+    // flex: 0 0 auto; /*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+  }
+
+  &__title {
+    background-color: colors.$light-green-color;
+    padding: 24px;
+    // height: -webkit-fill-available;
+  }
+
+  &__main-content {
+    background-color: colors.$light-green-color;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: -webkit-fill-available;
+  }
 
   &__icon {
-    margin-bottom: 16px;
-    color: #5b8371;
+    // margin-bottom: 16px;
+    // color: #5b8371;
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -21,9 +49,14 @@
   }
 
   &__content {
+    // background-color: colors.$light-green-color;
+    padding: 24px;
+    flex: 1;
+
     p {
-      margin: 0 0 16px 0;
-      line-height: 1.7;
+      // margin: 0 0 16px 0;
+      margin: 0;
+      // line-height: 1.7;
 
       &:last-child {
         // margin-top: auto;

@@ -5,7 +5,13 @@ import { Brain, Heart, Sparkles } from 'lucide-react';
 import HeroBanner from '../../components/HeroBanner/HeroBanner';
 import Services from '../../components/Services/Services';
 import TherapeuticApproaches from '../../components/TherapeuticApproaches/TherapeuticApproaches';
+import ConsultationsOnPage from '../../components/ConsultationsOnPage/ConsultationsOnPage';
+import ApproachesSection from '../../components/ApproachesSection/ApproachesSection';
+import Steps from '../../components/Steps/Steps';
 import SessionSteps from '../../components/SessionSteps/SessionSteps';
+import DurationAndPrices from '../../components/DurationAndPrices/DurationAndPrices';
+import FrequentlyAskedQuestions from '../../components/FrequentlyAskedQuestions/FrequentlyAskedQuestions';
+
 import LastSectionWithCTA from '../../components/LastSectionWithCTA/LastSectionWithCTA';
 
 // Images
@@ -65,11 +71,21 @@ function ConsultationsPage() {
         imageSrc={nature}
       />
 
-      <Services paddingVersion="all-padding-version" />
+      <ConsultationsOnPage />
 
-      <TherapeuticApproaches approaches={therapeuticApproaches} />
+      <ApproachesSection />
 
-      <SessionSteps sessions={sessions} />
+      {/* <Steps /> */}
+
+      {/* <DurationAndPrices /> */}
+
+      {/* <FrequentlyAskedQuestions /> */}
+
+      {/* <Services paddingVersion="all-padding-version" /> */}
+
+      {/* <TherapeuticApproaches approaches={therapeuticApproaches} /> */}
+
+      {/* <SessionSteps sessions={sessions} /> */}
 
       <LastSectionWithCTA
         title="Quel que soit le trouble que vous rencontrez, vous n’êtes pas seul."

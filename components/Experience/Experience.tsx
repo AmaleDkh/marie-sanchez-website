@@ -32,10 +32,10 @@ function Experience({
   imagePosition = 'right',
 }: ExperienceProps) {
   return (
-    <div className="experience-container">
+    <div className="experience-container  margin-section">
       <SectionTitle
         title="Mon expérience"
-        colorVersion="dark-green"
+        // colorVersion="dark-green"
         textAlignVersion="center"
       />
       <div
@@ -51,7 +51,8 @@ function Experience({
             <div key={index} className="experience__item">
               {/* <div className="experience__period">{item.year}</div> */}
               <div className="experience__content">
-                <h3>{item.title}</h3>
+                <p className="experience__title">{item.title}</p>
+                {/* <h3>{item.title}</h3> */}
                 <p className="experience__location">{item.location}</p>
                 {/* <p className="experience__description">{item.description}</p> */}
               </div>

@@ -2,38 +2,46 @@
 @use '../../assets/styles/Colors.scss' as colors;
 
 .button {
-  display: flex;
+  background-color: colors.$light-green-color;
+  color: colors.$black-color;
+  padding: 16px 12px;
+  font-weight: var(--weight-medium);
   width: fit-content;
-  align-items: center;
-  gap: 0.5rem;
-  font-weight: 500;
-  text-decoration: none;
-  background-color: colors.$light-brown-color;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
-  cursor: pointer;
-
-  &--center-version {
-    margin: auto;
-  }
 }
 
-.margin-top-version {
-  margin-top: 56px;
+// .button {
+//   display: flex;
+//   width: fit-content;
+//   align-items: center;
+//   gap: 0.5rem;
+//   font-weight: 500;
+//   text-decoration: none;
+//   // background-color: colors.$light-brown-color;
+//   color: white;
+//   padding: 12px 24px;
+//   border-radius: 0.5rem;
+//   transition: all 0.3s ease;
+//   cursor: pointer;
 
-  @include breakpoints.respond-to-medium {
-    margin-top: 32px;
-  }
-}
+//   &--center-version {
+//     margin: auto;
+//   }
+// }
 
-.button-mobile-version {
-  @include breakpoints.respond-to-small {
-    display: none;
-  }
-}
+// .margin-top-version {
+//   margin-top: 56px;
 
-.button-with-no-margin {
-  margin: 0;
-}
+//   @include breakpoints.respond-to-medium {
+//     margin-top: 32px;
+//   }
+// }
+
+// .button-mobile-version {
+//   @include breakpoints.respond-to-small {
+//     display: none;
+//   }
+// }
+
+// .button-with-no-margin {
+//   margin: 0;
+// }

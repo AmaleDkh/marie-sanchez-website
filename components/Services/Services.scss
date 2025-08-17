@@ -3,40 +3,43 @@
 
 .services-section {
   // background-color: colors.$medium-green-color;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 
   &--all-padding-version {
-    padding: 4rem 104px;
+    padding: 80px 104px;
 
     @include breakpoints.respond-to-extra-large {
-      padding: 4rem 40px;
+      padding: 64px 40px;
     }
 
     @include breakpoints.respond-to-medium {
-      padding: 2rem 16px;
+      padding: 48px 16px;
     }
   }
 
   &--padding-top-version {
-    padding: 4rem 104px 0 104px;
+    padding: 80px 104px 0 104px;
 
     @include breakpoints.respond-to-extra-large {
-      padding: 4rem 40px 0 40px;
+      padding: 64px 40px 0 40px;
     }
 
     @include breakpoints.respond-to-medium {
-      padding: 2rem 16px 0 16px;
+      padding: 48px 16px 0 16px;
     }
   }
 
   &--padding-bottom-version {
-    padding: 0 104px 4rem 104px;
+    padding: 0 104px 80px 104px;
 
     @include breakpoints.respond-to-extra-large {
-      padding: 0 40px 4rem 40px;
+      padding: 0 40px 64px 40px;
     }
 
     @include breakpoints.respond-to-medium {
-      padding: 0 16px 2rem 16px;
+      padding: 0 16px 48px 16px;
     }
   }
 
@@ -57,9 +60,10 @@
 
 .service {
   // background-color: white;
-  background-color: colors.$medium-green-color;
-  padding: 32px;
-  border-radius: 8px;
+  // background-color: colors.$medium-green-color;
+  background-color: colors.$light-green-color;
+  padding: 40px;
+  // border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition:
     transform 0.3s ease,
@@ -67,22 +71,30 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  color: colors.$beige-color;
+  justify-content: space-between;
+  // text-align: center;
+  gap: 32px;
+  // color: colors.$beige-color;
 
-  &__title {
-    color: colors.$beige-color;
-  }
+  // &__title {
+  //   color: colors.$beige-color;
+  // }
 
-  &__icon {
-    // color: colors.$green-color;
-    // color: colors.$beige-color;
-    margin-bottom: 16px;
-  }
+  // &__icon {
+  //   // color: colors.$green-color;
+  //   // color: colors.$beige-color;
+  //   margin-bottom: 16px;
+  // }
 
   &__description {
-    line-height: 1.6;
+    // line-height: 1.6;
     margin: 0;
     flex-grow: 1;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
 }

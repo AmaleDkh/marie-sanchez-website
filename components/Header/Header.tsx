@@ -45,7 +45,7 @@ function Header() {
 
   return (
     <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
-      <div className="container">
+      <div className="header-container">
         <div className="header__content">
           <div
             className={`header__logo ${isMenuOpen ? 'header__logo--hidden' : ''}`}
@@ -113,7 +113,7 @@ function Header() {
                     Tarifs
                   </Link>
                 </li>
-                <li className="header__nav-item">
+                {/* <li className="header__nav-item">
                   <Link
                     href="/frequently-asked-questions"
                     className={
@@ -125,7 +125,7 @@ function Header() {
                   >
                     Questions
                   </Link>
-                </li>
+                </li> */}
                 <li className="header__nav-item">
                   <Link
                     href="/about"

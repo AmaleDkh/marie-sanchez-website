@@ -1,8 +1,12 @@
 @use '../../assets/styles/Colors.scss' as colors;
 
 .section-title {
-  &--beige {
-    color: colors.$beige-color;
+  // &--beige {
+  //   color: colors.$beige-color;
+  // }
+
+  &--white {
+    color: colors.$white-color;
   }
 
   &--dark-green {

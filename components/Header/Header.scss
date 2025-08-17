@@ -3,57 +3,58 @@
 @use '../../assets/styles/mixins/breakpoints.scss' as breakpoints;
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: transparent;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // background-color: transparent;
   z-index: 1000;
-  transition:
-    background-color 0.3s ease,
-    box-shadow 0.3s ease;
-  padding: 2rem 104px;
+  // transition:
+  //   background-color 0.3s ease,
+  //   box-shadow 0.3s ease;
 
-  @include breakpoints.respond-to-large {
-    padding: 2rem 40px;
+  margin: 32px 104px;
+
+  @include breakpoints.respond-to-extra-large {
+    margin: 32px 40px;
   }
 
   @include breakpoints.respond-to-medium {
-    padding: 2rem 16px;
+    margin: 32px 16px;
   }
 
   &--scrolled {
-    background-color: rgba(colors.$beige-color, 0.95);
+    // background-color: rgba(colors.$beige-color, 0.95);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
     .header__logo-link {
       color: colors.$dark-green-color;
 
-      &:hover {
-        color: colors.$green-color;
-      }
+      // &:hover {
+      //   color: colors.$green-color;
+      // }
     }
 
-    .header__nav-link {
-      color: colors.$dark-green-color;
+    // .header__nav-link {
+    //   color: colors.$dark-green-color;
 
-      &:hover {
-        color: colors.$green-color;
-      }
+    //   &:hover {
+    //     color: colors.$green-color;
+    //   }
 
-      &--active {
-        color: colors.$green-color;
-      }
-    }
+    //   &--active {
+    //     color: colors.$green-color;
+    //   }
+    // }
 
-    .header__appointment-button {
-      background-color: colors.$dark-green-color;
-      color: colors.$beige-color;
+    // .header__appointment-button {
+    //   // background-color: colors.$dark-green-color;
+    //   // color: colors.$beige-color;
 
-      &:hover {
-        background-color: colors.$green-color;
-      }
-    }
+    //   &:hover {
+    //     background-color: colors.$green-color;
+    //   }
+    // }
   }
 
   &__content {
@@ -78,14 +79,14 @@
     &-link {
       font-family: fonts.$font-primary;
       font-size: 24px;
-      color: colors.$beige-color;
+      // color: colors.$beige-color;
       display: flex;
       flex-direction: column;
       text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
-      &:hover {
-        color: rgba(colors.$beige-color, 0.9);
-      }
+      // &:hover {
+      //   color: rgba(colors.$beige-color, 0.9);
+      // }
     }
 
     &-subtitle {
@@ -97,7 +98,7 @@
     display: none;
     background: none;
     border: none;
-    color: colors.$beige-color;
+    // color: colors.$beige-color;
     cursor: pointer;
     z-index: 1002;
     padding: 4px;
@@ -123,9 +124,10 @@
   }
 
   &__nav-wrapper {
+    z-index: 1000;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 40px;
 
     @include breakpoints.respond-to-extra-large {
       position: fixed;
@@ -133,10 +135,10 @@
       right: -100%;
       width: 100%;
       height: 100vh;
-      background-color: colors.$beige-color;
+      background-color: colors.$white-color;
       flex-direction: column;
       justify-content: center;
-      gap: 32px;
+      // gap: 32px;
       transition: right 0.3s ease;
       padding: 32px;
 
@@ -153,34 +155,36 @@
   }
 
   &__nav-list {
+    margin: 0;
     display: flex;
+    gap: 32px;
     list-style: none;
     padding: 0;
 
     @include breakpoints.respond-to-extra-large {
       flex-direction: column;
       align-items: center;
-      gap: 24px;
+      // gap: 24px;
     }
   }
 
   &__nav-item {
-    margin-left: 24px;
+    // margin-left: 24px;
 
     @include breakpoints.respond-to-medium {
-      margin-left: 0;
+      // margin-left: 0;
       width: 100%;
       text-align: center;
     }
   }
 
   &__nav-link {
-    color: colors.$beige-color;
+    // color: colors.$beige-color;
     text-decoration: none;
     position: relative;
-    padding: 4px 0;
+    // padding: 4px 0;
     transition: color 0.2s ease;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    // text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
     &:after {
       content: '';
@@ -189,12 +193,12 @@
       left: 0;
       width: 0;
       height: 2px;
-      background-color: colors.$beige-color;
+      // background-color: colors.$beige-color;
       transition: width 0.2s ease;
     }
 
     &--active {
-      color: rgba(colors.$beige-color, 0.9);
+      // color: rgba(colors.$beige-color, 0.9);
 
       &:after {
         width: 100%;
@@ -203,22 +207,32 @@
 
     @include breakpoints.respond-to-extra-large {
       display: block;
-      padding: 8px;
-      font-size: 1.2rem;
-      color: colors.$dark-green-color;
+      // padding: 8px;
+      // font-size: 1.2rem;
+      // color: colors.$dark-green-color;
       text-shadow: none;
 
       &:after {
         display: none;
       }
 
-      &:hover {
-        color: colors.$green-color;
-      }
+      // &:hover {
+      //   color: colors.$green-color;
+      // }
 
-      &--active {
-        color: colors.$green-color;
-      }
+      // &--active {
+      //   color: colors.$green-color;
+      // }
     }
   }
+}
+
+.header-container {
+  width: -webkit-fill-available;
+  // display: flex;
+  // justify-content: space-between;
+}
+
+.lucide-menu {
+  color: colors.$dark-green-color;
 }

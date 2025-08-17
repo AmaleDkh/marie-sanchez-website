@@ -1,31 +1,36 @@
 @use '../../assets/styles/mixins/breakpoints.scss' as breakpoints;
+@use '../../assets/styles/Colors.scss' as colors;
 
 .cta {
+  height: 800px;
   position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+
   overflow: hidden;
-  padding: 4rem 104px;
 
   @include breakpoints.respond-to-extra-large {
-    padding: 4rem 40px;
+    height: 700px;
   }
 
-  @include breakpoints.respond-to-medium {
-    padding: 2rem 16px;
+  @include breakpoints.respond-to-large {
+    height: 600px;
   }
 
-  &__image {
+  &__media {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
   }
 
-  &__background {
+  &__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 1;
   }
 
   &__overlay {
@@ -34,28 +39,190 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      rgba(43, 104, 96, 0.85),
-      rgba(43, 104, 96, 0.95)
-    );
+    // background: linear-gradient(rgba(43, 104, 96, 0.4), rgba(43, 104, 96, 0.6));
   }
 
   &__content {
+    background-color: colors.$white-color;
     position: relative;
     z-index: 1;
-    max-width: 800px;
-    margin: 0 auto;
     text-align: center;
-    color: white;
-  }
 
-  &__description {
-    font-size: 1.2rem;
-    margin-bottom: 32px;
-    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-width: 800px;
 
-    @media (max-width: 767px) {
-      font-size: 1.1rem;
+    padding: 40px;
+
+    margin: 0 auto;
+
+    // margin: 0 104px;
+
+    // @include breakpoints.respond-to-extra-large {
+    //   margin: 0 40px;
+    // }
+
+    @include breakpoints.respond-to-large {
+      margin: 0 40px;
+      width: 100%;
+    }
+
+    @include breakpoints.respond-to-medium {
+      margin: 0 16px;
+    }
+
+    &__first-information {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
     }
   }
+
+  &__title {
+    // margin-bottom: 24px;
+    // color: colors.$beige-color;
+    // text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: colors.$black-color;
+  }
 }
+
+.container {
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: center;
+}
+
+// .cta {
+//   position: relative;
+//   // overflow: hidden;
+//   // padding: 4rem 104px;
+
+//   // @include breakpoints.respond-to-extra-large {
+//   //   padding: 4rem 40px;
+//   // }
+
+//   // @include breakpoints.respond-to-medium {
+//   //   padding: 2rem 16px;
+//   // }
+
+//   &__image {
+//     // position: absolute;
+//     // position: relative;
+//     // top: 0;
+//     // left: 0;
+//     width: 100%;
+//     // height: 100%;
+//     height: 600px;
+//     z-index: 0;
+//   }
+
+//   &__background {
+//     width: 100%;
+//     // height: 100%;
+//     height: 800px;
+//     object-fit: cover;
+
+//     @include breakpoints.respond-to-extra-large {
+//       // width: 500px;
+//       height: 700px;
+//     }
+
+//     @include breakpoints.respond-to-large {
+//       // width: 100%;
+//       height: 600px;
+//     }
+//   }
+
+//   // &__overlay {
+//   //   position: absolute;
+//   //   top: 0;
+//   //   left: 0;
+//   //   width: 100%;
+//   //   height: 100%;
+//   //   background: linear-gradient(
+//   //     rgba(43, 104, 96, 0.85),
+//   //     rgba(43, 104, 96, 0.95)
+//   //   );
+//   // }
+
+//   &__content {
+//     max-width: 800px;
+
+//     margin: 0 auto;
+
+//     padding: 40px;
+
+//     // margin: auto 88px;
+
+//     // @include breakpoints.respond-to-extra-large {
+//     //   margin: auto 64px;
+//     // }
+
+//     // @include breakpoints.respond-to-medium {
+//     //   margin: auto 48px;
+//     // }
+
+//     @include breakpoints.respond-to-large {
+//       margin: 0 40px;
+//       width: 100%;
+//     }
+
+//     @include breakpoints.respond-to-medium {
+//       margin: 0 16px;
+//     }
+
+//     // margin: 0 104px;
+
+//     // @include breakpoints.respond-to-extra-large {
+//     //   margin: 0 40px;
+//     // }
+
+//     // @include breakpoints.respond-to-medium {
+//     //   margin: 0 16px;
+//     // }
+
+//     background-color: colors.$white-color;
+//     position: relative;
+//     z-index: 1;
+//     // max-width: 800px;
+//     // margin: 0 auto;
+//     text-align: center;
+//     // color: white;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     gap: 32px;
+//     position: absolute;
+//     // top: 0;
+//     // right: auto;
+//     // left: 0;
+//     // top: 50%;
+//     // transform: translateY(-50%);
+
+//     &__text {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 24px;
+//     }
+//   }
+
+//   &__description {
+//     margin: 0;
+//     // line-height: 1.6;
+//   }
+// }
+
+// .cta-container {
+//   width: -webkit-fill-available;
+//   display: flex;
+//   justify-content: center;
+
+//   position: absolute;
+//   // top: 0;
+//   // right: auto;
+//   left: 0;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }

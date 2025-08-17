@@ -27,19 +27,19 @@ function Services({ paddingVersion }: ServicesnProps) {
     {
       title: 'Thérapie individuelle',
       description:
-        'Accompagnement personnalisé basé sur des approches thérapeutiques validées scientifiquement (TCC, psychodynamique, systémique) pour vous aider à surmonter vos difficultés.',
+        'Un espace d’écoute pour vous aider à dépasser ce qui vous freine et retrouver équilibre au quotidien.',
       icon: <Heart size={32} />,
     },
     {
       title: 'Bilan psychologique',
       description:
-        'Évaluation complète incluant tests cognitifs, de personnalité et neuropsychologiques pour mieux comprendre votre fonctionnement et vos besoins.',
+        'Un temps pour faire le point sur votre situation et poser des bases claires pour la suite.',
       icon: <Scale size={32} />,
     },
     {
       title: 'Prise en charge des troubles',
       description:
-        'Traitement spécialisé des troubles anxieux, dépressifs, du stress post-traumatique (PTSD), et des addictions.',
+        'Un temps pour faire le point sur votre situation et poser des bases claires pour la suite.',
       icon: <Stethoscope size={32} />,
     },
   ];
@@ -49,21 +49,25 @@ function Services({ paddingVersion }: ServicesnProps) {
       <SectionTitle
         title="Des consultations adaptées à vos besoins"
         // colorVersion="beige"
-        colorVersion="dark-green"
-        textAlignVersion="center"
+        // colorVersion="dark-green"
+        // textAlignVersion="center"
       />
       <div className="services">
         {classicServices.map((service, index) => (
           <div key={index} className="service">
-            {service.icon && (
-              <div className="service__icon">{service.icon}</div>
-            )}
-            <h3 className="service__title">{service.title}</h3>
-            <p className="service__description">{service.description}</p>
+            <div className="service__text">
+              {service.icon && (
+                <div className="service__icon">{service.icon}</div>
+              )}
+              <h3 className="service__title">{service.title}</h3>
+              <p className="service__description">{service.description}</p>
+            </div>
+
+            <SecondaryButton text="Découvrir" link="/consultations" />
           </div>
         ))}
       </div>
-
+      {/* 
       {pathname !== '/consultations/' && isButton && (
         <SecondaryButton
           link="/consultations"
@@ -71,7 +75,7 @@ function Services({ paddingVersion }: ServicesnProps) {
           centerVersion="secondary-button--center-version"
           marginTopVersion="margin-top-version"
         />
-      )}
+      )} */}
     </div>
   );
 }

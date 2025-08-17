@@ -2,8 +2,10 @@
 import HeroBanner from '../../components/HeroBanner/HeroBanner';
 import SessionSteps from '../../components/SessionSteps/SessionSteps';
 import PricingTable from '../../components/PricingTable/PricingTable';
-import PaymentTerms from '../../components/PaymentTerms/PaymentTerms';
+// import PaymentTerms from '../../components/PaymentTerms/PaymentTerms';
 import Services from '../../components/Services/Services';
+import DurationAndPrices from '../../components/DurationAndPrices/DurationAndPrices';
+import FrequentlyAskedQuestions from '../../components/FrequentlyAskedQuestions/FrequentlyAskedQuestions';
 import LastSectionWithCTA from '../../components/LastSectionWithCTA/LastSectionWithCTA';
 
 // Images
@@ -58,20 +60,31 @@ function PracticalInformationPage() {
         imageSrc={Nature2}
       />
 
-      <PricingTable items={pricingItems} />
+      <DurationAndPrices />
 
-      <SessionSteps sessions={sessions} />
-
-      <PaymentTerms />
-
-      <Services paddingVersion="all-padding-version" />
+      <FrequentlyAskedQuestions />
 
       <LastSectionWithCTA
-        title="Prêt à commencer votre chemin vers le mieux-être ?"
+        title="Prenez un moment pour vous et commencez à avancer."
         description="Prenez rendez-vous pour une première consultation et découvrez comment la thérapie peut vous aider à retrouver l'équilibre."
         imageSrc={plant2}
         imageAlt=""
       />
+
+      {/* <PricingTable items={pricingItems} /> */}
+
+      {/* <SessionSteps sessions={sessions} /> */}
+
+      {/* <PaymentTerms /> */}
+
+      {/* <Services paddingVersion="all-padding-version" /> */}
+
+      {/* <LastSectionWithCTA
+        title="Prêt à commencer votre chemin vers le mieux-être ?"
+        description="Prenez rendez-vous pour une première consultation et découvrez comment la thérapie peut vous aider à retrouver l'équilibre."
+        imageSrc={plant2}
+        imageAlt=""
+      /> */}
     </>
   );
 }

@@ -26,12 +26,8 @@ function FrequentlyAskedQuestions({}) {
   };
 
   return (
-    <div className="faq-container">
-      <SectionTitle
-        title="Questions fréquentes"
-        textAlignVersion="center"
-        colorVersion="dark-green"
-      />
+    <div className="faq-container margin-section">
+      <SectionTitle title="Questions fréquentes" textAlignVersion="center" />
 
       <div className="faq">
         {FrequentlyAskedQuestionsData.map((item, index) => (
@@ -60,6 +56,69 @@ function FrequentlyAskedQuestions({}) {
 }
 
 export default FrequentlyAskedQuestions;
+
+// 'use client';
+
+// // React elements
+// import { useState } from 'react';
+// import { ChevronDown } from 'lucide-react';
+
+// // Component
+// import SectionTitle from '../SectionTitle/SectionTitle';
+
+// // Style
+// import './FrequentlyAskedQuestions.scss';
+
+// // Data
+// import FrequentlyAskedQuestionsData from '../../assets/datas/frequently-asked-questions.json';
+
+// export interface FAQItem {
+//   question: string;
+//   answer: string;
+// }
+
+// function FrequentlyAskedQuestions({}) {
+//   const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+//   const toggleItem = (index: number) => {
+//     setOpenIndex(openIndex === index ? null : index);
+//   };
+
+//   return (
+//     <div className="faq-container">
+//       <SectionTitle
+//         title="Questions fréquentes"
+//         textAlignVersion="center"
+//         colorVersion="dark-green"
+//       />
+
+//       <div className="faq">
+//         {FrequentlyAskedQuestionsData.map((item, index) => (
+//           <div
+//             key={index}
+//             className={`faq-item ${openIndex === index ? 'faq-item--open' : ''}`}
+//             onClick={() => toggleItem(index)}
+//           >
+//             <div className="faq-item__header">
+//               <p className="faq-item__question">{item.question}</p>
+//               <ChevronDown
+//                 className={`faq-item__icon ${openIndex === index ? 'faq-item__icon--open' : ''}`}
+//                 size={24}
+//               />
+//             </div>
+//             <div
+//               className={`faq-item__answer-wrapper ${openIndex === index ? 'faq-item__answer-wrapper--open' : ''}`}
+//             >
+//               <p className="faq-item__answer">{item.answer}</p>
+//             </div>
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default FrequentlyAskedQuestions;
 
 // import React from 'react';
 // import SectionTitle from '../SectionTitle/SectionTitle';

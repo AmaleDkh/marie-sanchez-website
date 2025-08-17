@@ -35,12 +35,15 @@ function HeroBanner({
           width={100}
           height={100}
         />
-        <div className="hero-banner__overlay"></div>
+        {/* <div className="hero-banner__overlay"></div> */}
       </div>
       <div className="container">
         <div className="hero-banner__content">
-          <h1 className="hero-banner__title">{title}</h1>
-          {subtitle && <p className="hero-banner__subtitle">{subtitle}</p>}
+          <div className="hero-banner__content__first-information">
+            <h1 className="hero-banner__title">{title}</h1>
+            {subtitle && <p className="hero-banner__subtitle">{subtitle}</p>}
+          </div>
+
           {hasButton && (
             <div className="hero-banner__buttons">
               <PrimaryButton
@@ -48,10 +51,10 @@ function HeroBanner({
                 text="Prendre rendez-vous"
               />
 
-              <SecondaryButton
+              {/* <SecondaryButton
                 link="/consultations"
                 label="Découvrir les consultations"
-              />
+              /> */}
             </div>
           )}
         </div>

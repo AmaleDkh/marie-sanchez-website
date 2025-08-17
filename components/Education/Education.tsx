@@ -27,10 +27,10 @@ interface EducationProps {
 
 function Education({ image, imagePosition = 'left' }: EducationProps) {
   return (
-    <div className="education-container">
+    <div className="education-container margin-section">
       <SectionTitle
         title="Mes diplômes"
-        colorVersion="dark-green"
+        // colorVersion="dark-green"
         textAlignVersion="center"
       />
       <div
@@ -46,7 +46,8 @@ function Education({ image, imagePosition = 'left' }: EducationProps) {
             <div key={index} className="education__item">
               {/* <div className="education__date">{item.year}</div> */}
               <div className="education__content">
-                <h3>{item.degree}</h3>
+                {/* <h3>{item.degree}</h3> */}
+                <p className="education__degree">{item.degree}</p>
                 <p className="education__institution">{item.institution}</p>
                 {/* <p className="education__description">{item.description}</p> */}
               </div>
