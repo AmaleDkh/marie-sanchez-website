@@ -28,6 +28,8 @@ function ConsultationsOnPage() {
 
   return (
     <section className="consultations-on-page only-top-margin-section">
+
+      <div className="consultations-on-page__container">
       <h2 className="consultations-on-page__title">
         Des consultations adaptées à vos besoins
       </h2>
@@ -42,9 +44,7 @@ function ConsultationsOnPage() {
               <p className="consultations-on-page__service-description">
                 {service.description}
               </p>
-            </div>
 
-            <div className="consultations-on-page__service-benefit">
               <p className="consultations-on-page__service-benefit-text">
                 {service.benefit}
               </p>
@@ -52,6 +52,7 @@ function ConsultationsOnPage() {
           </div>
         ))}
       </div>
+      </div>    
     </section>
   );
 }

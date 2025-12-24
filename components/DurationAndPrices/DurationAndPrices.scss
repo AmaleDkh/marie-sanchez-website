@@ -5,13 +5,21 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center;
+  // align-items: center;
   gap: 24px;
   // padding: 0 0 120px;
   background-color: colors.$dark-green-color;
 
   &__title {
     color: colors.$white-color;
+  }
+
+  &__container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 }
 
@@ -29,8 +37,8 @@
 .duration-and-prices__pricing-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 24px;
+  // align-items: center;
+  gap: 16px;
   // padding: 120px 152px 180px;
   width: 100%;
   // background-color: colors.$dark-green-color;
@@ -42,7 +50,7 @@
   // align-items: flex-end;
   justify-content: center;
   // gap: 80px;
-  gap: 24px;
+  gap: 16px;
   width: 100%;
 
   // @include breakpoints.respond-to-medium {
@@ -55,7 +63,7 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
   padding: 40px;
   flex: 1;
   background-color: #fffbf7;
@@ -64,6 +72,8 @@
   box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+   
 }
 
 .duration-and-prices__card-content {
@@ -109,13 +119,9 @@
   align-items: flex-start;
   justify-content: center;
   gap: 16px;
-  // gap: 40px;
   padding: 40px;
   background-color: colors.$white-color;
-  // border: 1px solid #b0bcae;
-
-  // margin-top: 24px;
-  // margin: 0;
+  width: fit-content;
 }
 
 .duration-and-prices__payment-title {
@@ -186,31 +192,29 @@
 // }
 
 @media (max-width: 992px) {
-  // .duration-and-prices__title {
-  //   font-size: 40px;
-  //   letter-spacing: -1.2px;
-  // }
-
-  // .duration-and-prices__pricing-container {
-  //   padding: 64px 32px 120px;
-  //   margin: 0 -32px;
-  // }
+  
 
   .duration-and-prices__pricing-cards {
     flex-direction: column;
     // align-items: center;
-    gap: 32px;
+    // gap: 32px;
+  }
+
+  .duration-and-prices__container {
+    width: 100%;
   }
 
   .duration-and-prices__pricing-card {
     width: 100%;
     // max-width: 400px;
     height: -webkit-fill-available;
+    padding: 16px;
   }
 
   .duration-and-prices__payment-info {
     width: 100%;
     // max-width: 600px;
+    padding: 16px;
   }
 }
 

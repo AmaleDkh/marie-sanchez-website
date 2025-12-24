@@ -74,19 +74,7 @@ function ConsultationsPage() {
       <ConsultationsOnPage />
 
       <ApproachesSection />
-
-      {/* <Steps /> */}
-
-      {/* <DurationAndPrices /> */}
-
-      {/* <FrequentlyAskedQuestions /> */}
-
-      {/* <Services paddingVersion="all-padding-version" /> */}
-
-      {/* <TherapeuticApproaches approaches={therapeuticApproaches} /> */}
-
-      {/* <SessionSteps sessions={sessions} /> */}
-
+      
       <LastSectionWithCTA
         title="Quel que soit le trouble que vous rencontrez, vous n’êtes pas seul."
         description="Ensemble, nous trouverons des solutions adaptées pour vous

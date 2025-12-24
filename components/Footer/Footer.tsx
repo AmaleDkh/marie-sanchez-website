@@ -16,39 +16,62 @@ function Footer() {
     },
   ];
 
-  const navigationLinks = ['Consultations', 'Tarifs', 'À propos'];
+  // const navigationLinks = ['Consultations', 'Tarifs', 'À propos'];
+
+  const navigationLinks = [
+    {
+      name: 'Consultations',
+      link: '/consultations',
+    },
+    {
+      name: 'Tarifs',
+      link: '/practical-information',
+    },
+    {
+      name: 'À propos',
+      link: '/about',
+    },
+    {
+      name: 'Mentions légales',
+      link: '/mentions-legales',
+    },
+  ];
 
   return (
     <footer className="footer margin-section">
-      <div className="footer__content">
-        <div className="footer__contact">
-          {contactInfo.map((info, index) => (
-            <div key={index} className="footer__contact-item">
-              <div className="footer__contact-label">{info.label}</div>
-              <div className="footer__contact-value">{info.value}</div>
-            </div>
-          ))}
+
+      <div className="footer__container">
+        <div className="footer__content">
+          <div className="footer__contact">
+            {contactInfo.map((info, index) => (
+              <div key={index} className="footer__contact-item">
+                <div className="footer__contact-label">{info.label}</div>
+                <div className="footer__contact-value">{info.value}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="footer__navigation">
+            {navigationLinks.map((navigationLink, index) => (
+              <a href={navigationLink.link} key={index} className="footer__nav-link">
+                {navigationLink.name}
+              </a>
+            ))}
+          </div>
+
+          <div className="footer__brand">
+            <div className="footer__brand-name">Marie Sanchez</div>
+            <div className="footer__brand-title">Psychologue-Clinicienne</div>
+          </div>
         </div>
 
-        <div className="footer__navigation">
-          {navigationLinks.map((link, index) => (
-            <a key={index} className="footer__nav-link">
-              {link}
-            </a>
-          ))}
-        </div>
-
-        <div className="footer__brand">
-          <div className="footer__brand-name">Marie Sanchez</div>
-          <div className="footer__brand-title">Psychologue-Clinicienne</div>
+        <div className="footer__copyright">
+          <div className="footer__copyright-text">
+            © 2025
+          </div>
         </div>
       </div>
 
-      <div className="footer__copyright">
-        <div className="footer__copyright-text">
-          © 2025 | ALL RIGHTS RESERVED
-        </div>
-      </div>
     </footer>
   );
 }

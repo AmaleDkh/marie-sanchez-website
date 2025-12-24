@@ -28,11 +28,8 @@ interface EducationProps {
 function Education({ image, imagePosition = 'left' }: EducationProps) {
   return (
     <div className="education-container margin-section">
-      <SectionTitle
-        title="Mes diplômes"
-        // colorVersion="dark-green"
-        textAlignVersion="center"
-      />
+      <div className="education-container__content">
+     
       <div
         className={`education-wrapper ${image ? `education-wrapper--with-image education-wrapper--image-${imagePosition}` : ''}`}
       >
@@ -42,6 +39,12 @@ function Education({ image, imagePosition = 'left' }: EducationProps) {
           </div>
         )}
         <div className="education">
+          <SectionTitle
+            title="Mes diplômes"
+            textAlignVersion="center"
+          />
+
+          <div className="education-list">
           {educationList.map((item, index) => (
             <div key={index} className="education__item">
               {/* <div className="education__date">{item.year}</div> */}
@@ -53,6 +56,10 @@ function Education({ image, imagePosition = 'left' }: EducationProps) {
               </div>
             </div>
           ))}
+
+          </div>
+
+          
         </div>
         {image && imagePosition === 'right' && (
           <div className="education-image">
@@ -60,6 +67,8 @@ function Education({ image, imagePosition = 'left' }: EducationProps) {
           </div>
         )}
       </div>
+      </div>
+  
     </div>
   );
 }

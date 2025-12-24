@@ -41,9 +41,11 @@ function DurationAndPrices() {
 
   return (
     <section className="duration-and-prices padding-section">
-      <h2 className="duration-and-prices__title">Durées & tarifs</h2>
 
-      <div className="duration-and-prices__pricing-container">
+      <div className="duration-and-prices__container">
+        <h2 className="duration-and-prices__title">Durées & tarifs</h2>
+
+        <div className="duration-and-prices__pricing-container">
         <div className="duration-and-prices__pricing-cards">
           {pricingCards.map((card, index) => (
             <div key={index} className="duration-and-prices__pricing-card">
@@ -82,6 +84,10 @@ function DurationAndPrices() {
           </div>
         </div>
       </div>
+      </div>
+
+
+    
     </section>
   );
 }

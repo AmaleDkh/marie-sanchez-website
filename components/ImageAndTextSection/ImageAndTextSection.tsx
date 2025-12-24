@@ -50,12 +50,8 @@ function ImageAndTextSection({
     <section
       className={`image-and-text-section image-and-text-section--${backgroundColor} image-and-text-section--${paddingVersion}  ${imageOnLeft ? 'image-and-text-section--image-left' : ''} image-and-text-section--${paddingVersion}`}
     >
-      {/* <div className="image-and-text-section__inner"> */}
-      {/* <div
-        className={`image-and-text-section__grid ${
-          imageOnLeft ? 'image-and-text-section__grid--image-left' : ''
-        }`}
-      > */}
+      <div className="image-and-text-section__container">
+
       <div className="image-and-text-section__content">
         <SectionTitle title={sectionTitle} colorVersion={titleColorVersion} />
         <p
@@ -80,8 +76,11 @@ function ImageAndTextSection({
           className="image-and-text-section__image"
         />
       </div>
-      {/* </div> */}
-      {/* </div> */}
+      </div>
+
+
+
+     
     </section>
   );
 }

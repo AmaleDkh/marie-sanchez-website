@@ -45,7 +45,7 @@ function Header() {
 
   return (
     <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
-      <div className="header-container">
+      <div className="header__container">
         <div className="header__content">
           <div
             className={`header__logo ${isMenuOpen ? 'header__logo--hidden' : ''}`}
@@ -55,10 +55,17 @@ function Header() {
               className="header__logo-link"
               onClick={handleLinkClick}
             >
-              Marie Sanchez
+
+
+              {/* Marie Sanchez
               <span className="header__logo-subtitle">
                 Psychologue-Clinicienne
-              </span>
+              </span> */}
+
+               <div className="header__brand">
+            <div className="header__brand-name">Marie Sanchez</div>
+            <div className="header__brand-title">Psychologue-Clinicienne</div>
+          </div>
             </Link>
           </div>
 

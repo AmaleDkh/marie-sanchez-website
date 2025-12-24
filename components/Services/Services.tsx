@@ -45,12 +45,12 @@ function Services({ paddingVersion }: ServicesnProps) {
   ];
 
   return (
-    <div className={`services-section services-section--${paddingVersion}`}>
+    <section className={`services-section services-section--${paddingVersion}`}>
+
+      <div className="services-section__content">
+
       <SectionTitle
         title="Des consultations adaptées à vos besoins"
-        // colorVersion="beige"
-        // colorVersion="dark-green"
-        // textAlignVersion="center"
       />
       <div className="services">
         {classicServices.map((service, index) => (
@@ -67,16 +67,11 @@ function Services({ paddingVersion }: ServicesnProps) {
           </div>
         ))}
       </div>
-      {/* 
-      {pathname !== '/consultations/' && isButton && (
-        <SecondaryButton
-          link="/consultations"
-          label="Découvrir toutes les consultations proposées"
-          centerVersion="secondary-button--center-version"
-          marginTopVersion="margin-top-version"
-        />
-      )} */}
-    </div>
+
+
+      </div>
+     
+    </section>
   );
 }
 

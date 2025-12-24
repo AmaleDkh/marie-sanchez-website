@@ -2,7 +2,6 @@
 @use '../../assets/styles/Colors.scss' as colors;
 
 .services-section {
-  // background-color: colors.$medium-green-color;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -46,12 +45,20 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 1400px;
+    margin: auto;
+  }
 }
 
 .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 16px;
 
   @include breakpoints.respond-to-large {
     grid-template-columns: 1fr;
@@ -74,18 +81,11 @@
   justify-content: space-between;
   // text-align: center;
   gap: 32px;
-  // color: colors.$beige-color;
 
-  // &__title {
-  //   color: colors.$beige-color;
-  // }
-
-  // &__icon {
-  //   // color: colors.$green-color;
-  //   // color: colors.$beige-color;
-  //   margin-bottom: 16px;
-  // }
-
+  @include breakpoints.respond-to-medium {
+    padding: 16px;
+  }
+ 
   &__description {
     // line-height: 1.6;
     margin: 0;

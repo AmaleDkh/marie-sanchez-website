@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   color: white;
-
   overflow: hidden;
 
   @include breakpoints.respond-to-extra-large {
@@ -46,22 +45,13 @@
     background-color: colors.$white-color;
     position: relative;
     z-index: 1;
-    text-align: center;
-
+    // text-align: center;
     display: flex;
     flex-direction: column;
     gap: 32px;
     max-width: 800px;
-
     padding: 40px;
-
     margin: 0 auto;
-
-    // margin: 0 104px;
-
-    // @include breakpoints.respond-to-extra-large {
-    //   margin: 0 40px;
-    // }
 
     @include breakpoints.respond-to-large {
       margin: 0 40px;
@@ -79,11 +69,11 @@
     }
   }
 
-  &__title {
-    // margin-bottom: 24px;
-    // color: colors.$beige-color;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  }
+  // &__title {
+  //   // margin-bottom: 24px;
+  //   // color: colors.$beige-color;
+  //   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  // }
 
   &__subtitle {
     color: colors.$black-color;
@@ -94,7 +84,7 @@
   &__buttons {
     display: flex;
     gap: 24px;
-    justify-content: center;
+    // justify-content: center;
   }
 }
 

@@ -57,6 +57,10 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   }
 
+  @include breakpoints.respond-to-large {
+    padding: 16px;
+}
+
   &__header {
     display: flex;
     justify-content: space-between;

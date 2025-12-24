@@ -2,50 +2,67 @@
 @use '../../assets/styles/Colors.scss' as colors;
 
 .consultations-on-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
+  &__container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__service-description {
+    margin: 0;
+  }
 }
 
 .consultations-on-page__services {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  // gap: 32px;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-auto-rows: 1fr;             
+  gap: 16px;
+
+  @include breakpoints.respond-to-large {
+    grid-template-columns: 1fr;       
+    grid-template-rows: repeat(3, 1fr);  
+  }
 }
 
 .consultations-on-page__service {
+  flex: 1;
   display: flex;
-  // width: 834px;
+  // flex-direction: column;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   gap: 24px;
 
-  @include breakpoints.respond-to-medium {
+  @include breakpoints.respond-to-large {
     flex-direction: column;
     gap: 8px;
   }
 }
 
 .consultations-on-page__service-content {
+  height: -webkit-fill-available;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  // justify-content: center;
   gap: 16px;
   flex: 1;
   padding: 24px;
   background-color: colors.$light-green-color;
+
+  @include breakpoints.respond-to-large {
+   width: 100%;
+   padding: 16px;
+  }
 }
 
 .consultations-on-page__service-benefit {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
   gap: 4px;
   // padding: 40px;
   // background-color: #d2dbd2;

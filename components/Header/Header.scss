@@ -3,16 +3,7 @@
 @use '../../assets/styles/mixins/breakpoints.scss' as breakpoints;
 
 .header {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // background-color: transparent;
   z-index: 1000;
-  // transition:
-  //   background-color 0.3s ease,
-  //   box-shadow 0.3s ease;
-
   margin: 32px 104px;
 
   @include breakpoints.respond-to-extra-large {
@@ -24,37 +15,16 @@
   }
 
   &--scrolled {
-    // background-color: rgba(colors.$beige-color, 0.95);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
     .header__logo-link {
       color: colors.$dark-green-color;
-
-      // &:hover {
-      //   color: colors.$green-color;
-      // }
     }
+  }
 
-    // .header__nav-link {
-    //   color: colors.$dark-green-color;
-
-    //   &:hover {
-    //     color: colors.$green-color;
-    //   }
-
-    //   &--active {
-    //     color: colors.$green-color;
-    //   }
-    // }
-
-    // .header__appointment-button {
-    //   // background-color: colors.$dark-green-color;
-    //   // color: colors.$beige-color;
-
-    //   &:hover {
-    //     background-color: colors.$green-color;
-    //   }
-    // }
+  &__container {
+    max-width: 1400px;
+    margin: auto;
   }
 
   &__content {
@@ -127,7 +97,7 @@
     z-index: 1000;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 24px;
 
     @include breakpoints.respond-to-extra-large {
       position: fixed;
@@ -157,7 +127,7 @@
   &__nav-list {
     margin: 0;
     display: flex;
-    gap: 32px;
+    gap: 24px;
     list-style: none;
     padding: 0;
 
@@ -235,4 +205,27 @@
 
 .lucide-menu {
   color: colors.$dark-green-color;
+}
+
+.header__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.header__brand-name {
+  font-family: 'Libre Baskerville', Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.header__brand-title {
+  font-family: 'Montserrat', Helvetica;
+  font-weight: 400;
+  color: #111815;
+  font-size: 16px;
+  line-height: 1.5;
 }

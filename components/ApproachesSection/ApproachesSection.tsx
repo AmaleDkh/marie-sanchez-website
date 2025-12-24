@@ -57,8 +57,7 @@ function ApproachesSection() {
                 <h3 className="approaches-section__card-title">
                   {approach.title}
                 </h3>
-              </div>
-              <div className="approaches-section__card-content">
+
                 <p className="approaches-section__card-description">
                   {approach.description}
                 </p>
